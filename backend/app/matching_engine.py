@@ -53,6 +53,12 @@ def _all_vocab_terms() -> set[str]:
 def _terms_in(text: str) -> list[str]:
     norm = normalize(text)
     found = [t for t in _all_vocab_terms() if contains_term(norm, t)]
+    # Requirements often use an equivalent phrase instead of the canonical
+    # term ("event promotion" for event planning, "Salesforce" for CRM).
+    aliases = knowledge_loader.get_common().get("skill_aliases", {})
+    for canonical, variants in aliases.items():
+        if canonical not in found and any(contains_term(norm, v) for v in variants):
+            found.append(canonical)
     # Drop terms fully contained in a longer matched term
     # ("marketing" inside "email marketing").
     return sorted(

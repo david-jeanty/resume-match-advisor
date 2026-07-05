@@ -13,7 +13,7 @@
     "communication": ["presented", "presentations", "stakeholder communication", "wrote reports", "public speaking", "client-facing", "customer-facing"],
     "stakeholder management": ["stakeholder communication", "cross-functional", "liaised", "coordinated with", "worked with departments", "partner teams"],
     "leadership": ["led a team", "vice president", "vp of", "president of", "team lead", "captain", "founded", "co-founded", "executive member", "director of"],
-    "market research": ["competitive analysis", "competitor analysis", "customer research", "survey", "focus group", "industry research"],
+    "market research": ["competitive analysis", "competitor analysis", "competitor research", "customer research", "survey", "focus group", "industry research"],
     "financial modeling": ["dcf", "discounted cash flow", "valuation model", "three-statement model", "sensitivity analysis", "lbo"],
     "financial analysis": ["variance analysis", "ratio analysis", "financial statements analysis", "budget analysis"],
     "accounting": ["bookkeeping", "journal entries", "reconciliation", "reconciliations", "accounts payable", "accounts receivable", "general ledger"],
@@ -21,7 +21,7 @@
     "social media": ["instagram", "tiktok", "linkedin content", "facebook", "social channels", "content calendar"],
     "reporting": ["kpi reporting", "weekly reports", "monthly reports", "dashboards", "status reports", "reported on"],
     "budgeting": ["managed a budget", "budget management", "forecasting", "budget planning", "cost tracking"],
-    "event planning": ["event coordination", "organized events", "event logistics", "planned events", "conference planning"],
+    "event planning": ["event coordination", "organized events", "event logistics", "planned events", "conference planning", "event promotion", "campus events", "promoted events"],
     "process improvement": ["streamlined", "optimized process", "reduced turnaround", "standardized", "improved efficiency", "lean"],
     "erp": ["sap", "oracle netsuite", "netsuite", "workday", "erp system"],
     "python": ["pandas", "jupyter"],
@@ -29,6 +29,7 @@
     "seo": ["search engine optimization", "keyword research"],
     "email marketing": ["mailchimp", "email campaigns", "newsletters", "klaviyo"],
     "quickbooks": ["quick books"],
+    "internship": ["intern", "co-op", "coop", "summer student", "summer analyst"],
     "sales": ["cold calling", "prospecting", "outbound", "closed deals", "upselling", "quota"]
   },
   "student_experience_translations": [
