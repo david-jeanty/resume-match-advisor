@@ -14,7 +14,7 @@
       "purpose": "Source of truth for ADM course codes, English/French titles, and descriptions used in course_to_skill mappings.",
       "trust_level": "authoritative",
       "last_checked_date": "2026-07-05",
-      "notes": "Direct fetch was blocked by this build environment's network policy; titles for ADM 1370, 2302, 2303, 2320, 2336, 2341, 2350, 2372, 2381 were verified via official telfer.uottawa.ca program-sequence documents surfaced in web search. Titles for ADM 1300, 1301, 1305, 1340, 2304, 2337 and all French 17xx/27xx equivalents are marked to_verify in the pack and should be re-checked against this page."
+      "notes": "Catalogue confirms English titles for ADM 1300, 1301, 1305, 1340, 1370, 2302 (Business Analytics for Decision Making), 2303, 2304, 2320, 2336, 2337, 2341, 2350, 2372, 2381, plus French entries ADM 1701 Gestion et société, ADM 1705 Mathématiques pour la gestion, ADM 1740 Comptabilité financière, ADM 1770 Applications des technologies de l'information en gestion (checked 2026-07-05). Remaining French pairings (ADM 1700, 27xx codes) still to_verify."
     },
     {
       "source_name": "Telfer School of Management — Clubs and Associations",
@@ -23,7 +23,7 @@
       "purpose": "Official list of Telfer student clubs and associations for club_mappings.",
       "trust_level": "authoritative",
       "last_checked_date": "2026-07-05",
-      "notes": "Direct fetch blocked by build environment; CASCO, TMA, TCCT (JDC/HM/TICC), and BTA descriptions verified via official telfer.uottawa.ca content in search results. Full current club roster should be re-verified against this page."
+      "notes": "Official page confirms (2026-07-05): AÉTSA, Accounting Club/TAC, CASCO, ACE uOttawa, Business Healthcare Society/BHS, Telfer Finance Society/TFS, Telfer Human Resources Association/HRA, TCCT, BTA, Telfer International, Enactus uOttawa, TMA, The Entrepreneurs' Club/TECDE, Women in Management Network/WMN, and UOCA. UOREC not confirmed on this page — remains to_verify."
     },
     {
       "source_name": "AÉTSA — Clubs at Telfer",
@@ -32,7 +32,7 @@
       "purpose": "How clubs describe their activities and student-development value; cross-reference for club names/acronyms.",
       "trust_level": "high",
       "last_checked_date": "2026-07-05",
-      "notes": "Direct fetch blocked by build environment. Club list in the pack follows the project brief and known public club names; marked to_verify where not confirmed by an official snippet."
+      "notes": "Student-facing descriptions used for club advice wording (2026-07-05): BTA (data, analytics, technology in business), TCCT (case competitions incl. JDC, HM, TICC), TMA (marketing skills, connections, personal brand), TFS (industry events, networking, mock interviews, trips), TAC (professional development, panels, workshops), CASCO (charity gala, fundraising), Enactus (social entrepreneurship), UOCA (consulting skills, firm visits, workshops), TBJ (business writing, articles). Used for descriptions and TBJ existence only — the official Telfer page remains the source of truth for the official club list."
     },
     {
       "source_name": "Telfer CO-OP Programs",
@@ -69,6 +69,15 @@
       "trust_level": "qualitative_only",
       "last_checked_date": "2026-07-05",
       "notes": "Never used for factual claims about courses, prerequisites, co-op rules, or policy. No forum content is quoted or stored in packs."
+    },
+    {
+      "source_name": "Telfer BCom — Business Technology Management (BTM) option page",
+      "source_type": "official_university",
+      "url": "https://telfer.uottawa.ca/en/bcom/",
+      "purpose": "Confirms BTM program structure facts used in the pack: French Immersion stream availability, inclusion of the BCom compulsory core, and BTM-specific/optional courses (ADM 3303, 3305, 3308, 3378, 3379, 4103, 4307, 4376, 4377, 4378, 4379).",
+      "trust_level": "authoritative",
+      "last_checked_date": "2026-07-05",
+      "notes": "BTM option course list and French Immersion availability confirmed from the official BTM program page (2026-07-05); the ENG_BTM_2025.pdf mandatory course sequence on the same domain corroborates the course codes."
     }
   ]
 }

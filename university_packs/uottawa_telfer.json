@@ -4,129 +4,237 @@
   "university_name": "University of Ottawa",
   "business_school": "Telfer School of Management",
   "aliases": [
-    "uottawa", "u of o", "ottawau", "ottawa u", "university of ottawa",
-    "université d'ottawa", "universite d'ottawa", "telfer",
-    "telfer school of management", "école de gestion telfer", "ecole de gestion telfer"
+    "uottawa",
+    "u of o",
+    "ottawau",
+    "ottawa u",
+    "university of ottawa",
+    "université d'ottawa",
+    "universite d'ottawa",
+    "telfer",
+    "telfer school of management",
+    "école de gestion telfer",
+    "ecole de gestion telfer"
   ],
   "relevant_programs": [
-    "BCom", "Bachelor of Commerce", "BCom Co-op",
-    "Business Technology Management (BTM)", "Accounting", "Finance", "Marketing",
-    "Business Analytics", "Management", "Human Resource Management",
-    "International Management", "Entrepreneurship", "Healthcare Analytics"
+    "BCom",
+    "Bachelor of Commerce",
+    "BCom Co-op",
+    "Business Technology Management (BTM)",
+    "Accounting",
+    "Finance",
+    "Marketing",
+    "Business Analytics",
+    "Management",
+    "Human Resource Management",
+    "International Management",
+    "Entrepreneurship",
+    "Healthcare Analytics"
   ],
-  "course_code_patterns": ["\\badm\\s?-?\\s?[12345]\\d{3}\\b"],
-  "course_note": "French-language sections at uOttawa use parallel 17xx/27xx/37xx codes (e.g. ADM 1300 -> ADM 1700, ADM 2372 -> ADM 2772). Both codes map to the same skills. Titles marked verified=false follow the project brief and the standard uOttawa naming but must be re-checked against the official catalogue (see research_sources/uottawa_telfer_sources.json).",
+  "course_code_patterns": [
+    "\\badm\\s?-?\\s?[12345]\\d{3}\\b"
+  ],
+  "course_note": "French-language sections at uOttawa use parallel 17xx/27xx/37xx codes; the official catalogue confirms ADM 1701 Gestion et société, ADM 1705 Mathématiques pour la gestion, ADM 1740 Comptabilité financière, and ADM 1770 Applications des technologies de l'information en gestion (checked 2026-07-05). Remaining French pairings (ADM 1700 and the 27xx codes) follow the same convention but are still to_verify. Both codes in a pair map to the same skills. The official BTM program page confirms the BTM option includes the BCom compulsory core courses.",
   "courses": {
     "ADM 1300": {
-      "name": "Introduction to Business Management",
+      "name": "Introduction to Business",
       "french_equivalent": "ADM 1700",
-      "verified": false,
+      "verified": true,
       "disciplines": [],
-      "skills": ["communication", "problem solving"],
+      "skills": [
+        "communication",
+        "problem solving"
+      ],
       "advice": "An intro business course signals foundational knowledge, but it is weak evidence on its own — mention the team project or company analysis you did in it if it's relevant."
     },
     "ADM 1301": {
       "name": "Business and Society",
       "french_equivalent": "ADM 1701",
-      "verified": false,
+      "verified": true,
       "disciplines": [],
-      "skills": ["communication", "market research"],
+      "skills": [
+        "communication",
+        "market research"
+      ],
       "advice": "Business & Society coursework can support research and stakeholder-awareness evidence if you name the analysis or case you produced."
     },
     "ADM 1305": {
       "name": "Mathematics for Management",
       "french_equivalent": "ADM 1705",
-      "verified": false,
-      "disciplines": ["finance", "business_analytics"],
-      "skills": ["data analysis"],
+      "verified": true,
+      "disciplines": [
+        "finance",
+        "business_analytics"
+      ],
+      "skills": [
+        "data analysis"
+      ],
       "advice": "Quantitative coursework only becomes evidence when you show it applied — an Excel model, a stats project, or an analysis with a conclusion."
     },
     "ADM 1340": {
       "name": "Financial Accounting",
       "french_equivalent": "ADM 1740",
-      "verified": false,
-      "disciplines": ["accounting", "finance"],
-      "skills": ["accounting", "financial statements", "reporting"],
+      "verified": true,
+      "disciplines": [
+        "accounting",
+        "finance"
+      ],
+      "skills": [
+        "accounting",
+        "financial statements",
+        "reporting"
+      ],
       "advice": "Financial Accounting coursework supports accounting fundamentals. To make it real evidence, name a concrete task: statements prepared, a case analyzed, or reconciliations done in the course or elsewhere."
     },
     "ADM 1370": {
       "name": "Applications of Information Technology for Business",
       "french_equivalent": "ADM 1770",
       "verified": true,
-      "disciplines": ["btm_mis", "business_analytics"],
-      "skills": ["excel", "data analysis", "reporting", "dashboards", "documentation"],
+      "disciplines": [
+        "btm_mis",
+        "business_analytics"
+      ],
+      "skills": [
+        "excel",
+        "data analysis",
+        "reporting",
+        "dashboards",
+        "documentation"
+      ],
       "advice": "ADM 1370 covers spreadsheets, databases, and business intelligence tools. A course code alone is weak evidence — add the actual deliverable (an Excel model, a database exercise, a BI dashboard) with the tool named."
     },
     "ADM 2302": {
-      "name": "Business Analytics",
+      "name": "Business Analytics for Decision Making",
       "french_equivalent": "ADM 2702",
       "verified": true,
-      "disciplines": ["business_analytics", "operations"],
-      "skills": ["data analysis", "statistics", "excel", "forecasting", "problem solving"],
+      "disciplines": [
+        "business_analytics",
+        "operations"
+      ],
+      "skills": [
+        "data analysis",
+        "statistics",
+        "excel",
+        "forecasting",
+        "problem solving"
+      ],
       "advice": "ADM 2302 supports decision-modeling and analytics evidence. Turn it into a bullet: the business problem, the model or method (optimization, simulation, spreadsheet model), and the recommendation."
     },
     "ADM 2303": {
       "name": "Statistics for Management",
       "french_equivalent": "ADM 2703",
       "verified": true,
-      "disciplines": ["business_analytics"],
-      "skills": ["statistics", "data analysis"],
+      "disciplines": [
+        "business_analytics"
+      ],
+      "skills": [
+        "statistics",
+        "data analysis"
+      ],
       "advice": "Statistics coursework is weak evidence alone. If you analyzed a real dataset (in class or anywhere), state the dataset, method (regression, hypothesis testing), tool, and finding."
     },
     "ADM 2304": {
       "name": "Applications of Statistical Methods in Business",
       "french_equivalent": "ADM 2704",
-      "verified": false,
-      "disciplines": ["business_analytics"],
-      "skills": ["statistics", "data analysis", "reporting"],
+      "verified": true,
+      "disciplines": [
+        "business_analytics"
+      ],
+      "skills": [
+        "statistics",
+        "data analysis",
+        "reporting"
+      ],
       "advice": "Applied statistics coursework becomes evidence when you show the applied part: the business dataset, the method, and what the analysis concluded."
     },
     "ADM 2320": {
       "name": "Marketing",
       "french_equivalent": "ADM 2720",
       "verified": true,
-      "disciplines": ["marketing"],
-      "skills": ["market research", "campaign management", "audience segmentation", "communication"],
+      "disciplines": [
+        "marketing"
+      ],
+      "skills": [
+        "market research",
+        "campaign management",
+        "audience segmentation",
+        "communication"
+      ],
       "advice": "The core Marketing course supports fundamentals only. A marketing plan project — with the target segment, channel choices, and any results or grades on the deliverable — is much stronger evidence."
     },
     "ADM 2336": {
       "name": "Organizational Behaviour",
       "french_equivalent": "ADM 2736",
       "verified": true,
-      "disciplines": ["hr"],
-      "skills": ["communication", "leadership"],
+      "disciplines": [
+        "hr"
+      ],
+      "skills": [
+        "communication",
+        "leadership"
+      ],
       "advice": "OB coursework supports people-management awareness. For HR roles, pair it with real coordination evidence: club recruitment, training coworkers, or running a team."
     },
     "ADM 2337": {
       "name": "Human Resource Management",
       "french_equivalent": "ADM 2737",
-      "verified": false,
-      "disciplines": ["hr"],
-      "skills": ["recruitment", "onboarding", "communication"],
+      "verified": true,
+      "disciplines": [
+        "hr"
+      ],
+      "skills": [
+        "recruitment",
+        "onboarding",
+        "communication"
+      ],
       "advice": "HRM coursework signals HR interest; make it evidence by naming an HR case, policy analysis, or any real recruiting/onboarding you've done in clubs or jobs."
     },
     "ADM 2341": {
       "name": "Managerial Accounting",
       "french_equivalent": "ADM 2741",
       "verified": true,
-      "disciplines": ["accounting", "finance"],
-      "skills": ["accounting", "budgeting", "variance analysis", "reporting"],
+      "disciplines": [
+        "accounting",
+        "finance"
+      ],
+      "skills": [
+        "accounting",
+        "budgeting",
+        "variance analysis",
+        "reporting"
+      ],
       "advice": "Managerial Accounting supports costing/budgeting fundamentals. Add the concrete task — a costing case, a budget built, a variance analysis — to move beyond course-only evidence."
     },
     "ADM 2350": {
       "name": "Financial Management",
       "french_equivalent": "ADM 2750",
       "verified": true,
-      "disciplines": ["finance"],
-      "skills": ["financial analysis", "financial modeling", "valuation", "forecasting"],
+      "disciplines": [
+        "finance"
+      ],
+      "skills": [
+        "financial analysis",
+        "financial modeling",
+        "valuation",
+        "forecasting"
+      ],
       "advice": "Financial Management coursework supports finance fundamentals. Name the model you built (valuation, capital budgeting, sensitivity analysis) and what decision it informed."
     },
     "ADM 2372": {
       "name": "Management Information Systems",
       "french_equivalent": "ADM 2772",
       "verified": true,
-      "disciplines": ["btm_mis"],
-      "skills": ["business analysis", "requirements gathering", "process mapping", "documentation", "erp", "crm"],
+      "disciplines": [
+        "btm_mis"
+      ],
+      "skills": [
+        "business analysis",
+        "requirements gathering",
+        "process mapping",
+        "documentation",
+        "erp",
+        "crm"
+      ],
       "advice": "ADM 2372 may support MIS knowledge, but a course name alone is not enough evidence for a business analyst role. If you completed a process analysis, systems project, or requirements document, add that project with tools, deliverables, and outcome."
     },
     "ADM 2381": {
@@ -134,12 +242,184 @@
       "french_equivalent": "ADM 2781",
       "verified": true,
       "disciplines": [],
-      "skills": ["communication", "presentation", "documentation"],
+      "skills": [
+        "communication",
+        "presentation",
+        "documentation"
+      ],
       "advice": "Communication coursework is weak evidence by itself — a delivered presentation, report, or client-style deliverable with an audience is what counts."
+    },
+    "ADM 3303": {
+      "name": "Hands-On Coding for Business",
+      "french_equivalent": null,
+      "verified": true,
+      "disciplines": [
+        "btm_mis",
+        "business_analytics"
+      ],
+      "skills": [
+        "python",
+        "data analysis"
+      ],
+      "advice": "A coding-for-business course only counts once you show what you built — name the language, the business problem, and the working result."
+    },
+    "ADM 3305": {
+      "name": "Business Simulation Analytics",
+      "french_equivalent": null,
+      "verified": true,
+      "disciplines": [
+        "business_analytics"
+      ],
+      "skills": [
+        "data analysis",
+        "forecasting",
+        "statistics"
+      ],
+      "advice": "Simulation analytics coursework becomes evidence when you describe the simulation, the decisions you modeled, and what the results showed."
+    },
+    "ADM 3308": {
+      "name": "Business Data Mining",
+      "french_equivalent": null,
+      "verified": true,
+      "disciplines": [
+        "business_analytics",
+        "btm_mis"
+      ],
+      "skills": [
+        "data analysis",
+        "statistics",
+        "data visualization"
+      ],
+      "advice": "Data mining coursework is weak evidence alone — name the dataset, the technique, the tool, and the business finding to make it real."
+    },
+    "ADM 3378": {
+      "name": "Emerging Topics in Management Information Systems",
+      "french_equivalent": null,
+      "verified": true,
+      "disciplines": [
+        "btm_mis"
+      ],
+      "skills": [
+        "business analysis",
+        "documentation"
+      ],
+      "advice": "An emerging-MIS-topics course signals current tech-business awareness; cite the specific topic you researched or presented and the deliverable."
+    },
+    "ADM 3379": {
+      "name": "Systems Analysis, Development, and Performance",
+      "french_equivalent": null,
+      "verified": true,
+      "disciplines": [
+        "btm_mis"
+      ],
+      "skills": [
+        "business analysis",
+        "requirements gathering",
+        "process mapping",
+        "testing",
+        "documentation"
+      ],
+      "advice": "Systems analysis coursework maps directly to business analyst work — add the system you analyzed, the requirements or process documents you produced, and any testing you did."
+    },
+    "ADM 4103": {
+      "name": "Project Management",
+      "french_equivalent": null,
+      "verified": true,
+      "disciplines": [
+        "btm_mis",
+        "operations",
+        "consulting"
+      ],
+      "skills": [
+        "project management",
+        "stakeholder management",
+        "scheduling",
+        "documentation"
+      ],
+      "advice": "A project management course supports PM fundamentals; the evidence employers want is a real plan you built or a project you coordinated — scope, timeline, stakeholders, outcome."
+    },
+    "ADM 4307": {
+      "name": "Business Forecasting Analytics",
+      "french_equivalent": null,
+      "verified": true,
+      "disciplines": [
+        "business_analytics",
+        "finance"
+      ],
+      "skills": [
+        "forecasting",
+        "data analysis",
+        "statistics"
+      ],
+      "advice": "Forecasting coursework becomes evidence when you name what you forecasted, the method and tool, and how close or useful the forecast was."
+    },
+    "ADM 4376": {
+      "name": "Cybersecurity Management",
+      "french_equivalent": null,
+      "verified": true,
+      "disciplines": [
+        "btm_mis"
+      ],
+      "skills": [
+        "documentation",
+        "process improvement"
+      ],
+      "advice": "Cybersecurity management coursework is relevant to Ottawa's security sector — cite the risk assessment, policy analysis, or case you produced, not just the course."
+    },
+    "ADM 4377": {
+      "name": "Digital Enterprise Systems and Strategies",
+      "french_equivalent": null,
+      "verified": true,
+      "disciplines": [
+        "btm_mis"
+      ],
+      "skills": [
+        "erp",
+        "business analysis",
+        "process improvement"
+      ],
+      "advice": "Enterprise-systems coursework supports ERP/digital-transformation awareness; naming the system or case you worked on makes it credible."
+    },
+    "ADM 4378": {
+      "name": "Business Communications Networks",
+      "french_equivalent": null,
+      "verified": true,
+      "disciplines": [
+        "btm_mis"
+      ],
+      "skills": [
+        "business analysis",
+        "documentation"
+      ],
+      "advice": "Networks coursework signals technical literacy for business-technology roles; pair it with any hands-on lab, design, or analysis deliverable."
+    },
+    "ADM 4379": {
+      "name": "Management and Implementation of Web Technologies in Organizations",
+      "french_equivalent": null,
+      "verified": true,
+      "disciplines": [
+        "btm_mis"
+      ],
+      "skills": [
+        "business analysis",
+        "project management",
+        "testing"
+      ],
+      "advice": "Web-technologies coursework counts when you show the implementation or evaluation you did — the organization scenario, the technology, and the outcome."
     }
   },
   "coop_context": {
-    "signals": ["co-op", "coop", "co op", "work term", "work-term", "co-op work term", "co-op student", "work-integrated learning", "wil"],
+    "signals": [
+      "co-op",
+      "coop",
+      "co op",
+      "work term",
+      "work-term",
+      "co-op work term",
+      "co-op student",
+      "work-integrated learning",
+      "wil"
+    ],
     "facts": [
       "Telfer BCom co-op students complete 3-4 paid work terms (up to 16 months) alternating with study terms, starting after two years of study. (Verified against telfer.uottawa.ca/en/co-op/, 2026-07-05.)",
       "Co-op is optional and admission is competitive, with a separate application in first year.",
@@ -148,163 +428,393 @@
     "advice": "A co-op work term is direct, full-time student work experience — present it exactly like a job: employer, title, dates, and quantified bullets. If the posting is an internship, your co-op background is directly equivalent context; say 'co-op work term' explicitly."
   },
   "student_experience_signals": [
-    "telfer", "uottawa", "university of ottawa", "bcom", "btm", "mis", "commerce",
-    "french immersion", "co-op", "coop", "work term", "adm", "case competition",
-    "live case", "consulting case", "business case", "vp", "director", "sponsorship",
-    "event logistics", "student ambassador", "peer mentor"
+    "telfer",
+    "uottawa",
+    "university of ottawa",
+    "bcom",
+    "btm",
+    "mis",
+    "commerce",
+    "french immersion",
+    "co-op",
+    "coop",
+    "work term",
+    "adm",
+    "case competition",
+    "live case",
+    "consulting case",
+    "business case",
+    "vp",
+    "director",
+    "sponsorship",
+    "event logistics",
+    "student ambassador",
+    "peer mentor"
   ],
   "clubs": {
     "AÉTSA": {
       "full_name": "Telfer Students' Association (AÉTSA)",
       "kind": "association",
-      "verified": false,
-      "aliases": ["aétsa", "aetsa", "telfer students' association", "telfer student association", "association étudiante telfer", "association etudiante telfer"],
-      "disciplines": ["operations", "marketing", "finance", "hr"],
-      "supports": ["leadership", "stakeholder management", "event planning", "budgeting", "project management", "communication"],
+      "verified": true,
+      "aliases": [
+        "aétsa",
+        "aetsa",
+        "telfer students' association",
+        "telfer student association",
+        "association étudiante telfer",
+        "association etudiante telfer"
+      ],
+      "disciplines": [
+        "operations",
+        "marketing",
+        "finance",
+        "hr"
+      ],
+      "supports": [
+        "leadership",
+        "stakeholder management",
+        "event planning",
+        "budgeting",
+        "project management",
+        "communication"
+      ],
       "advice": "AÉTSA work is student governance and operations evidence — name your portfolio, the budget or events you owned, who you coordinated with (school administration, sponsors, clubs), and the scale."
     },
     "TCCT": {
       "full_name": "Telfer Competitions Committee (TCCT)",
       "kind": "club",
       "verified": true,
-      "aliases": ["tcct", "telfer competitions committee", "competitions committee"],
-      "disciplines": ["consulting", "marketing", "finance", "operations", "business_analytics"],
-      "supports": ["problem solving", "presentation", "project management", "stakeholder management", "communication", "event planning"],
+      "aliases": [
+        "tcct",
+        "telfer competitions committee",
+        "competitions committee"
+      ],
+      "disciplines": [
+        "consulting",
+        "marketing",
+        "finance",
+        "operations",
+        "business_analytics"
+      ],
+      "supports": [
+        "problem solving",
+        "presentation",
+        "project management",
+        "stakeholder management",
+        "communication",
+        "event planning"
+      ],
       "advice": "Your TCCT experience may support project coordination, stakeholder communication, event logistics, and business presentation skills. Make it stronger by adding the competition or event size, tools used, stakeholders coordinated, and a measurable outcome (placement, delegates sent, sponsorship raised)."
     },
     "BTA": {
       "full_name": "Telfer Business Technology Association (BTA)",
       "kind": "club",
       "verified": true,
-      "aliases": ["bta", "business technology association", "telfer business technology association"],
-      "disciplines": ["btm_mis", "business_analytics", "consulting"],
-      "supports": ["business analysis", "data analysis", "event planning", "stakeholder management", "communication"],
+      "aliases": [
+        "bta",
+        "business technology association",
+        "telfer business technology association"
+      ],
+      "disciplines": [
+        "btm_mis",
+        "business_analytics",
+        "consulting"
+      ],
+      "supports": [
+        "business analysis",
+        "data analysis",
+        "event planning",
+        "stakeholder management",
+        "communication"
+      ],
       "advice": "BTA involvement signals business-technology interest. It becomes real BTM/analytics evidence when you show organized tech or analytics events, workshop content, speaker or sponsor outreach, CRM/BI exposure, or attendance numbers."
     },
     "TMA": {
       "full_name": "Telfer Marketing Association (TMA)",
       "kind": "club",
       "verified": true,
-      "aliases": ["tma", "telfer marketing association", "marketing association"],
-      "disciplines": ["marketing"],
-      "supports": ["campaign management", "social media", "content creation", "event planning", "communication"],
+      "aliases": [
+        "tma",
+        "telfer marketing association",
+        "marketing association"
+      ],
+      "disciplines": [
+        "marketing"
+      ],
+      "supports": [
+        "campaign management",
+        "social media",
+        "content creation",
+        "event planning",
+        "communication"
+      ],
       "advice": "TMA involvement counts as marketing evidence only when the work is shown: campaign planning, social media content, event promotion, sponsorships, analytics, or audience growth with numbers."
     },
     "TFS": {
       "full_name": "Telfer Finance Society (TFS)",
       "kind": "club",
-      "verified": false,
-      "aliases": ["tfs", "telfer finance society", "finance society"],
-      "disciplines": ["finance"],
-      "supports": ["financial analysis", "financial modeling", "market research", "communication"],
+      "verified": true,
+      "aliases": [
+        "tfs",
+        "telfer finance society",
+        "finance society"
+      ],
+      "disciplines": [
+        "finance"
+      ],
+      "supports": [
+        "financial analysis",
+        "financial modeling",
+        "market research",
+        "communication"
+      ],
       "advice": "Finance club involvement becomes finance evidence when you show the technical work: stock pitches, modelling workshops you ran or completed, market research, Excel work, or competition results."
     },
     "TAC": {
       "full_name": "Telfer Accounting Club (TAC)",
       "kind": "club",
-      "verified": false,
-      "aliases": ["telfer accounting club", "accounting club", "tac"],
-      "disciplines": ["accounting"],
-      "supports": ["accounting", "financial statements", "communication"],
+      "verified": true,
+      "aliases": [
+        "telfer accounting club",
+        "accounting club",
+        "tac"
+      ],
+      "disciplines": [
+        "accounting"
+      ],
+      "supports": [
+        "accounting",
+        "financial statements",
+        "communication"
+      ],
       "advice": "Accounting club involvement supports CPA-pathway interest. Tax clinics, audit simulations, accounting cases, or events you ran (with attendance or volumes) turn it into real evidence."
     },
     "HRA": {
-      "full_name": "Human Resources Association (HRA)",
+      "full_name": "Telfer Human Resources Association (HRA)",
       "kind": "club",
-      "verified": false,
-      "aliases": ["hra", "hrma", "human resources association", "hr association"],
-      "disciplines": ["hr"],
-      "supports": ["recruitment", "onboarding", "event planning", "communication"],
+      "verified": true,
+      "aliases": [
+        "hra",
+        "hrma",
+        "human resources association",
+        "hr association",
+        "telfer human resources association"
+      ],
+      "disciplines": [
+        "hr"
+      ],
+      "supports": [
+        "recruitment",
+        "onboarding",
+        "event planning",
+        "communication"
+      ],
       "advice": "HR club involvement becomes HR evidence when you show recruitment drives, onboarding of members, event coordination, policy research, or HR case competitions."
     },
     "UOCA": {
       "full_name": "University of Ottawa Consulting Association (UOCA)",
       "kind": "club",
-      "verified": false,
-      "aliases": ["uoca", "consulting association", "university of ottawa consulting association"],
-      "disciplines": ["consulting", "btm_mis", "operations"],
-      "supports": ["problem solving", "presentation", "market research", "stakeholder management"],
+      "verified": true,
+      "aliases": [
+        "uoca",
+        "consulting association",
+        "university of ottawa consulting association"
+      ],
+      "disciplines": [
+        "consulting",
+        "btm_mis",
+        "operations"
+      ],
+      "supports": [
+        "problem solving",
+        "presentation",
+        "market research",
+        "stakeholder management"
+      ],
       "advice": "Consulting club work counts when the analyst work is visible: case prep, client-style projects and presentations, research, stakeholder analysis, or firm workshops attended/organized."
     },
     "Enactus": {
       "full_name": "Enactus uOttawa",
       "kind": "club",
-      "verified": false,
-      "aliases": ["enactus", "enactus uottawa"],
-      "disciplines": ["consulting", "operations", "marketing", "sales_revops"],
-      "supports": ["project management", "leadership", "event planning", "market research", "sales"],
+      "verified": true,
+      "aliases": [
+        "enactus",
+        "enactus uottawa"
+      ],
+      "disciplines": [
+        "consulting",
+        "operations",
+        "marketing",
+        "sales_revops"
+      ],
+      "supports": [
+        "project management",
+        "leadership",
+        "event planning",
+        "market research",
+        "sales"
+      ],
       "advice": "Enactus projects are real project-execution evidence — state the project, beneficiaries or customers reached, revenue or funding involved, partners, and your specific role."
     },
     "CASCO": {
       "full_name": "CASCO (Telfer's charity organization supporting CHEO)",
       "kind": "club",
       "verified": true,
-      "aliases": ["casco"],
-      "disciplines": ["marketing", "operations", "sales_revops"],
-      "supports": ["event planning", "sales", "budgeting", "project management", "social media"],
+      "aliases": [
+        "casco"
+      ],
+      "disciplines": [
+        "marketing",
+        "operations",
+        "sales_revops"
+      ],
+      "supports": [
+        "event planning",
+        "sales",
+        "budgeting",
+        "project management",
+        "social media"
+      ],
       "advice": "CASCO work (gala, fundraisers, sponsorship) is genuine event-operations and business-development evidence — include funds raised, attendance, sponsors secured, and team size."
     },
     "BHS": {
       "full_name": "Business Healthcare Society (BHS)",
       "kind": "club",
-      "verified": false,
-      "aliases": ["bhs", "business healthcare society"],
-      "disciplines": ["consulting", "operations", "business_analytics"],
-      "supports": ["market research", "event planning", "communication"],
+      "verified": true,
+      "aliases": [
+        "bhs",
+        "business healthcare society"
+      ],
+      "disciplines": [
+        "consulting",
+        "operations",
+        "business_analytics"
+      ],
+      "supports": [
+        "market research",
+        "event planning",
+        "communication"
+      ],
       "advice": "BHS involvement signals healthcare-business interest; panels organized, research produced, or partnerships built are what make it resume evidence."
     },
     "TBJ": {
       "full_name": "Telfer Business Journal (TBJ)",
       "kind": "club",
-      "verified": false,
-      "aliases": ["tbj", "telfer business journal", "business journal"],
-      "disciplines": ["marketing", "consulting"],
-      "supports": ["copywriting", "market research", "content creation", "communication"],
-      "advice": "TBJ work is writing and research evidence — cite published articles, interviews conducted, editing responsibility, or readership numbers."
+      "verified": true,
+      "aliases": [
+        "tbj",
+        "telfer business journal",
+        "business journal"
+      ],
+      "disciplines": [
+        "marketing",
+        "consulting"
+      ],
+      "supports": [
+        "copywriting",
+        "market research",
+        "content creation",
+        "communication"
+      ],
+      "advice": "TBJ work is writing and research evidence — cite published articles, interviews conducted, editing responsibility, or readership numbers.",
+      "source_note": "Confirmed via the AÉTSA Clubs at Telfer page (student-facing source), 2026-07-05."
     },
     "TECDE": {
       "full_name": "The Entrepreneurs' Club (TECDE)",
       "kind": "club",
-      "verified": false,
-      "aliases": ["tecde", "entrepreneurs' club", "entrepreneurs club", "the entrepreneurs' club"],
-      "disciplines": ["sales_revops", "marketing", "consulting"],
-      "supports": ["sales", "market research", "event planning", "presentation"],
+      "verified": true,
+      "aliases": [
+        "tecde",
+        "entrepreneurs' club",
+        "entrepreneurs club",
+        "the entrepreneurs' club"
+      ],
+      "disciplines": [
+        "sales_revops",
+        "marketing",
+        "consulting"
+      ],
+      "supports": [
+        "sales",
+        "market research",
+        "event planning",
+        "presentation"
+      ],
       "advice": "Entrepreneurship club work counts when you show pitch competitions, customer discovery, market research, business model work, or sales outreach with numbers."
     },
     "WMN": {
       "full_name": "Women in Management Network (WMN)",
       "kind": "club",
-      "verified": false,
-      "aliases": ["wmn", "women in management network", "women in management"],
-      "disciplines": ["hr", "marketing"],
-      "supports": ["leadership", "event planning", "communication"],
+      "verified": true,
+      "aliases": [
+        "wmn",
+        "women in management network",
+        "women in management"
+      ],
+      "disciplines": [
+        "hr",
+        "marketing"
+      ],
+      "supports": [
+        "leadership",
+        "event planning",
+        "communication"
+      ],
       "advice": "WMN involvement supports leadership and community-building evidence — name events led, mentorship given or received, partnerships, and engagement numbers."
     },
     "Telfer International": {
       "full_name": "Telfer International (TI)",
       "kind": "club",
-      "verified": false,
-      "aliases": ["telfer international"],
-      "disciplines": ["marketing", "hr", "consulting"],
-      "supports": ["communication", "event planning", "stakeholder management"],
+      "verified": true,
+      "aliases": [
+        "telfer international"
+      ],
+      "disciplines": [
+        "marketing",
+        "hr",
+        "consulting"
+      ],
+      "supports": [
+        "communication",
+        "event planning",
+        "stakeholder management"
+      ],
       "advice": "Telfer International work supports cross-cultural communication — exchange-student support, international events, or multilingual communication are the evidence to surface."
     },
     "ACE": {
       "full_name": "ACE uOttawa",
       "kind": "club",
-      "verified": false,
-      "aliases": ["ace uottawa"],
-      "disciplines": ["consulting", "sales_revops"],
-      "supports": ["problem solving", "project management", "presentation"],
+      "verified": true,
+      "aliases": [
+        "ace uottawa"
+      ],
+      "disciplines": [
+        "consulting",
+        "sales_revops"
+      ],
+      "supports": [
+        "problem solving",
+        "project management",
+        "presentation"
+      ],
       "advice": "ACE project work counts as consulting/venture evidence when the project, client or venture, and outcome are named."
     },
     "UOREC": {
       "full_name": "University of Ottawa Real Estate Club (UOREC)",
       "kind": "club",
       "verified": false,
-      "aliases": ["uorec", "real estate club"],
-      "disciplines": ["finance"],
-      "supports": ["financial analysis", "market research", "event planning"],
+      "aliases": [
+        "uorec",
+        "real estate club"
+      ],
+      "disciplines": [
+        "finance"
+      ],
+      "supports": [
+        "financial analysis",
+        "market research",
+        "event planning"
+      ],
       "advice": "Real estate club involvement becomes finance evidence through property/market analyses, financial models, or industry events you organized."
     }
   },
@@ -312,39 +822,99 @@
     "TICC": {
       "full_name": "Telfer Internal Case Competition (TICC)",
       "verified": true,
-      "aliases": ["ticc", "telfer internal case competition"],
-      "disciplines": ["consulting", "marketing", "finance", "operations"],
-      "supports": ["problem solving", "presentation", "data analysis", "communication"],
+      "aliases": [
+        "ticc",
+        "telfer internal case competition"
+      ],
+      "disciplines": [
+        "consulting",
+        "marketing",
+        "finance",
+        "operations"
+      ],
+      "supports": [
+        "problem solving",
+        "presentation",
+        "data analysis",
+        "communication"
+      ],
       "advice": "TICC participation is moderate evidence for case analysis and presentation. State the case topic, your recommendation, and any placement to strengthen it."
     },
     "JDC": {
       "full_name": "Jeux du Commerce (JDC)",
-      "verified": false,
-      "aliases": ["jdc", "jeux du commerce", "jdc central"],
-      "disciplines": ["consulting", "marketing", "finance", "operations", "business_analytics"],
-      "supports": ["problem solving", "presentation", "project management", "communication"],
+      "verified": true,
+      "aliases": [
+        "jdc",
+        "jeux du commerce",
+        "jdc central"
+      ],
+      "disciplines": [
+        "consulting",
+        "marketing",
+        "finance",
+        "operations",
+        "business_analytics"
+      ],
+      "supports": [
+        "problem solving",
+        "presentation",
+        "project management",
+        "communication"
+      ],
       "advice": "JDC is a recognized inter-university competition — name your delegation category (academic case, sports, social), the case discipline, team role, and placement."
     },
     "PALJ": {
       "full_name": "Place à la Jeunesse (PALJ)",
       "verified": false,
-      "aliases": ["palj", "place à la jeunesse", "place a la jeunesse"],
-      "disciplines": ["consulting", "marketing", "finance"],
-      "supports": ["problem solving", "presentation", "communication"],
+      "aliases": [
+        "palj",
+        "place à la jeunesse",
+        "place a la jeunesse"
+      ],
+      "disciplines": [
+        "consulting",
+        "marketing",
+        "finance"
+      ],
+      "supports": [
+        "problem solving",
+        "presentation",
+        "communication"
+      ],
       "advice": "Place à la Jeunesse case work is bilingual case-competition evidence — state the case discipline, language, and result. It also demonstrates French business communication."
     },
     "Happening Marketing": {
       "full_name": "Happening Marketing (HM)",
-      "verified": false,
-      "aliases": ["happening marketing"],
-      "disciplines": ["marketing"],
-      "supports": ["market research", "campaign management", "presentation", "problem solving"],
+      "verified": true,
+      "aliases": [
+        "happening marketing"
+      ],
+      "disciplines": [
+        "marketing"
+      ],
+      "supports": [
+        "market research",
+        "campaign management",
+        "presentation",
+        "problem solving"
+      ],
       "advice": "Happening Marketing competition work is marketing case evidence — name the case, your analysis, and placement."
     }
   },
   "bilingual_context": {
-    "signals": ["french immersion", "bilingual", "bilingue", "french and english", "english and french", "régime d'immersion", "regime d'immersion"],
-    "advice": "English/French bilingualism is a real asset in the Ottawa market (federal government, Crown corporations, and many NCR employers). If you are bilingual or in French Immersion, state it explicitly in your skills or summary — including your working level."
+    "signals": [
+      "french immersion",
+      "bilingual",
+      "bilingue",
+      "french and english",
+      "english and french",
+      "régime d'immersion",
+      "regime d'immersion"
+    ],
+    "advice": "English/French bilingualism is a real asset in the Ottawa market (federal government, Crown corporations, and many NCR employers). If you are bilingual or in French Immersion, state it explicitly in your skills or summary — including your working level.",
+    "facts": [
+      "The official BTM program page confirms a French Immersion stream is available with the BTM program (checked 2026-07-05)."
+    ]
   },
   "evidence_strength_rules": [
     "Course code/name only = weak evidence at most.",
@@ -358,19 +928,57 @@
     "University context must never be used to rank students or compare schools."
   ],
   "leadership_title_terms": [
-    "vp", "vice president", "vice-president", "vice-présidente", "vice-président",
-    "president", "présidente", "président", "director", "directrice", "directeur",
-    "co-chair", "chair", "head of", "lead", "executive", "exec", "founder",
-    "co-founder", "treasurer", "secretary", "coordinator"
+    "vp",
+    "vice president",
+    "vice-president",
+    "vice-présidente",
+    "vice-président",
+    "president",
+    "présidente",
+    "président",
+    "director",
+    "directrice",
+    "directeur",
+    "co-chair",
+    "chair",
+    "head of",
+    "lead",
+    "executive",
+    "exec",
+    "founder",
+    "co-founder",
+    "treasurer",
+    "secretary",
+    "coordinator"
   ],
   "strong_outcome_terms": [
-    "raised", "sponsorship", "sponsors", "placement", "placed", "won", "1st", "2nd", "3rd",
-    "first place", "second place", "third place", "attendance", "attendees", "delegates",
-    "budget", "organized", "judges", "partners", "grew", "increased"
+    "raised",
+    "sponsorship",
+    "sponsors",
+    "placement",
+    "placed",
+    "won",
+    "1st",
+    "2nd",
+    "3rd",
+    "first place",
+    "second place",
+    "third place",
+    "attendance",
+    "attendees",
+    "delegates",
+    "budget",
+    "organized",
+    "judges",
+    "partners",
+    "grew",
+    "increased"
   ],
   "source_notes": [
-    "Course titles marked verified=true were confirmed against official telfer.uottawa.ca program documents on 2026-07-05; verified=false titles follow the project brief and standard uOttawa naming and must be re-checked against https://catalogue.uottawa.ca/en/courses/adm/.",
-    "Club descriptions for TCCT, BTA, TMA, CASCO confirmed from official Telfer pages; other clubs follow the brief and the AÉTSA club list and are marked verified=false (to_verify).",
+    "Course titles for ADM 1300, 1301, 1305, 1340, 1370, 2302, 2303, 2304, 2320, 2336, 2337, 2341, 2350, 2372, 2381 and the BTM-option courses (ADM 3303, 3305, 3308, 3378, 3379, 4103, 4307, 4376, 4377, 4378, 4379) are confirmed against the official uOttawa ADM catalogue (2026-07-05).",
+    "French equivalents ADM 1701, 1705, 1740, 1770 are catalogue-confirmed; ADM 1700 and the 27xx French pairings follow the standard convention but remain to_verify.",
+    "Club roster (AÉTSA, TAC, CASCO, ACE, BHS, TFS, HRA, TCCT, BTA, Telfer International, Enactus, TMA, TECDE, WMN, UOCA) confirmed against the official Telfer clubs and associations page (2026-07-05); TBJ via the AÉTSA clubs page; UOREC and PALJ remain to_verify.",
+    "JDC and Happening Marketing confirmed via the official TCCT description; Place à la Jeunesse (PALJ) remains to_verify.",
     "No Reddit or forum content is stored here; forums informed only alias phrasing (e.g. students write 'case comp', 'JDC', 'work term').",
     "No private co-op portal, LinkedIn, or login-only content was used."
   ]
