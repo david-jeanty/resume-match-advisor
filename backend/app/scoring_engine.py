@@ -30,7 +30,11 @@ LABELS = {
 }
 
 STRENGTH_VALUE = {"strong": 1.0, "moderate": 0.65, "weak": 0.3, "missing": 0.0}
-SKILL_STATUS_VALUE = {"direct": 1.0, "alias": 0.9, "translated": 0.5, "missing": 0.0}
+# "context" = course/club context only (Phase 2). Deliberately low: a course
+# code or club name must never meaningfully move the score.
+SKILL_STATUS_VALUE = {
+    "direct": 1.0, "alias": 0.9, "translated": 0.5, "context": 0.25, "missing": 0.0,
+}
 
 
 def _avg_strength(items: list[EvidenceItem]) -> float:
@@ -67,12 +71,19 @@ def score_skills(matches: list[SkillMatch]) -> tuple[float, str]:
     ratio = sum(SKILL_STATUS_VALUE[m.status] for m in matches) / len(matches)
     covered = sum(1 for m in matches if m.status in ("direct", "alias"))
     transferable = sum(1 for m in matches if m.status == "translated")
+    context_only = sum(1 for m in matches if m.status == "context")
     missing = sum(1 for m in matches if m.status == "missing")
-    return ratio, (
+    explanation = (
         f"The posting mentions {len(matches)} skills/tools: {covered} covered in your "
         f"resume, {transferable} plausibly transferable from student experience, "
         f"{missing} not found."
     )
+    if context_only:
+        explanation += (
+            f" {context_only} appear only in course/club context — weak until the "
+            "resume shows them applied."
+        )
+    return ratio, explanation
 
 
 def score_experience(

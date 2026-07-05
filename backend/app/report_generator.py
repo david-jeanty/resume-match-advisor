@@ -1,6 +1,6 @@
 """Assembles the full analysis report from the deterministic pipeline."""
 
-from . import knowledge_loader
+from . import context_engine, knowledge_loader
 from .company_card import build_company_card
 from .discipline_classifier import classify
 from .jd_parser import ParsedJD, parse_jd
@@ -64,6 +64,11 @@ def _weak_areas(evidence: list[EvidenceItem], matches: list[SkillMatch]) -> list
                 f"{m.term} — your '{m.matched_via}' experience is transferable, "
                 "but the resume doesn't say it explicitly yet"
             )
+        elif m.status == "context":
+            areas.append(
+                f"{m.term} — your {m.matched_via} may cover this, but the resume "
+                "doesn't show it applied yet"
+            )
     return areas[:10]
 
 
@@ -124,13 +129,29 @@ def _build_suggestions(
 
     # Transferable student experience that should be made explicit.
     for m in matches:
-        if m.status == "translated" and len(suggestions) < MAX_SUGGESTIONS:
+        if len(suggestions) >= MAX_SUGGESTIONS:
+            break
+        if m.status == "translated":
             suggestions.append(
                 ImprovementSuggestion(
                     priority="medium",
                     title=f"Reframe your {m.matched_via} experience as {m.term}",
                     suggestion=m.translation_advice
                     or f"Make the {m.term} aspect of your {m.matched_via} experience explicit.",
+                    related_requirement=m.term,
+                )
+            )
+        elif m.status == "context":
+            suggestions.append(
+                ImprovementSuggestion(
+                    priority="medium",
+                    title=f"Turn your {m.matched_via} into {m.term} evidence",
+                    suggestion=m.translation_advice
+                    or (
+                        f"The posting asks for {m.term}, and your {m.matched_via} may "
+                        "cover it — but only if the resume shows the project, tool, "
+                        "deliverable, or outcome, not just the name."
+                    ),
                     related_requirement=m.term,
                 )
             )
@@ -192,6 +213,17 @@ def _build_suggestions(
 def generate_report(request: AnalyzeRequest) -> AnalyzeResponse:
     resume = parse_resume(request.resume_text)
     jd = parse_jd(request.job_description_text)
+
+    # Optional Phase-2 context (university/courses/clubs/location). Context
+    # feeds evidence translation and advice; course codes and club names on
+    # their own contribute weak evidence at most and can't inflate the score.
+    university_context, university_pack = context_engine.build_university_context(
+        request, resume
+    )
+    resume.context_evidence = context_engine.build_context_term_evidence(
+        university_context, university_pack
+    )
+
     disciplines = classify(jd, request.target_discipline)
 
     evidence = build_evidence_map(jd, resume)
@@ -215,6 +247,11 @@ def generate_report(request: AnalyzeRequest) -> AnalyzeResponse:
     card = build_company_card(
         request.company_name,
         disciplines[0].discipline if disciplines else None,
+    )
+
+    location_context, _location_pack = context_engine.build_location_context(request, jd)
+    contextual_feedback = context_engine.build_feedback_sections(
+        university_context, university_pack, location_context, disciplines
     )
 
     return AnalyzeResponse(
@@ -244,4 +281,7 @@ def generate_report(request: AnalyzeRequest) -> AnalyzeResponse:
         weak_areas=_weak_areas(evidence, matches),
         improvement_suggestions=suggestions,
         company_card=card,
+        university_context=university_context,
+        location_context=location_context,
+        contextual_feedback=contextual_feedback,
     )

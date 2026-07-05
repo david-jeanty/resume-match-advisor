@@ -1,0 +1,74 @@
+{
+  "description": "Source manifest for the uOttawa/Telfer university pack. Official uOttawa/Telfer pages are the only acceptable source of truth for course names, program structure, co-op facts, and official club lists. Student forums may only inform qualitative wording, never facts.",
+  "source_hierarchy": [
+    "1. Official uOttawa / Telfer pages: authoritative for course names, descriptions, program structure, co-op information, official clubs.",
+    "2. Public Telfer/AÉTSA club pages: acceptable for how clubs describe their own activities and student-development value.",
+    "3. Reddit / student forums: qualitative student-experience language only (how students describe courses, common pain points). Never authoritative for requirements, prerequisites, course content, co-op rules, or policy.",
+    "4. Never used: private co-op portal content, login-only resources, LinkedIn, private student data."
+  ],
+  "sources": [
+    {
+      "source_name": "uOttawa official ADM course catalogue",
+      "source_type": "official_university",
+      "url": "https://catalogue.uottawa.ca/en/courses/adm/",
+      "purpose": "Source of truth for ADM course codes, English/French titles, and descriptions used in course_to_skill mappings.",
+      "trust_level": "authoritative",
+      "last_checked_date": "2026-07-05",
+      "notes": "Direct fetch was blocked by this build environment's network policy; titles for ADM 1370, 2302, 2303, 2320, 2336, 2341, 2350, 2372, 2381 were verified via official telfer.uottawa.ca program-sequence documents surfaced in web search. Titles for ADM 1300, 1301, 1305, 1340, 2304, 2337 and all French 17xx/27xx equivalents are marked to_verify in the pack and should be re-checked against this page."
+    },
+    {
+      "source_name": "Telfer School of Management — Clubs and Associations",
+      "source_type": "official_university",
+      "url": "https://telfer.uottawa.ca/en/students/clubs-and-associations/",
+      "purpose": "Official list of Telfer student clubs and associations for club_mappings.",
+      "trust_level": "authoritative",
+      "last_checked_date": "2026-07-05",
+      "notes": "Direct fetch blocked by build environment; CASCO, TMA, TCCT (JDC/HM/TICC), and BTA descriptions verified via official telfer.uottawa.ca content in search results. Full current club roster should be re-verified against this page."
+    },
+    {
+      "source_name": "AÉTSA — Clubs at Telfer",
+      "source_type": "official_student_association",
+      "url": "https://www.aetsa.info/clubs-at-telfer",
+      "purpose": "How clubs describe their activities and student-development value; cross-reference for club names/acronyms.",
+      "trust_level": "high",
+      "last_checked_date": "2026-07-05",
+      "notes": "Direct fetch blocked by build environment. Club list in the pack follows the project brief and known public club names; marked to_verify where not confirmed by an official snippet."
+    },
+    {
+      "source_name": "Telfer CO-OP Programs",
+      "source_type": "official_university",
+      "url": "https://telfer.uottawa.ca/en/co-op/",
+      "purpose": "Public co-op context: number of work terms, timing, competitive admission.",
+      "trust_level": "authoritative",
+      "last_checked_date": "2026-07-05",
+      "notes": "Verified via official telfer.uottawa.ca content in search results: 3-4 paid work terms, up to 16 months, first work term after two years of study, optional and admission is competitive. No private co-op portal content is used anywhere in this project."
+    },
+    {
+      "source_name": "Telfer BCom program structure / anticipated ADM course offerings",
+      "source_type": "official_university",
+      "url": "https://telfer.uottawa.ca/en/bcom/your-program-of-study/program-structure/anticipated-adm-course-offerings/",
+      "purpose": "Cross-reference for which ADM courses exist in the BCom program and their short titles.",
+      "trust_level": "authoritative",
+      "last_checked_date": "2026-07-05",
+      "notes": "Program sequence PDFs (e.g. ENG_BTM_2025.pdf, Finance-English.pdf) on this domain confirmed course codes and short titles used in the pack."
+    },
+    {
+      "source_name": "Telfer BCom co-op sequences (BTM, Finance, Accounting, Management options)",
+      "source_type": "official_university",
+      "url": "https://telfer.uottawa.ca/en/bcom/your-program-of-study/program-structure/",
+      "purpose": "Confirms co-op variants exist for BCom options including BTM, Finance, Accounting.",
+      "trust_level": "authoritative",
+      "last_checked_date": "2026-07-05",
+      "notes": "Option-specific co-op marketing/analytics pages were not individually verified; marked to_verify."
+    },
+    {
+      "source_name": "Reddit r/geegees and student forums",
+      "source_type": "student_forum",
+      "url": "https://www.reddit.com/r/geegees/",
+      "purpose": "Qualitative only: how students phrase Telfer/ADM experiences on resumes (e.g. 'JDC', 'case comp', 'co-op work term'). Informs alias lists and advice tone.",
+      "trust_level": "qualitative_only",
+      "last_checked_date": "2026-07-05",
+      "notes": "Never used for factual claims about courses, prerequisites, co-op rules, or policy. No forum content is quoted or stored in packs."
+    }
+  ]
+}

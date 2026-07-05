@@ -11,6 +11,10 @@ export default function ScanPage() {
   const [jdText, setJdText] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [discipline, setDiscipline] = useState("");
+  const [university, setUniversity] = useState("");
+  const [program, setProgram] = useState("");
+  const [location, setLocation] = useState("");
+  const [courses, setCourses] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [report, setReport] = useState<AnalyzeResponse | null>(null);
@@ -30,6 +34,10 @@ export default function ScanPage() {
         job_description_text: jdText,
         company_name: companyName.trim() || null,
         target_discipline: discipline || null,
+        university: university.trim() || null,
+        program: program.trim() || null,
+        location: location.trim() || null,
+        completed_courses: courses.trim() || null,
       });
       setReport(result);
       // Bring the results into view once they render.
@@ -117,6 +125,79 @@ export default function ScanPage() {
             </select>
           </div>
         </div>
+
+        <details className="rounded-xl border border-slate-200 bg-white">
+          <summary className="cursor-pointer select-none p-4 text-sm font-medium text-slate-700">
+            Optional context{" "}
+            <span className="font-normal text-slate-400">
+              — university, program, location, courses
+            </span>
+          </summary>
+          <div className="space-y-4 border-t border-slate-100 p-4">
+            <p className="text-xs text-slate-500">
+              Optional context helps the tool translate courses, clubs, and local student
+              experiences into resume evidence. It is not stored.
+            </p>
+            <div className="grid gap-4 md:grid-cols-2">
+              <div>
+                <label htmlFor="university" className="mb-1 block text-sm font-medium text-slate-700">
+                  University
+                </label>
+                <input
+                  id="university"
+                  type="text"
+                  value={university}
+                  onChange={(e) => setUniversity(e.target.value)}
+                  maxLength={200}
+                  placeholder="e.g. University of Ottawa"
+                  className="w-full rounded-lg border border-slate-300 bg-white p-3 text-sm focus:border-slate-500 focus:outline-none"
+                />
+              </div>
+              <div>
+                <label htmlFor="program" className="mb-1 block text-sm font-medium text-slate-700">
+                  Program
+                </label>
+                <input
+                  id="program"
+                  type="text"
+                  value={program}
+                  onChange={(e) => setProgram(e.target.value)}
+                  maxLength={200}
+                  placeholder="e.g. BCom, BTM, Marketing, Finance"
+                  className="w-full rounded-lg border border-slate-300 bg-white p-3 text-sm focus:border-slate-500 focus:outline-none"
+                />
+              </div>
+              <div>
+                <label htmlFor="location" className="mb-1 block text-sm font-medium text-slate-700">
+                  Location
+                </label>
+                <input
+                  id="location"
+                  type="text"
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
+                  maxLength={200}
+                  placeholder="e.g. Ottawa / Kanata"
+                  className="w-full rounded-lg border border-slate-300 bg-white p-3 text-sm focus:border-slate-500 focus:outline-none"
+                />
+              </div>
+              <div>
+                <label htmlFor="courses" className="mb-1 block text-sm font-medium text-slate-700">
+                  Completed or relevant courses
+                </label>
+                <input
+                  id="courses"
+                  type="text"
+                  value={courses}
+                  onChange={(e) => setCourses(e.target.value)}
+                  maxLength={500}
+                  placeholder="e.g. ADM 1370, ADM 2372, ADM 2302, ADM 2320"
+                  className="w-full rounded-lg border border-slate-300 bg-white p-3 text-sm focus:border-slate-500 focus:outline-none"
+                />
+              </div>
+            </div>
+          </div>
+        </details>
 
         {error && (
           <div className="rounded-lg border border-rose-200 bg-rose-50 p-3 text-sm text-rose-800">

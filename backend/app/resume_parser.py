@@ -23,6 +23,9 @@ class ParsedResume:
     student_signals: list[str]
     quantified_bullets: list[str] = field(default_factory=list)
     action_verb_bullets: list[str] = field(default_factory=list)
+    # Optional Phase-2 context evidence (term -> ContextTermEvidence),
+    # attached by the report generator after parsing.
+    context_evidence: dict = field(default_factory=dict)
 
     @property
     def sections_found(self) -> list[str]:

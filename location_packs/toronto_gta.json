@@ -1,0 +1,40 @@
+{
+  "pack_type": "location",
+  "id": "toronto_gta",
+  "location_name": "Toronto / GTA",
+  "aliases": [
+    "toronto", "gta", "greater toronto area", "mississauga", "markham", "vaughan",
+    "brampton", "scarborough", "north york", "etobicoke", "richmond hill", "oakville"
+  ],
+  "common_industries": [
+    "Banking & capital markets",
+    "Insurance & wealth management",
+    "Big 4 accounting & consulting",
+    "Retail & CPG head offices",
+    "Technology & fintech",
+    "Media & telecommunications",
+    "Real estate & construction"
+  ],
+  "common_business_roles": [
+    "financial analyst", "audit/tax associate", "consultant", "brand/category analyst",
+    "business analyst", "sales operations", "marketing coordinator", "product analyst"
+  ],
+  "bilingual_context": "Bilingualism helps for national-scope roles but is less of a differentiator than in Ottawa; industry-specific skills matter more.",
+  "public_sector_context": "Provincial government and municipal roles exist, but the private sector (finance, consulting, retail, tech) dominates student hiring.",
+  "b2b_tech_context": "Toronto tech spans B2C and B2B, plus a large fintech sector — CRM, analytics, and campaign evidence transfer well.",
+  "positioning_advice": [
+    "Toronto student hiring is high-volume and competitive — quantified, specific bullets matter even more than usual.",
+    "Financial services and Big 4 recruiting is structured and credential-aware — surface CPA-track coursework, case competitions, and finance club technical work explicitly.",
+    "Retail/CPG head offices value category, brand, and consumer-analytics language — translate campus marketing work into those terms where honest."
+  ],
+  "role_angles": [
+    {
+      "if_jd_mentions": ["bank", "banking", "capital markets", "wealth", "insurance", "fintech", "asset management"],
+      "advice": "For a Toronto financial-services role, emphasize Excel/modeling evidence, finance coursework applied to real analyses, attention to detail, and any client-facing experience."
+    },
+    {
+      "if_jd_mentions": ["cpg", "consumer packaged goods", "retail", "brand", "category", "merchandising"],
+      "advice": "For a retail/CPG role, translate campus and part-time experience into consumer terms: shopper insights, promotions, category or sales data, and in-store operations."
+    }
+  ]
+}

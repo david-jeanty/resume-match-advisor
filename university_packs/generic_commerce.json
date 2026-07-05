@@ -1,0 +1,46 @@
+{
+  "pack_type": "university",
+  "id": "generic_commerce",
+  "university_name": "Generic commerce program",
+  "business_school": null,
+  "aliases": [],
+  "relevant_programs": [
+    "BCom", "Bachelor of Commerce", "BBA", "Bachelor of Business Administration",
+    "Business Administration", "Commerce", "Management"
+  ],
+  "course_code_patterns": [],
+  "courses": {},
+  "coop_context": {
+    "signals": ["co-op", "coop", "co op", "work term", "work-term", "co-op student", "work-integrated learning", "wil", "internship"],
+    "facts": [],
+    "advice": "Co-op work terms and internships are direct student work experience — present them like jobs: employer, title, dates, and quantified bullets. If the posting is an internship, say 'co-op work term' or 'internship' explicitly so the equivalence is obvious."
+  },
+  "student_experience_signals": [
+    "bcom", "bba", "commerce", "business administration", "case competition",
+    "student association", "co-op", "work term"
+  ],
+  "clubs": {},
+  "competitions": {},
+  "bilingual_context": {
+    "signals": ["bilingual", "french and english", "english and french"],
+    "advice": "If you work in more than one language, say so explicitly with your working level — it is an asset for many Canadian employers."
+  },
+  "evidence_strength_rules": [
+    "Course code/name only = weak evidence at most.",
+    "Club membership only = weak evidence at most.",
+    "Club leadership with concrete tasks, metrics, stakeholders, tools, or outcomes = strong evidence.",
+    "Work terms, internships, jobs, and concrete projects always outweigh course-only evidence."
+  ],
+  "leadership_title_terms": [
+    "vp", "vice president", "vice-president", "president", "director", "co-chair",
+    "chair", "head of", "lead", "executive", "founder", "co-founder", "treasurer",
+    "secretary", "coordinator"
+  ],
+  "strong_outcome_terms": [
+    "raised", "sponsorship", "sponsors", "placement", "placed", "won", "first place",
+    "attendance", "attendees", "budget", "organized", "partners", "grew", "increased"
+  ],
+  "source_notes": [
+    "Fallback pack used when a student names a university we don't have a dedicated pack for. It keeps the tool useful for every commerce student without pretending to know their school."
+  ]
+}

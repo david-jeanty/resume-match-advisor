@@ -1,0 +1,46 @@
+{
+  "pack_type": "location",
+  "id": "ottawa_kanata",
+  "location_name": "Ottawa / Kanata (National Capital Region)",
+  "aliases": [
+    "ottawa", "kanata", "kanata north", "national capital region", "ncr",
+    "nepean", "gatineau", "ottawa-gatineau", "orleans", "barrhaven"
+  ],
+  "common_industries": [
+    "B2B technology & SaaS",
+    "Telecommunications",
+    "Cybersecurity & defence tech",
+    "Federal government & public sector",
+    "Crown corporations & agencies",
+    "Consulting & professional services",
+    "Healthcare & research institutes",
+    "Non-profits & associations"
+  ],
+  "common_business_roles": [
+    "business analyst", "technical/product marketing", "marketing coordinator",
+    "sales operations", "revenue operations", "project coordinator",
+    "financial analyst", "procurement/policy analyst", "communications officer"
+  ],
+  "bilingual_context": "English/French bilingualism is a genuine differentiator in the NCR — for federal government, Crown corporations, and many customer-facing roles. If you are bilingual, state it with your working level.",
+  "public_sector_context": "Federal departments, agencies, and Crown corporations hire many student and new-grad business roles (FSWEP, co-op, policy, procurement, finance). They value documentation quality, process discipline, stakeholder coordination, and bilingualism.",
+  "b2b_tech_context": "The Kanata North area hosts a large concentration of B2B technology companies (telecom, SaaS, cybersecurity, semiconductors). Their business roles are B2B: longer sales cycles, technical products, CRM discipline, and close marketing-sales-product collaboration.",
+  "positioning_advice": [
+    "Ottawa's market is mostly B2B and public-sector, not consumer brands — position your evidence around stakeholders, documentation, and process rather than consumer buzz.",
+    "If you are bilingual (or in French Immersion), make it explicit — it materially widens your NCR options.",
+    "Local student experience (uOttawa/Carleton clubs, NCR non-profits, government student programs) is recognized by Ottawa employers — name organizations rather than genericizing them."
+  ],
+  "role_angles": [
+    {
+      "if_jd_mentions": ["saas", "software", "b2b", "cloud", "cybersecurity", "cyber", "telecom", "telecommunications", "semiconductor", "5g", "networking", "tech company", "startup"],
+      "advice": "For an Ottawa/Kanata B2B technology role, make technical curiosity, CRM usage, campaign or pipeline reporting, documentation, and cross-functional (sales-marketing-product) communication clearly visible on your resume."
+    },
+    {
+      "if_jd_mentions": ["government", "public service", "federal", "crown corporation", "agency", "policy", "public sector", "bilingual", "procurement"],
+      "advice": "For a public-sector or Crown-corporation role in the NCR, emphasize bilingual communication (if applicable), documentation quality, stakeholder coordination, and reliable process work — these are weighted heavily."
+    },
+    {
+      "if_jd_mentions": ["non-profit", "nonprofit", "association", "charity", "fundraising"],
+      "advice": "Ottawa has a dense non-profit and association sector — fundraising, sponsorship, event, and volunteer-coordination evidence from student life transfers directly; quantify it."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 """Pydantic models for the Resume Match Advisor API."""
 
-from typing import Literal, Optional
+from typing import Literal, Optional, Union
 
 from pydantic import BaseModel, Field
 
@@ -20,6 +20,14 @@ class AnalyzeRequest(BaseModel):
     target_discipline: Optional[str] = Field(
         None, max_length=100, description="Knowledge pack id, e.g. 'marketing'"
     )
+    # Optional context — improves feedback quality, never required, never stored.
+    university: Optional[str] = Field(None, max_length=200)
+    program: Optional[str] = Field(None, max_length=200)
+    location: Optional[str] = Field(None, max_length=200)
+    completed_courses: Optional[Union[str, list[str]]] = Field(
+        None, description="Course codes/names, as a comma-separated string or list"
+    )
+    current_year: Optional[str] = Field(None, max_length=50)
 
 
 class ScoreBreakdownItem(BaseModel):
@@ -88,6 +96,50 @@ class CompanyCard(BaseModel):
     source: Literal["wikipedia", "fallback"]
 
 
+class DetectedCourse(BaseModel):
+    code: str
+    name: str
+    disciplines: list[str] = []
+    related_skills: list[str] = []
+    strength: Literal["weak", "moderate", "strong"]
+    note: str
+
+
+class DetectedClub(BaseModel):
+    name: str
+    matched_text: str
+    kind: Literal["club", "association", "competition"]
+    disciplines: list[str] = []
+    supports: list[str] = []
+    strength: Literal["weak", "moderate", "strong"]
+    note: str
+
+
+class UniversityContext(BaseModel):
+    university_name: str
+    business_school: Optional[str] = None
+    detected_from: Literal["provided", "resume"]
+    program: Optional[str] = None
+    detected_courses: list[DetectedCourse] = []
+    detected_clubs: list[DetectedClub] = []
+    coop_detected: bool = False
+    bilingual_detected: bool = False
+    notes: list[str] = []
+
+
+class LocationContext(BaseModel):
+    location_name: str
+    detected_from: Literal["provided", "job_description", "resume"]
+    industries: list[str] = []
+    positioning_advice: list[str] = []
+
+
+class ContextSection(BaseModel):
+    section_id: Literal["university_program", "school_involvement", "location_angle"]
+    title: str
+    items: list[str]
+
+
 class AnalyzeResponse(BaseModel):
     overall_score: int
     score_interpretation: str
@@ -100,4 +152,7 @@ class AnalyzeResponse(BaseModel):
     weak_areas: list[str]
     improvement_suggestions: list[ImprovementSuggestion]
     company_card: Optional[CompanyCard] = None
+    university_context: Optional[UniversityContext] = None
+    location_context: Optional[LocationContext] = None
+    contextual_feedback: list[ContextSection] = []
     privacy_note: str = PRIVACY_NOTE

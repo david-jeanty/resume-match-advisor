@@ -9,6 +9,7 @@ import EvidenceMap from "./EvidenceMap";
 import GapsSection from "./GapsSection";
 import SuggestionsList from "./SuggestionsList";
 import CompanyCardView from "./CompanyCardView";
+import ContextSections from "./ContextSections";
 
 export default function ResultsView({ report }: { report: AnalyzeResponse }) {
   const [copied, setCopied] = useState(false);
@@ -40,6 +41,7 @@ export default function ResultsView({ report }: { report: AnalyzeResponse }) {
       <EvidenceMap items={report.evidence_map} />
       <GapsSection missing={report.missing_skills} weakAreas={report.weak_areas} />
       <SuggestionsList suggestions={report.improvement_suggestions} />
+      <ContextSections sections={report.contextual_feedback ?? []} />
       {report.company_card && <CompanyCardView card={report.company_card} />}
 
       <p className="rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-500">

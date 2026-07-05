@@ -66,6 +66,12 @@ export function reportToMarkdown(report: AnalyzeResponse): string {
   }
   lines.push("");
 
+  for (const section of report.contextual_feedback ?? []) {
+    lines.push(`## ${section.title}`);
+    for (const item of section.items) lines.push(`- ${item}`);
+    lines.push("");
+  }
+
   if (report.company_card) {
     const c = report.company_card;
     lines.push(`## Company: ${c.company_name}`);

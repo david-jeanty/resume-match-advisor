@@ -32,10 +32,50 @@ improvement suggestions.
 ## Privacy principles
 
 - **Resumes are never stored.** Analysis happens in memory; nothing is written to disk or a
-  database, and nothing is logged.
+  database, and nothing is logged. The optional context fields (university, program,
+  location, courses) are processed the same way — never stored.
 - No user accounts, no tracking, no third-party analytics.
 - The only optional external call is a lookup of the **company name** (not resume content)
   against Wikipedia's free public summary API — disable it entirely with `COMPANY_LOOKUP=off`.
+- **No scraping, ever**: no LinkedIn, no job boards, and no private co-op portal content.
+  University/location packs are built only from official public pages.
+
+## Optional university / program / location context
+
+Students can optionally provide a university, program, location, and completed courses
+(e.g. `ADM 1370, ADM 2372`). The first supported university pack is **uOttawa / Telfer**
+(`university_packs/uottawa_telfer.json`); the first location packs are **Ottawa/Kanata**
+and **Toronto/GTA**. Everything still works with these blank, and a generic fallback keeps
+the tool useful for any commerce student.
+
+What context does — and deliberately doesn't do:
+
+- It **improves feedback**: translates ADM courses, Telfer clubs (TCCT, BTA, TMA, TFS, …),
+  case competitions (TICC, JDC), co-op, and bilingual context into evidence advice, and adds
+  a location-specific application angle (e.g. Kanata B2B tech, NCR public sector).
+- It **barely moves the score**: a course code or club name alone is weak evidence at most.
+  Course + project/tool = moderate; course + concrete project + tool + outcome = strong.
+  Club membership alone is weak; leadership is moderate; leadership with metrics/stakeholders
+  is strong. Real work/internship/project evidence always outweighs course-only evidence.
+- It is **never used to rank students or compare schools**.
+
+### Source hierarchy for university packs
+
+1. **Official uOttawa/Telfer pages** are the only source of truth for course names,
+   program structure, co-op facts, and official club lists.
+2. **Public Telfer/AÉTSA club pages** may inform how clubs describe their activities.
+3. **Reddit/forums** may only inform qualitative wording (how students phrase things),
+   never facts. Facts that couldn't be verified are marked `to_verify` in
+   `research_sources/uottawa_telfer_sources.json` and `verified: false` in the pack.
+
+### Updating university and location packs
+
+- Add a new school: copy `university_packs/uottawa_telfer.json`, fill in `aliases`,
+  `courses` (skills must use canonical terms from `knowledge_packs/`), `clubs`,
+  `competitions`, and `coop_context`; record your sources in `research_sources/`.
+- Add a new city: copy `location_packs/ottawa_kanata.json` and adjust `aliases`,
+  `common_industries`, `positioning_advice`, and `role_angles`.
+- Packs are loaded automatically from those directories — no code changes needed.
 
 ## Tech stack
 
@@ -47,8 +87,11 @@ improvement suggestions.
 | Storage | None (by design) |
 
 ```
-backend/            FastAPI app: parsers, classifier, matcher, scoring, report
+backend/            FastAPI app: parsers, classifier, matcher, scoring, context, report
 knowledge_packs/    9 discipline packs + common.json (aliases, translations)
+university_packs/   Optional university context (uottawa_telfer + generic fallback)
+location_packs/     Optional location context (ottawa_kanata, toronto_gta, generic)
+research_sources/   Source manifests + verification status for university packs
 frontend/           Next.js app: landing page, scanner, results UI
 examples/           Sample resumes, job descriptions, expected output
 ```
@@ -71,7 +114,7 @@ Environment variables (all optional):
 
 - `ALLOWED_ORIGINS` — comma-separated CORS origins (default `*`).
 - `COMPANY_LOOKUP=off` — disable the Wikipedia company lookup (offline fallback card is used).
-- `KNOWLEDGE_PACKS_DIR` — override the knowledge packs location.
+- `KNOWLEDGE_PACKS_DIR` / `UNIVERSITY_PACKS_DIR` / `LOCATION_PACKS_DIR` — override pack locations.
 
 ### Frontend (port 3000)
 

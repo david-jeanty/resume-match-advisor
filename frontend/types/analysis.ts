@@ -10,6 +10,12 @@ export interface AnalyzeRequest {
   job_description_text: string;
   company_name?: string | null;
   target_discipline?: string | null;
+  // Optional context — improves feedback quality; never required, never stored.
+  university?: string | null;
+  program?: string | null;
+  location?: string | null;
+  completed_courses?: string | string[] | null;
+  current_year?: string | null;
 }
 
 export interface ScoreBreakdownItem {
@@ -78,6 +84,50 @@ export interface CompanyCard {
   source: "wikipedia" | "fallback";
 }
 
+export interface DetectedCourse {
+  code: string;
+  name: string;
+  disciplines: string[];
+  related_skills: string[];
+  strength: "weak" | "moderate" | "strong";
+  note: string;
+}
+
+export interface DetectedClub {
+  name: string;
+  matched_text: string;
+  kind: "club" | "association" | "competition";
+  disciplines: string[];
+  supports: string[];
+  strength: "weak" | "moderate" | "strong";
+  note: string;
+}
+
+export interface UniversityContext {
+  university_name: string;
+  business_school: string | null;
+  detected_from: "provided" | "resume";
+  program: string | null;
+  detected_courses: DetectedCourse[];
+  detected_clubs: DetectedClub[];
+  coop_detected: boolean;
+  bilingual_detected: boolean;
+  notes: string[];
+}
+
+export interface LocationContext {
+  location_name: string;
+  detected_from: "provided" | "job_description" | "resume";
+  industries: string[];
+  positioning_advice: string[];
+}
+
+export interface ContextSection {
+  section_id: "university_program" | "school_involvement" | "location_angle";
+  title: string;
+  items: string[];
+}
+
 export interface AnalyzeResponse {
   overall_score: number;
   score_interpretation: string;
@@ -90,6 +140,9 @@ export interface AnalyzeResponse {
   weak_areas: string[];
   improvement_suggestions: ImprovementSuggestion[];
   company_card: CompanyCard | null;
+  university_context: UniversityContext | null;
+  location_context: LocationContext | null;
+  contextual_feedback: ContextSection[];
   privacy_note: string;
 }
 

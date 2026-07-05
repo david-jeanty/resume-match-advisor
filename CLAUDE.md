@@ -23,6 +23,26 @@ SaaS, and must stay cheap/free to run.
 6. **Keep it simple.** A student developer must be able to maintain this. No microservices,
    no complex infra, no unnecessary dependencies.
 
+## University/location context rules (Phase 2)
+
+- **Official sources only for facts.** Course names, program structure, co-op facts, and
+  official club lists in `university_packs/` must come from official university pages,
+  recorded in `research_sources/`. Reddit/forums may only inform qualitative wording
+  (how students phrase experiences), never facts. **Never fabricate course details** —
+  mark unverified entries `verified: false` / `to_verify` instead.
+- **Never overvalue course-only evidence.** Course code/name alone = weak at most;
+  course + project/tool = moderate; course + concrete project + tool + outcome = strong.
+  Club membership alone = weak; leadership title = moderate; leadership with concrete
+  tasks/metrics/stakeholders = strong. Work/internship/project evidence always outweighs
+  course-only evidence. These caps are enforced in `context_engine.py` and
+  `SKILL_STATUS_VALUE["context"]` — keep them.
+- **Never use school or location context to judge students unfairly** — no ranking
+  students, no comparing schools; location changes advice wording, not the score.
+- **Keep generic fallbacks working** for non-uOttawa students
+  (`university_packs/generic_commerce.json`, `location_packs/generic_canada.json`);
+  the tool must work perfectly with all context fields blank.
+- No private co-op portal content, login-only resources, or LinkedIn — ever.
+
 ## Product principles
 
 - The differentiator is **commerce-specific evidence translation**: clubs, case competitions,
@@ -50,7 +70,7 @@ SaaS, and must stay cheap/free to run.
 
 ## Workflow
 
-- Backend tests: `cd backend && .venv/bin/python -m pytest` (34+ tests; keep them green,
+- Backend tests: `cd backend && .venv/bin/python -m pytest` (61+ tests; keep them green,
   and tests must never hit the network — `COMPANY_LOOKUP=off` is set in `conftest.py`).
 - Frontend build check: `cd frontend && npm run build`.
 - Sample inputs for manual testing live in `examples/`.

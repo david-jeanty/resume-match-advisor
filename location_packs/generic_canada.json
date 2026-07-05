@@ -1,0 +1,16 @@
+{
+  "pack_type": "location",
+  "id": "generic_canada",
+  "location_name": "Canada (general)",
+  "aliases": ["canada", "remote", "remote canada", "hybrid"],
+  "common_industries": [],
+  "common_business_roles": [],
+  "bilingual_context": "If you work in more than one language, state it with your working level — it's an asset for many Canadian employers.",
+  "public_sector_context": "",
+  "b2b_tech_context": "",
+  "positioning_advice": [
+    "Research the local employer mix for the job's city — the same student experience should be framed differently for a government town, a finance hub, or a tech corridor.",
+    "For remote roles, written communication and self-management evidence (documentation, async updates, tools) carries extra weight."
+  ],
+  "role_angles": []
+}

@@ -25,10 +25,24 @@ STRENGTH_ORDER = {"strong": 3, "moderate": 2, "weak": 1, "missing": 0}
 @dataclass
 class SkillMatch:
     term: str
-    status: Literal["direct", "alias", "translated", "missing"]
+    status: Literal["direct", "alias", "translated", "context", "missing"]
     evidence_line: Optional[str] = None
-    matched_via: Optional[str] = None  # alias term or student signal
+    matched_via: Optional[str] = None  # alias term, student signal, or context source
     translation_advice: Optional[str] = None
+
+
+@dataclass
+class ContextTermEvidence:
+    """Evidence contributed by optional university/club context (Phase 2).
+
+    Consulted only when the resume itself shows nothing for a term, and
+    capped: course context is weak, club context at most moderate.
+    """
+
+    strength: str  # weak | moderate
+    line: Optional[str]
+    source: str  # e.g. "ADM 2372 (Management Information Systems) coursework"
+    advice: str
 
 
 @dataclass
@@ -36,8 +50,9 @@ class TermEvidence:
     term: str
     strength: str  # strong | moderate | weak | missing
     line: Optional[str]
-    via: Optional[str]  # what actually matched (alias / student signal)
+    via: Optional[str]  # what actually matched (alias / student signal / context)
     advice: Optional[str] = None
+    origin: str = "resume"  # resume | translation | context
 
 
 def _all_vocab_terms() -> set[str]:
@@ -112,8 +127,16 @@ def evidence_for_term(term: str, resume: ParsedResume) -> TermEvidence:
             if contains_term(resume.norm_text, signal):
                 return TermEvidence(
                     term, "moderate", _find_line(resume, signal), signal,
-                    advice=translation.get("advice"),
+                    advice=translation.get("advice"), origin="translation",
                 )
+
+    # 4. Optional university/club context (courses = weak, clubs <= moderate).
+    ctx = resume.context_evidence.get(term)
+    if ctx is not None:
+        return TermEvidence(
+            term, ctx.strength, ctx.line, ctx.source,
+            advice=ctx.advice, origin="context",
+        )
 
     return TermEvidence(term, "missing", None, None)
 
@@ -158,7 +181,12 @@ def _explain(strength: str, evidences: list[TermEvidence], line: Optional[str]) 
         )
     elif strength == "moderate":
         best = supported[0]
-        if best.advice:
+        if best.origin == "context":
+            parts.append(
+                f"No direct {best.term} evidence in the resume, but your "
+                f"{best.via} may support it. {best.advice}"
+            )
+        elif best.advice:
             parts.append(
                 f"No direct {best.term} bullet, but your '{best.via}' experience "
                 f"is transferable. {best.advice}"
@@ -174,10 +202,17 @@ def _explain(strength: str, evidences: list[TermEvidence], line: Optional[str]) 
                 "listed skill — an experience bullet showing it in use would be stronger."
             )
     elif strength == "weak":
-        parts.append(
-            "Some wording overlaps with this requirement, but nothing in the "
-            "resume clearly demonstrates it."
-        )
+        if supported and supported[0].origin == "context":
+            best = supported[0]
+            parts.append(
+                f"Your {best.via} may relate to {best.term}, but coursework or "
+                f"membership alone is weak evidence. {best.advice}"
+            )
+        else:
+            parts.append(
+                "Some wording overlaps with this requirement, but nothing in the "
+                "resume clearly demonstrates it."
+            )
     else:
         parts.append("No evidence for this requirement was found in your resume.")
     if unsupported and strength in ("strong", "moderate"):
@@ -230,6 +265,8 @@ def match_skills(terms: list[str], resume: ParsedResume) -> list[SkillMatch]:
         ev = evidence_for_term(term, resume)
         if ev.strength == "missing":
             status = "missing"
+        elif ev.origin == "context":
+            status = "context"
         elif ev.advice:
             status = "translated"
         elif ev.via:

@@ -53,6 +53,43 @@ def test_analyze_rejects_empty_resume(marketing_jd):
     assert response.status_code == 422
 
 
+def test_analyze_accepts_optional_context_fields(mixed_resume, btm_jd):
+    response = client.post(
+        "/analyze",
+        json={
+            "resume_text": mixed_resume,
+            "job_description_text": btm_jd,
+            "university": "University of Ottawa",
+            "program": "BCom, BTM option",
+            "location": "Ottawa / Kanata",
+            "completed_courses": ["ADM 1370", "ADM 2372"],
+            "current_year": "2nd year",
+        },
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert data["university_context"]["university_name"] == "University of Ottawa"
+    assert data["university_context"]["program"] == "BCom, BTM option"
+    assert {c["code"] for c in data["university_context"]["detected_courses"]} == {
+        "ADM 1370", "ADM 2372",
+    }
+    assert data["location_context"]["location_name"].startswith("Ottawa")
+    assert any(
+        s["section_id"] == "university_program" for s in data["contextual_feedback"]
+    )
+
+
+def test_analyze_context_fields_optional(club_resume, btm_jd):
+    response = client.post(
+        "/analyze",
+        json={"resume_text": club_resume, "job_description_text": btm_jd},
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert "university_context" in data
+    assert "contextual_feedback" in data
+
+
 def test_analyze_with_target_discipline(mixed_resume, marketing_jd):
     response = client.post(
         "/analyze",
