@@ -1,0 +1,49 @@
+{
+  "id": "business_analytics",
+  "discipline": "Business Analytics",
+  "role_titles": [
+    "Business Analytics Intern", "Data Analyst Intern", "Business Intelligence Intern",
+    "Analytics Co-op", "Reporting Analyst Intern", "Insights Intern",
+    "Marketing Analytics Intern", "Operations Analyst Intern", "Junior Data Analyst"
+  ],
+  "core_skills": [
+    "data analysis", "sql", "excel", "data visualization", "reporting", "dashboards",
+    "statistics", "data cleaning", "forecasting", "kpi reporting", "storytelling with data",
+    "a/b testing", "market research", "presentation", "problem solving"
+  ],
+  "tools": [
+    "Excel", "SQL", "Power BI", "Tableau", "Python", "R", "Google Analytics",
+    "Google Sheets", "Looker", "BigQuery", "Alteryx"
+  ],
+  "responsibilities": [
+    "collect, clean, and analyze business data", "build dashboards and recurring reports",
+    "identify trends and insights for stakeholders", "define and track kpis",
+    "support forecasting and planning", "present findings to non-technical audiences",
+    "document data definitions and processes", "run ad-hoc analyses for business teams"
+  ],
+  "business_keywords": [
+    "insights", "kpi", "dashboard", "trend", "metric", "dataset", "segmentation",
+    "visualization", "hypothesis", "regression", "forecast", "data-driven",
+    "stakeholders", "reporting", "automation", "root cause"
+  ],
+  "student_experience_signals": [
+    "analytics coursework", "class project with a dataset", "case competition",
+    "excel modeling", "power bi or tableau project", "sports or club statistics",
+    "survey analysis", "capstone project", "datathon", "part-time reporting task"
+  ],
+  "strong_resume_evidence": [
+    "analysis project naming the dataset, tool, and finding", "dashboard built with stated audience",
+    "sql or python used on a real dataset", "insight that changed a decision",
+    "kpi reporting with cadence and stakeholders", "datathon or case competition placement"
+  ],
+  "weak_evidence_patterns": [
+    "analytical mindset", "familiar with data analysis", "took statistics courses",
+    "proficient in excel", "detail-oriented problem solver"
+  ],
+  "improvement_angles": [
+    "For every analysis, name the dataset, the tool, the method, and the takeaway — 'analyzed data' alone reads as filler.",
+    "If you built any dashboard or tracker (club, class, part-time job), say who used it and what it tracked.",
+    "Class projects count: treat a capstone or course analysis like a work deliverable with a business conclusion.",
+    "If the posting asks for SQL and you've only used it in class, still list the coursework project explicitly rather than omitting it."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "consulting",
+  "discipline": "Consulting",
+  "role_titles": [
+    "Consulting Intern", "Management Consulting Intern", "Strategy Intern",
+    "Business Consultant Intern", "Associate Consultant Intern", "Advisory Intern",
+    "Summer Business Analyst", "Strategy & Operations Intern"
+  ],
+  "core_skills": [
+    "problem solving", "structured thinking", "data analysis", "market research",
+    "presentation", "storytelling", "financial analysis", "stakeholder management",
+    "project management", "communication", "hypothesis-driven analysis", "benchmarking",
+    "excel", "slide building"
+  ],
+  "tools": [
+    "Excel", "PowerPoint", "Power BI", "Tableau", "SQL", "Miro", "Google Workspace", "Alteryx"
+  ],
+  "responsibilities": [
+    "structure and analyze business problems", "conduct market and competitor research",
+    "build presentations and client deliverables", "support workstreams on client projects",
+    "gather and synthesize data and interviews", "develop recommendations with supporting evidence",
+    "support project planning and status updates"
+  ],
+  "business_keywords": [
+    "strategy", "recommendation", "client", "workstream", "deliverable", "framework",
+    "market sizing", "benchmarking", "synthesis", "insights", "engagement",
+    "hypothesis", "growth", "cost reduction", "operating model", "due diligence"
+  ],
+  "student_experience_signals": [
+    "case competition", "consulting club", "pro bono consulting", "student consulting group",
+    "business case coursework", "club strategy role", "capstone project",
+    "debate or presentation experience", "research assistant"
+  ],
+  "strong_resume_evidence": [
+    "case competition with placement and recommendation described", "pro bono client project with outcome",
+    "market sizing or research with numbers", "presentation delivered to a real audience",
+    "structured analysis with framework named", "recommendation that was adopted"
+  ],
+  "weak_evidence_patterns": [
+    "strong problem solver", "interested in consulting", "team player",
+    "excellent communication skills", "participated in case competition"
+  ],
+  "improvement_angles": [
+    "Don't just say you 'participated' in a case competition — state the problem, your analysis, the recommendation, and the result or placement.",
+    "Pro bono or club consulting work is real client evidence: name the client type, the deliverable, and what changed.",
+    "Show slide-building and presentation evidence with audience and stakes (judges, executives, clients).",
+    "Quantify research: number of interviews, companies benchmarked, or market size estimated."
+  ]
+}

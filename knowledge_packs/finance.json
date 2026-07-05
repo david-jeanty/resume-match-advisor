@@ -1,0 +1,52 @@
+{
+  "id": "finance",
+  "discipline": "Finance",
+  "role_titles": [
+    "Finance Intern", "Financial Analyst Intern", "Corporate Finance Intern",
+    "Investment Banking Summer Analyst", "Equity Research Intern", "Treasury Intern",
+    "FP&A Intern", "Wealth Management Intern", "Commercial Banking Intern",
+    "Credit Analyst Intern", "Risk Analyst Intern"
+  ],
+  "core_skills": [
+    "financial modeling", "financial analysis", "valuation", "forecasting", "budgeting",
+    "variance analysis", "financial statements", "data analysis", "excel", "reporting",
+    "due diligence", "market research", "risk assessment", "cash flow analysis",
+    "presentation", "attention to detail"
+  ],
+  "tools": [
+    "Excel", "PowerPoint", "Bloomberg", "Capital IQ", "FactSet", "Power BI", "Tableau",
+    "SQL", "Python", "QuickBooks", "SAP"
+  ],
+  "responsibilities": [
+    "build and maintain financial models", "prepare budgets and forecasts",
+    "analyze financial statements", "perform variance analysis",
+    "support valuation and due diligence work", "prepare presentations and reports",
+    "monitor market and industry trends", "reconcile and validate financial data",
+    "support month-end and quarter-end processes"
+  ],
+  "business_keywords": [
+    "valuation", "dcf", "p&l", "balance sheet", "income statement", "cash flow",
+    "ebitda", "forecast", "budget", "variance", "portfolio", "equity", "debt",
+    "capital markets", "roi", "npv", "irr", "liquidity", "hedge", "underwriting"
+  ],
+  "student_experience_signals": [
+    "finance coursework", "investment club", "stock pitch", "case competition",
+    "personal investing", "dcf model in class", "student fund", "treasurer role",
+    "budget management for a club", "part-time cash handling"
+  ],
+  "strong_resume_evidence": [
+    "built a financial model with stated purpose and outcome", "stock pitch with result",
+    "managed or forecasted a real budget with dollar amounts", "variance analysis with findings",
+    "valuation coursework applied to a real company", "treasurer role with dollar figures"
+  ],
+  "weak_evidence_patterns": [
+    "interested in finance", "strong analytical skills", "took finance courses",
+    "familiar with financial statements", "passionate about investing"
+  ],
+  "improvement_angles": [
+    "Name the models you built (DCF, three-statement, sensitivity) and what decision they informed.",
+    "If you were a club treasurer or managed any budget, state the dollar amount and what you tracked or forecasted.",
+    "Turn coursework into evidence: name the company analyzed, the method, and the conclusion.",
+    "The role asks for Excel-based analysis — show a specific Excel task (pivot tables, lookups, models), not just 'Excel' in a skills list."
+  ]
+}

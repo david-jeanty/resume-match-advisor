@@ -1,0 +1,99 @@
+{
+  "pack_type": "common",
+  "skill_aliases": {
+    "excel": ["microsoft excel", "ms excel", "spreadsheets", "spreadsheet", "pivot tables", "pivot table", "vlookup", "xlookup", "excel modeling", "excel models"],
+    "power bi": ["powerbi", "power-bi", "bi dashboards", "bi dashboard"],
+    "tableau": ["tableau dashboards"],
+    "sql": ["mysql", "postgresql", "postgres", "sql queries", "sql server"],
+    "crm": ["salesforce", "hubspot", "zoho", "dynamics 365", "lead tracking", "pipeline management", "customer relationship management", "crm system"],
+    "google analytics": ["ga4", "web analytics"],
+    "powerpoint": ["ms powerpoint", "slide decks", "slide deck", "presentation decks", "pitch deck", "google slides"],
+    "project management": ["project coordination", "project planning", "managed a project", "led a project", "project timeline", "asana", "trello", "monday.com", "jira"],
+    "data analysis": ["analyzed data", "data analytics", "analyzing data", "data-driven", "quantitative analysis"],
+    "communication": ["presented", "presentations", "stakeholder communication", "wrote reports", "public speaking", "client-facing", "customer-facing"],
+    "stakeholder management": ["stakeholder communication", "cross-functional", "liaised", "coordinated with", "worked with departments", "partner teams"],
+    "leadership": ["led a team", "vice president", "vp of", "president of", "team lead", "captain", "founded", "co-founded", "executive member", "director of"],
+    "market research": ["competitive analysis", "competitor analysis", "customer research", "survey", "focus group", "industry research"],
+    "financial modeling": ["dcf", "discounted cash flow", "valuation model", "three-statement model", "sensitivity analysis", "lbo"],
+    "financial analysis": ["variance analysis", "ratio analysis", "financial statements analysis", "budget analysis"],
+    "accounting": ["bookkeeping", "journal entries", "reconciliation", "reconciliations", "accounts payable", "accounts receivable", "general ledger"],
+    "customer service": ["customer support", "customer-facing", "served customers", "client service", "front desk", "cashier"],
+    "social media": ["instagram", "tiktok", "linkedin content", "facebook", "social channels", "content calendar"],
+    "reporting": ["kpi reporting", "weekly reports", "monthly reports", "dashboards", "status reports", "reported on"],
+    "budgeting": ["managed a budget", "budget management", "forecasting", "budget planning", "cost tracking"],
+    "event planning": ["event coordination", "organized events", "event logistics", "planned events", "conference planning"],
+    "process improvement": ["streamlined", "optimized process", "reduced turnaround", "standardized", "improved efficiency", "lean"],
+    "erp": ["sap", "oracle netsuite", "netsuite", "workday", "erp system"],
+    "python": ["pandas", "jupyter"],
+    "a/b testing": ["ab testing", "split testing", "experimentation"],
+    "seo": ["search engine optimization", "keyword research"],
+    "email marketing": ["mailchimp", "email campaigns", "newsletters", "klaviyo"],
+    "quickbooks": ["quick books"],
+    "sales": ["cold calling", "prospecting", "outbound", "closed deals", "upselling", "quota"]
+  },
+  "student_experience_translations": [
+    {
+      "signals": ["case competition", "case comp"],
+      "supports": ["project management", "data analysis", "presentation", "teamwork", "problem solving", "consulting", "strategy"],
+      "advice": "Case competition work can count as real project and analysis evidence — make the business problem, your role, the timeline, and the outcome (placement, recommendation adopted) explicit."
+    },
+    {
+      "signals": ["student club", "student association", "student society", "vp of", "vice president", "president of", "executive member", "club executive"],
+      "supports": ["leadership", "project management", "stakeholder management", "event planning", "budgeting", "communication"],
+      "advice": "Club leadership can support project coordination and stakeholder evidence, but the resume needs to show who you coordinated with, what you organized, the scope, and the result."
+    },
+    {
+      "signals": ["part-time", "part time", "retail", "server", "barista", "cashier", "customer service"],
+      "supports": ["communication", "customer service", "operations", "time management", "sales", "teamwork"],
+      "advice": "Customer-facing part-time work supports communication and fast-paced operations. Connect it to the role: stakeholder communication, handling volume, upselling, or resolving problems under pressure."
+    },
+    {
+      "signals": ["class project", "course project", "capstone", "group project", "coursework"],
+      "supports": ["data analysis", "market research", "financial analysis", "presentation", "teamwork", "excel", "business analysis"],
+      "advice": "Class and capstone projects count as evidence when they name the tools, dataset or company context, and the deliverable — treat them like mini work experiences with outcomes."
+    },
+    {
+      "signals": ["student ambassador", "campus ambassador", "brand ambassador", "orientation leader", "peer mentor"],
+      "supports": ["marketing", "communication", "sales", "event planning", "social media"],
+      "advice": "Ambassador and mentoring roles support outreach, promotion, and communication evidence — quantify audiences reached, events run, or students supported."
+    },
+    {
+      "signals": ["volunteer", "non-profit", "nonprofit", "fundraiser", "fundraising"],
+      "supports": ["event planning", "communication", "project management", "budgeting", "sales"],
+      "advice": "Volunteer and fundraising work can show initiative, coordination, and results — include amounts raised, attendance, or partners involved."
+    },
+    {
+      "signals": ["intern", "internship", "co-op", "coop"],
+      "supports": ["professional experience", "reporting", "stakeholder management", "communication"],
+      "advice": "Internship and co-op bullets carry the most weight — make each one name the tool, the task, and a concrete result."
+    }
+  ],
+  "action_verbs": [
+    "led", "managed", "coordinated", "analyzed", "built", "created", "developed", "launched",
+    "organized", "presented", "designed", "improved", "increased", "reduced", "streamlined",
+    "negotiated", "researched", "forecasted", "reconciled", "tracked", "reported", "supported",
+    "collaborated", "executed", "implemented", "planned", "prepared", "delivered", "drove",
+    "grew", "resolved", "trained", "audited", "budgeted", "conducted", "consolidated", "founded"
+  ],
+  "section_headers": {
+    "experience": ["experience", "work experience", "professional experience", "employment", "work history", "relevant experience", "internships", "internship experience"],
+    "education": ["education", "academic background", "academics"],
+    "skills": ["skills", "technical skills", "core competencies", "tools", "skills & tools", "skills and tools", "competencies", "technical proficiencies"],
+    "projects": ["projects", "academic projects", "class projects", "relevant projects", "case competitions"],
+    "leadership": ["leadership", "extracurricular", "extracurriculars", "activities", "involvement", "leadership & involvement", "leadership and activities", "volunteer experience", "volunteering", "campus involvement"],
+    "summary": ["summary", "profile", "objective", "about", "professional summary", "highlights"],
+    "certifications": ["certifications", "certificates", "awards", "awards & certifications", "honors"]
+  },
+  "stopwords": [
+    "a", "an", "the", "and", "or", "of", "to", "in", "on", "for", "with", "at", "by", "as",
+    "is", "are", "was", "were", "be", "been", "being", "have", "has", "had", "do", "does",
+    "will", "would", "can", "could", "should", "may", "might", "must", "you", "your", "we",
+    "our", "their", "they", "them", "this", "that", "these", "those", "it", "its", "from",
+    "into", "about", "across", "within", "including", "ability", "strong", "excellent",
+    "experience", "experiences", "skills", "skill", "knowledge", "working", "work", "who",
+    "what", "where", "when", "how", "other", "etc", "e.g", "i.e", "such", "plus", "using",
+    "related", "relevant", "preferred", "required", "must-have", "nice", "ideally", "years",
+    "year", "demonstrated", "proven", "familiarity", "familiar", "proficiency", "proficient",
+    "understanding", "background", "degree", "currently", "enrolled", "pursuing", "team", "environment"
+  ]
+}

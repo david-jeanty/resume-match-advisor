@@ -1,0 +1,50 @@
+{
+  "id": "hr",
+  "discipline": "HR / People Operations",
+  "role_titles": [
+    "HR Intern", "Human Resources Intern", "People Operations Intern", "Talent Acquisition Intern",
+    "Recruitment Coordinator", "HR Coordinator", "Campus Recruiting Intern",
+    "Total Rewards Intern", "Learning & Development Intern", "HR Analyst Intern"
+  ],
+  "core_skills": [
+    "recruitment", "onboarding", "communication", "interview coordination", "hris",
+    "employee engagement", "event planning", "documentation", "confidentiality",
+    "data analysis", "reporting", "organization", "stakeholder management",
+    "training coordination", "policy research"
+  ],
+  "tools": [
+    "Excel", "Workday", "BambooHR", "Greenhouse", "Lever", "LinkedIn Recruiter",
+    "SurveyMonkey", "Canva", "PowerPoint", "SharePoint", "ADP"
+  ],
+  "responsibilities": [
+    "support recruitment and interview scheduling", "screen resumes and coordinate candidates",
+    "assist with onboarding and orientation", "maintain employee records and hris data",
+    "support engagement surveys and events", "prepare hr reports and metrics",
+    "draft communications and documentation", "support training and development programs"
+  ],
+  "business_keywords": [
+    "talent", "candidate", "recruitment", "onboarding", "engagement", "retention",
+    "hris", "job posting", "screening", "orientation", "culture", "compensation",
+    "benefits", "compliance", "employee experience", "diversity"
+  ],
+  "student_experience_signals": [
+    "club recruitment or membership role", "orientation leader", "peer mentor",
+    "hiring or training new staff at a part-time job", "event planning",
+    "hr coursework", "student society vp of internal", "volunteer coordination"
+  ],
+  "strong_resume_evidence": [
+    "recruited or onboarded members with numbers", "trained new employees at a part-time job",
+    "coordinated interviews or events with volume", "ran an engagement or feedback survey",
+    "maintained records or schedules for a group", "organized orientation with attendance figures"
+  ],
+  "weak_evidence_patterns": [
+    "people person", "strong interpersonal skills", "interested in human resources",
+    "team player", "good at multitasking"
+  ],
+  "improvement_angles": [
+    "Club recruitment, orientation leading, and peer mentoring are direct HR evidence — quantify applicants, members, or events.",
+    "If you trained or scheduled coworkers at a part-time job, that is onboarding and coordination evidence; say so explicitly.",
+    "Show handling of confidential or sensitive information if you did (records, applications, feedback).",
+    "Surveys you ran for a club count as engagement analytics — include response counts and what changed."
+  ]
+}

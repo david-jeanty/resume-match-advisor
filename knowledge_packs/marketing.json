@@ -1,0 +1,53 @@
+{
+  "id": "marketing",
+  "discipline": "Marketing",
+  "role_titles": [
+    "Marketing Intern", "Digital Marketing Intern", "Product Marketing Intern",
+    "Campaign Coordinator", "Growth Marketing Intern", "Marketing Operations Intern",
+    "Social Media Coordinator", "Content Marketing Intern", "Brand Ambassador",
+    "Marketing Assistant", "Communications Intern", "Email Marketing Intern"
+  ],
+  "core_skills": [
+    "campaign management", "crm", "seo", "content marketing", "market research",
+    "social media", "analytics", "a/b testing", "kpi reporting", "email marketing",
+    "copywriting", "audience segmentation", "brand management", "content creation",
+    "paid advertising", "community management", "event planning", "communication"
+  ],
+  "tools": [
+    "HubSpot", "Salesforce", "Google Analytics", "Excel", "Power BI", "Canva",
+    "LinkedIn", "Mailchimp", "Meta Ads", "Google Ads", "Hootsuite", "Figma",
+    "Sprout Social", "Klaviyo", "WordPress"
+  ],
+  "responsibilities": [
+    "plan and execute marketing campaigns", "create social media content",
+    "track campaign performance and report on KPIs", "conduct market and competitor research",
+    "manage email marketing and newsletters", "support product launches",
+    "coordinate events and promotions", "maintain CRM data and lead lists",
+    "collaborate with sales and design teams", "analyze audience engagement"
+  ],
+  "business_keywords": [
+    "brand", "campaign", "engagement", "conversion", "funnel", "audience", "leads",
+    "impressions", "reach", "ctr", "roi", "segmentation", "positioning", "go-to-market",
+    "content calendar", "organic", "paid media", "persona"
+  ],
+  "student_experience_signals": [
+    "student club marketing", "case competition", "event promotion", "social media management",
+    "campaign tracking", "customer-facing experience", "market research project",
+    "student ambassador", "content creation for a club", "newsletter", "orientation events"
+  ],
+  "strong_resume_evidence": [
+    "quantified campaign result", "crm usage", "cross-functional collaboration",
+    "audience segmentation", "content creation with reach or engagement numbers",
+    "reporting on kpis", "a/b test with outcome", "grew followers or engagement by a stated amount"
+  ],
+  "weak_evidence_patterns": [
+    "responsible for social media", "helped with marketing", "posted on instagram",
+    "familiar with marketing concepts", "creative and passionate about brands"
+  ],
+  "improvement_angles": [
+    "Quantify at least one campaign or content result (reach, engagement, sign-ups, conversions).",
+    "If you touched a CRM, lead list, or campaign tracker anywhere (internship, club, part-time job), name the tool and the task explicitly.",
+    "Turn club promotion work into campaign language: audience, channel, message, and result.",
+    "Connect customer-facing part-time work to understanding customers and communicating a brand."
+  ]
+}

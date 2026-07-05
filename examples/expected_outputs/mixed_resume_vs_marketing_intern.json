@@ -1,0 +1,304 @@
+{
+  "overall_score": 84,
+  "score_interpretation": "Strong match \u2014 your resume already supports most of this role, but review the remaining gaps before applying.",
+  "score_breakdown": [
+    {
+      "category": "required_qualifications",
+      "label": "Required qualifications match",
+      "score": 23,
+      "max_score": 25,
+      "explanation": "Of 5 required qualifications: 4 strong, 1 moderate, 0 weak, 0 missing."
+    },
+    {
+      "category": "skills_tools",
+      "label": "Skills & tools match",
+      "score": 15,
+      "max_score": 20,
+      "explanation": "The posting mentions 15 skills/tools: 11 covered in your resume, 1 plausibly transferable from student experience, 3 not found."
+    },
+    {
+      "category": "experience_evidence",
+      "label": "Experience evidence match",
+      "score": 15,
+      "max_score": 20,
+      "explanation": "Based on how well your bullets support the day-to-day work: 5 of 7 responsibilities have direct or transferable evidence; 12 of 15 bullets include numbers."
+    },
+    {
+      "category": "discipline_fit",
+      "label": "Commerce discipline fit",
+      "score": 15,
+      "max_score": 15,
+      "explanation": "This looks like a Marketing role; your resume shows 12 of the skills and tools common to that discipline."
+    },
+    {
+      "category": "keyword_coverage",
+      "label": "Keyword & context coverage",
+      "score": 6,
+      "max_score": 10,
+      "explanation": "The posting uses 3 business keywords for this discipline; your resume speaks the same language on 1 of them (e.g. campaign)."
+    },
+    {
+      "category": "clarity_structure",
+      "label": "Resume clarity & structure",
+      "score": 10,
+      "max_score": 10,
+      "explanation": "Structure checks passed: 6 of 6."
+    }
+  ],
+  "detected_disciplines": [
+    {
+      "discipline_id": "marketing",
+      "discipline": "Marketing",
+      "confidence": "high",
+      "matched_signals": [
+        "title matches 'Marketing Intern'",
+        "skill: a/b testing",
+        "skill: analytics",
+        "skill: communication",
+        "skill: copywriting",
+        "skill: crm",
+        "skill: email marketing",
+        "skill: social media"
+      ]
+    }
+  ],
+  "extracted_job_requirements": {
+    "role_title": "Digital Marketing Intern \u2014 Summer 2026",
+    "required_qualifications": [
+      "Currently enrolled in a business, marketing, or communications program",
+      "Experience with CRM or campaign tracking tools",
+      "Strong written communication and copywriting ability",
+      "Comfort with Excel for basic reporting and analysis",
+      "Experience creating social media content"
+    ],
+    "preferred_qualifications": [
+      "Familiarity with Google Analytics or A/B testing",
+      "Experience with email marketing tools such as Mailchimp",
+      "Previous internship, club marketing, or campaign experience"
+    ],
+    "responsibilities": [
+      "Brightpath is looking for a Digital Marketing Intern to support our growth team for the summer. You will work closely with marketing and sales to run campaigns, keep our CRM clean, and report on what's working.",
+      "Plan and execute email and social media campaigns with the growth team",
+      "Maintain lead lists and campaign tracking in HubSpot",
+      "Report weekly on campaign KPIs including open rates, CTR, and conversions",
+      "Conduct market and competitor research to support positioning",
+      "Create content for LinkedIn and Instagram using Canva",
+      "Support event promotion and webinar logistics"
+    ],
+    "skills": [
+      "a/b testing",
+      "analytics",
+      "communication",
+      "copywriting",
+      "crm",
+      "email marketing",
+      "excel",
+      "logistics",
+      "reporting",
+      "sales",
+      "social media",
+      "testing"
+    ],
+    "tools": [
+      "canva",
+      "excel",
+      "google analytics",
+      "hubspot",
+      "linkedin",
+      "mailchimp"
+    ]
+  },
+  "extracted_resume_signals": {
+    "sections_found": [
+      "education",
+      "experience",
+      "leadership",
+      "projects",
+      "skills"
+    ],
+    "skills_found": [
+      "analytics",
+      "communication",
+      "copywriting",
+      "crm",
+      "email marketing",
+      "excel",
+      "market research",
+      "sales",
+      "social media",
+      "stakeholder management",
+      "statistics"
+    ],
+    "tools_found": [
+      "canva",
+      "excel",
+      "google analytics",
+      "hubspot",
+      "linkedin",
+      "powerpoint"
+    ],
+    "student_signals": [
+      "barista",
+      "class project",
+      "coursework",
+      "intern",
+      "retail"
+    ],
+    "bullet_count": 15,
+    "quantified_bullet_count": 12,
+    "action_verb_bullet_count": 9
+  },
+  "evidence_map": [
+    {
+      "requirement": "Currently enrolled in a business, marketing, or communications program",
+      "requirement_type": "required",
+      "resume_evidence": "Relevant coursework: Marketing Analytics, Consumer Behaviour, Business Statistics",
+      "match_strength": "moderate",
+      "explanation": "Your resume covers this requirement's wording closely, though no specific skill term was involved \u2014 read the quoted line and make sure it says this as directly as possible."
+    },
+    {
+      "requirement": "Experience with CRM or campaign tracking tools",
+      "requirement_type": "required",
+      "resume_evidence": "Tracked leads and supported campaign planning in HubSpot CRM for 3 concurrent email campaigns",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows crm in an experience bullet."
+    },
+    {
+      "requirement": "Strong written communication and copywriting ability",
+      "requirement_type": "required",
+      "resume_evidence": "Presented segmentation findings and campaign recommendations to a panel of 3 professors",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows communication (via presented) in an experience bullet."
+    },
+    {
+      "requirement": "Comfort with Excel for basic reporting and analysis",
+      "requirement_type": "required",
+      "resume_evidence": "Analyzed a retail dataset of 10,000 transactions in Excel using pivot tables to identify seasonal trends",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows excel in an experience bullet."
+    },
+    {
+      "requirement": "Experience creating social media content",
+      "requirement_type": "required",
+      "resume_evidence": "Drafted social media content that grew LinkedIn engagement by 24% over the summer",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows social media in an experience bullet."
+    },
+    {
+      "requirement": "Familiarity with Google Analytics or A/B testing",
+      "requirement_type": "preferred",
+      "resume_evidence": "Excel, HubSpot, Canva, Instagram, PowerPoint, Google Analytics (coursework), market research, copywriting",
+      "match_strength": "moderate",
+      "explanation": "Google analytics appears in your resume, but only as a listed skill \u2014 an experience bullet showing it in use would be stronger. Still unaddressed: a/b testing."
+    },
+    {
+      "requirement": "Experience with email marketing tools such as Mailchimp",
+      "requirement_type": "preferred",
+      "resume_evidence": "Tracked leads and supported campaign planning in HubSpot CRM for 3 concurrent email campaigns",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows email marketing (via email campaigns) in an experience bullet. Still unaddressed: mailchimp."
+    },
+    {
+      "requirement": "Previous internship, club marketing, or campaign experience",
+      "requirement_type": "preferred",
+      "resume_evidence": null,
+      "match_strength": "missing",
+      "explanation": "No evidence for this requirement was found in your resume."
+    },
+    {
+      "requirement": "Brightpath is looking for a Digital Marketing Intern to support our growth team for the summer. You will work closely with marketing and sales to run campaigns, keep our CRM clean, and report on what's working.",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Collaborated with the sales team on lead handoff lists covering 400+ prospects",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows sales in an experience bullet."
+    },
+    {
+      "requirement": "Plan and execute email and social media campaigns with the growth team",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Drafted social media content that grew LinkedIn engagement by 24% over the summer",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows social media in an experience bullet."
+    },
+    {
+      "requirement": "Maintain lead lists and campaign tracking in HubSpot",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Tracked leads and supported campaign planning in HubSpot CRM for 3 concurrent email campaigns",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows hubspot in an experience bullet."
+    },
+    {
+      "requirement": "Report weekly on campaign KPIs including open rates, CTR, and conversions",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Created weekly KPI reports in Excel covering open rates, click-through rates, and conversions",
+      "match_strength": "moderate",
+      "explanation": "Your resume covers this requirement's wording closely, though no specific skill term was involved \u2014 read the quoted line and make sure it says this as directly as possible."
+    },
+    {
+      "requirement": "Conduct market and competitor research to support positioning",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Excel, HubSpot, Canva, Instagram, PowerPoint, Google Analytics (coursework), market research, copywriting",
+      "match_strength": "weak",
+      "explanation": "Some wording overlaps with this requirement, but nothing in the resume clearly demonstrates it."
+    },
+    {
+      "requirement": "Create content for LinkedIn and Instagram using Canva",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Drafted social media content that grew LinkedIn engagement by 24% over the summer",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows linkedin in an experience bullet."
+    },
+    {
+      "requirement": "Support event promotion and webinar logistics",
+      "requirement_type": "responsibility",
+      "resume_evidence": null,
+      "match_strength": "missing",
+      "explanation": "No evidence for this requirement was found in your resume."
+    }
+  ],
+  "missing_skills": {
+    "required_missing": [
+      "logistics"
+    ],
+    "preferred_missing": [
+      "a/b testing"
+    ],
+    "tools_missing": [
+      "mailchimp"
+    ]
+  },
+  "weak_areas": [
+    "Only weak evidence for: \"Conduct market and competitor research to support positioning\"",
+    "reporting \u2014 your 'intern' experience is transferable, but the resume doesn't say it explicitly yet"
+  ],
+  "improvement_suggestions": [
+    {
+      "priority": "high",
+      "title": "Add logistics evidence",
+      "suggestion": "The posting names logistics as a skill it cares about. If you have used it in coursework, a class project, a club role, an internship, or a part-time job, add a specific bullet naming the context and what you did with it. If you haven't, consider a small project or course to build it before applying \u2014 don't add it without real experience.",
+      "related_requirement": "logistics"
+    },
+    {
+      "priority": "medium",
+      "title": "Mention mailchimp if you've used it",
+      "suggestion": "The posting names mailchimp as a tool it cares about. If you have used it in coursework, a class project, a club role, an internship, or a part-time job, add a specific bullet naming the context and what you did with it. If you haven't, consider a small project or course to build it before applying \u2014 don't add it without real experience.",
+      "related_requirement": "mailchimp"
+    },
+    {
+      "priority": "medium",
+      "title": "Reframe your intern experience as reporting",
+      "suggestion": "Internship and co-op bullets carry the most weight \u2014 make each one name the tool, the task, and a concrete result.",
+      "related_requirement": "reporting"
+    }
+  ],
+  "company_card": {
+    "company_name": "Brightpath Software",
+    "industry": null,
+    "ownership": null,
+    "business_model": null,
+    "products_services": [],
+    "student_angle": "Before applying, spend 15 minutes on Brightpath Software's site and recent news: what they sell, who their customers are, and what's changing for them right now. In your application, connect your marketing coursework and student experience to that reality instead of speaking generically.",
+    "resume_angle": "Mirror the posting's own vocabulary where it's honest for you, and pick the one or two experiences most relevant to what Brightpath Software actually does \u2014 a targeted resume beats a complete one.",
+    "source": "fallback"
+  },
+  "privacy_note": "Your resume and job description are processed in memory to generate this report and are not stored, logged, or used for anything else."
+}

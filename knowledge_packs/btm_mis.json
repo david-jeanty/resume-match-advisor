@@ -1,0 +1,53 @@
+{
+  "id": "btm_mis",
+  "discipline": "Business Technology Management (BTM/MIS)",
+  "role_titles": [
+    "Business Analyst Intern", "IT Business Analyst Intern", "Business Systems Analyst Intern",
+    "BTM Intern", "MIS Intern", "Technology Consulting Intern", "Product Analyst Intern",
+    "Digital Transformation Intern", "IT Project Coordinator", "QA Analyst Intern",
+    "Systems Analyst Co-op"
+  ],
+  "core_skills": [
+    "business analysis", "requirements gathering", "process mapping", "documentation",
+    "stakeholder management", "user stories", "testing", "uat", "data analysis", "sql",
+    "agile", "scrum", "project management", "communication", "workflow analysis",
+    "gap analysis", "change management"
+  ],
+  "tools": [
+    "Excel", "Jira", "Confluence", "Visio", "Lucidchart", "SQL", "Power BI", "Tableau",
+    "SharePoint", "Azure DevOps", "Figma", "ServiceNow", "Miro", "Power Automate"
+  ],
+  "responsibilities": [
+    "gather and document business requirements", "map current and future state processes",
+    "write user stories and acceptance criteria", "support user acceptance testing",
+    "liaise between business stakeholders and technical teams", "analyze systems and data",
+    "support project planning and status reporting", "create training and process documentation",
+    "identify process improvement opportunities"
+  ],
+  "business_keywords": [
+    "requirements", "stakeholders", "process", "workflow", "user story", "sprint",
+    "backlog", "uat", "implementation", "erp", "crm", "integration", "roadmap",
+    "documentation", "current state", "future state", "gap analysis", "sdlc"
+  ],
+  "student_experience_signals": [
+    "btm or mis coursework", "systems analysis project", "case competition",
+    "process mapping assignment", "club operations role", "student government",
+    "it help desk part-time", "database course project", "agile course project", "hackathon"
+  ],
+  "strong_resume_evidence": [
+    "documented requirements for a real or simulated system", "process map with tool named",
+    "uat or testing with defect counts", "stakeholder interviews conducted",
+    "jira or confluence used in a project", "sql queries on a course or work database",
+    "coordinated between technical and non-technical people"
+  ],
+  "weak_evidence_patterns": [
+    "interested in technology and business", "familiar with agile", "good communicator",
+    "bridge between business and it", "tech-savvy"
+  ],
+  "improvement_angles": [
+    "Show the analyst workflow explicitly: who you gathered requirements from, how you documented them, and what was built or decided.",
+    "Club or student government operations work can count as stakeholder and process evidence — name the stakeholders and the process you improved.",
+    "If you used Jira, Confluence, Visio, or SQL anywhere (including class), list the context, not just the tool name.",
+    "For customer-facing part-time work, connect it to this role: requirements come from listening to users and documenting problems."
+  ]
+}

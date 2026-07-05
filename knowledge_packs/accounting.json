@@ -1,0 +1,50 @@
+{
+  "id": "accounting",
+  "discipline": "Accounting",
+  "role_titles": [
+    "Accounting Intern", "Audit Intern", "Tax Intern", "Staff Accountant Intern",
+    "Assurance Intern", "Bookkeeping Assistant", "Accounts Payable Intern",
+    "Accounts Receivable Intern", "Financial Reporting Intern", "Co-op Accountant"
+  ],
+  "core_skills": [
+    "accounting", "bookkeeping", "reconciliation", "journal entries", "financial reporting",
+    "accounts payable", "accounts receivable", "audit", "tax preparation", "gaap",
+    "ifrs", "internal controls", "attention to detail", "excel", "data entry",
+    "month-end close", "documentation"
+  ],
+  "tools": [
+    "Excel", "QuickBooks", "SAP", "Oracle NetSuite", "Xero", "Sage", "CaseWare",
+    "Power BI", "Access", "TaxCycle", "ProFile"
+  ],
+  "responsibilities": [
+    "prepare journal entries and reconciliations", "support month-end and year-end close",
+    "process accounts payable and receivable", "assist with audit fieldwork and testing",
+    "prepare working papers and documentation", "support tax return preparation",
+    "maintain accurate financial records", "verify invoices and expense reports"
+  ],
+  "business_keywords": [
+    "general ledger", "trial balance", "reconciliation", "audit", "assurance",
+    "working papers", "gaap", "ifrs", "accruals", "payables", "receivables",
+    "fixed assets", "tax", "compliance", "internal controls", "close process", "cpa"
+  ],
+  "student_experience_signals": [
+    "accounting coursework", "cpa prerequisite courses", "bookkeeping for a club or small business",
+    "treasurer role", "tax clinic volunteer", "case competition", "part-time cash reconciliation",
+    "accounting society membership"
+  ],
+  "strong_resume_evidence": [
+    "reconciled accounts with volume or dollar figures", "prepared journal entries in a real system",
+    "volunteer tax clinic with number of returns filed", "treasurer role with reporting responsibility",
+    "audit or assurance coursework applied to a case", "processed invoices with stated volume"
+  ],
+  "weak_evidence_patterns": [
+    "detail-oriented", "completed accounting courses", "familiar with debits and credits",
+    "interested in pursuing cpa", "strong numerical skills"
+  ],
+  "improvement_angles": [
+    "Show real transaction work: reconciliations, invoices processed, or records maintained, with volume.",
+    "If you volunteered at a tax clinic or handled club finances, state the number of returns, members, or dollars involved.",
+    "Name the accounting software you have actually touched, even in coursework (QuickBooks, Sage, CaseWare).",
+    "Mention CPA-track coursework explicitly if the posting references CPA eligibility."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "operations",
+  "discipline": "Operations & Supply Chain",
+  "role_titles": [
+    "Operations Intern", "Supply Chain Intern", "Logistics Intern", "Procurement Intern",
+    "Operations Analyst Intern", "Inventory Analyst Intern", "Planning Intern",
+    "Warehouse Operations Co-op", "Continuous Improvement Intern", "Demand Planning Intern"
+  ],
+  "core_skills": [
+    "process improvement", "data analysis", "inventory management", "scheduling",
+    "logistics", "procurement", "forecasting", "excel", "reporting", "problem solving",
+    "vendor management", "quality control", "documentation", "time management",
+    "project coordination", "lean"
+  ],
+  "tools": [
+    "Excel", "SAP", "Oracle NetSuite", "Power BI", "Tableau", "SQL", "Visio",
+    "Google Sheets", "WMS", "Smartsheet"
+  ],
+  "responsibilities": [
+    "track and analyze operational metrics", "support inventory and demand planning",
+    "coordinate shipments and logistics", "identify and document process improvements",
+    "support vendor and supplier communication", "maintain operational reports and dashboards",
+    "assist with scheduling and capacity planning", "investigate and resolve operational issues"
+  ],
+  "business_keywords": [
+    "supply chain", "inventory", "logistics", "procurement", "fulfillment", "lead time",
+    "throughput", "capacity", "vendor", "sku", "forecast", "on-time", "efficiency",
+    "cost savings", "kpi", "root cause", "sop", "turnaround"
+  ],
+  "student_experience_signals": [
+    "part-time retail or warehouse work", "food service work", "event logistics",
+    "club operations role", "supply chain coursework", "case competition",
+    "inventory counting or stocking", "shift scheduling", "campus job coordination"
+  ],
+  "strong_resume_evidence": [
+    "process improvement with measured result (time saved, errors reduced)",
+    "inventory or stock management with volume", "coordinated logistics for an event with attendance",
+    "handled high-volume operations under time pressure", "created an sop or checklist that others used",
+    "forecasting or planning with data"
+  ],
+  "weak_evidence_patterns": [
+    "hard worker", "works well under pressure", "responsible for daily tasks",
+    "organized", "interested in supply chain"
+  ],
+  "improvement_angles": [
+    "Part-time retail, warehouse, or food service work is genuine operations evidence — add volume, pace, and accuracy numbers.",
+    "If you improved any process (even a club workflow), state what it was, what you changed, and the measurable difference.",
+    "Event planning is logistics: show vendors coordinated, budget, headcount, and timeline.",
+    "Name any planning or ERP-type systems you touched, including scheduling and inventory tools."
+  ]
+}

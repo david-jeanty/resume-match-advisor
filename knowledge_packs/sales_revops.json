@@ -1,0 +1,49 @@
+{
+  "id": "sales_revops",
+  "discipline": "Sales / Revenue Operations",
+  "role_titles": [
+    "Sales Intern", "Sales Operations Intern", "Revenue Operations Intern",
+    "Business Development Intern", "BDR Intern", "SDR Intern", "GTM Intern",
+    "Account Management Intern", "Sales Enablement Intern", "Partnerships Intern"
+  ],
+  "core_skills": [
+    "sales", "crm", "prospecting", "lead generation", "pipeline management",
+    "communication", "negotiation", "customer service", "reporting", "data analysis",
+    "excel", "presentation", "outreach", "relationship building", "forecasting"
+  ],
+  "tools": [
+    "Salesforce", "HubSpot", "Excel", "LinkedIn Sales Navigator", "Outreach",
+    "ZoomInfo", "Power BI", "Google Sheets", "Apollo", "Gong"
+  ],
+  "responsibilities": [
+    "research and qualify prospects", "maintain crm data and pipeline hygiene",
+    "support outreach campaigns and follow-ups", "prepare sales reports and dashboards",
+    "support proposal and deck preparation", "coordinate between sales and marketing",
+    "track pipeline metrics and conversion rates", "support onboarding of new customers"
+  ],
+  "business_keywords": [
+    "pipeline", "quota", "leads", "prospects", "outreach", "conversion", "deal",
+    "territory", "qualification", "revenue", "upsell", "churn", "win rate",
+    "handoff", "forecast", "book of business", "cold call"
+  ],
+  "student_experience_signals": [
+    "retail or service sales experience", "fundraising", "sponsorship outreach for a club",
+    "brand ambassador", "door-to-door or phone sales", "upselling at a part-time job",
+    "sales competition", "networking events", "membership drives"
+  ],
+  "strong_resume_evidence": [
+    "sales or upsell results with numbers", "sponsorships secured with dollar amounts",
+    "crm usage for tracking leads or members", "fundraising totals",
+    "outreach with volume and conversion", "sales competition placement"
+  ],
+  "weak_evidence_patterns": [
+    "outgoing personality", "persuasive communicator", "interested in sales",
+    "customer-oriented", "confident speaker"
+  ],
+  "improvement_angles": [
+    "Retail upselling, fundraising, and club sponsorship outreach are real sales evidence — add dollar amounts, volumes, or conversion numbers.",
+    "If you tracked leads, members, or donors in any system (even a spreadsheet), frame it as CRM/pipeline experience.",
+    "Show persistence mechanics: outreach volume, follow-up cadence, and results.",
+    "Connect customer-facing work to discovery: understanding needs and matching them to an offer."
+  ]
+}

@@ -1,0 +1,26 @@
+Business Analyst Intern (BTM Co-op) — Winter 2027
+Northline Financial Group, Toronto, ON
+
+About the role
+Our Business Technology team is hiring a Business Analyst Intern to support a CRM implementation project. You will sit between business stakeholders and the technical delivery team.
+
+Responsibilities
+- Gather and document business requirements from stakeholders across departments
+- Map current state and future state processes in Visio
+- Write user stories and acceptance criteria in Jira
+- Support user acceptance testing (UAT) and track defects
+- Prepare status reports and project documentation in Confluence
+- Analyze data in Excel and SQL to support decision making
+
+Required qualifications
+- Currently enrolled in a Business Technology Management, MIS, or related business program
+- Strong stakeholder communication and documentation skills
+- Experience with Excel, including pivot tables and lookups
+- Understanding of business analysis or process mapping concepts
+- Ability to manage multiple priorities in a fast-paced environment
+
+Preferred qualifications
+- Exposure to Jira, Confluence, or Visio
+- Basic SQL knowledge
+- Experience with agile or scrum from coursework or projects
+- Case competition or student consulting experience is an asset
