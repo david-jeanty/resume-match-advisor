@@ -162,18 +162,48 @@ robustness on short/messy inputs. Tests never touch the network.
 
 ## Deployment (free tiers)
 
-**Frontend → Vercel (Hobby)**: import the repo, set the root directory to `frontend/`, and add
-`NEXT_PUBLIC_API_URL` pointing at your backend URL.
+Tested setup for sharing a private test link: backend on Render (free), frontend on
+Vercel (Hobby). No accounts, no database, no resume storage — deployment doesn't change
+the privacy model.
 
-**Backend → Render (free web service)**:
-- Root directory: `backend`
-- Build command: `pip install -r requirements.txt`
-- Start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-- Env var: `ALLOWED_ORIGINS=https://your-frontend.vercel.app`
-- Note: Render copies only the root directory, so either move `knowledge_packs/` into the
-  service or set the root to the repo and use
-  `uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT`.
-- Free-tier services sleep when idle; the first request after a while takes ~30s to wake.
+### 1. Backend → Render
+
+The repo includes a `render.yaml` blueprint. In Render: **New → Blueprint**, point it at
+your fork, and set `ALLOWED_ORIGINS` when prompted (you can fill in the real Vercel URL
+after step 2 and redeploy).
+
+Manual setup instead of the blueprint:
+
+- **Root directory**: leave as the repo root (important — the knowledge/university/
+  location packs live at the repo root).
+- **Build command**: `pip install -r backend/requirements.txt`
+- **Start command**: `uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT`
+- **Environment variables**:
+  - `ALLOWED_ORIGINS=https://your-app.vercel.app` (comma-separate to add more origins,
+    e.g. a Vercel preview URL; no trailing slashes needed)
+  - `ADVISOR_PROVIDER=rule_based` (the free offline default; never set an LLM provider)
+- Verify with `https://your-api.onrender.com/health` → `{"status":"ok"}`.
+
+### 2. Frontend → Vercel
+
+- **Import the repo**, set **Root Directory** to `frontend/` (Framework: Next.js,
+  defaults are fine).
+- **Environment variables**:
+  - `NEXT_PUBLIC_API_BASE_URL=https://your-api.onrender.com` (your Render URL, no
+    trailing slash)
+  - `NEXT_PUBLIC_FEEDBACK_URL=https://forms.gle/...` (optional — powers the beta
+    banner's "Leave feedback" button; otherwise edit the placeholder in
+    `frontend/components/BetaBanner.tsx`)
+- Deploy, then copy the production URL into the backend's `ALLOWED_ORIGINS` and
+  redeploy the backend.
+
+### 3. Before sending the link to testers
+
+- Run one real scan on the deployed URL (paste a resume + posting) and confirm results render.
+- Expect a slow first scan: **Render's free tier sleeps when idle** and takes ~30-60s to
+  wake. Tell your testers this or warm it up with a `/health` request first.
+- The UI shows a beta banner reminding testers that resumes are analyzed in memory,
+  never stored, and that no AI service is used.
 
 ## Future improvements
 

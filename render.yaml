@@ -1,0 +1,25 @@
+# Render blueprint for the backend API (free tier).
+# In the Render dashboard: New → Blueprint → point at this repository.
+# The service runs from the repo root (no rootDir) so the knowledge_packs/,
+# university_packs/, and location_packs/ directories resolve correctly.
+services:
+  - type: web
+    name: resume-match-advisor-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      # Set this to your deployed frontend origin(s), comma-separated,
+      # e.g. https://your-app.vercel.app — no trailing slash needed.
+      - key: ALLOWED_ORIGINS
+        sync: false
+      # Advisor stays the free offline default; company lookup uses only the
+      # free Wikipedia summary API (set to "off" to disable even that).
+      - key: ADVISOR_PROVIDER
+        value: rule_based
+      - key: COMPANY_LOOKUP
+        value: "on"

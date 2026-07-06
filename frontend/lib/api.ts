@@ -1,6 +1,12 @@
 import type { AnalyzeRequest, AnalyzeResponse } from "@/types/analysis";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+// NEXT_PUBLIC_API_BASE_URL is the canonical variable; NEXT_PUBLIC_API_URL is
+// kept as a fallback for existing local setups.
+const API_URL = (
+  process.env.NEXT_PUBLIC_API_BASE_URL ??
+  process.env.NEXT_PUBLIC_API_URL ??
+  "http://localhost:8000"
+).replace(/\/+$/, "");
 
 export async function analyze(request: AnalyzeRequest): Promise<AnalyzeResponse> {
   let response: Response;

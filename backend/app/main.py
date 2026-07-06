@@ -17,11 +17,18 @@ app = FastAPI(
     version="0.1.0",
 )
 
-# Comma-separated origins, e.g. "https://yourapp.vercel.app,http://localhost:3000"
-_origins = os.environ.get("ALLOWED_ORIGINS", "*")
+# Comma-separated origins, e.g. "https://yourapp.vercel.app,http://localhost:3000".
+# Defaults to "*" for easy local development; set it explicitly in deployment.
+# Trailing slashes are stripped — a browser Origin header never has one, so
+# "https://yourapp.vercel.app/" in the env var would otherwise never match.
+_origins = [
+    o.strip().rstrip("/")
+    for o in os.environ.get("ALLOWED_ORIGINS", "*").split(",")
+    if o.strip()
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[o.strip() for o in _origins.split(",")],
+    allow_origins=_origins,
     allow_methods=["POST", "GET", "OPTIONS"],
     allow_headers=["*"],
 )
