@@ -43,6 +43,24 @@ def _match_section_header(line: str, header_map: dict[str, list[str]]) -> str | 
     return None
 
 
+def is_section_header(line: str) -> bool:
+    """True for lines that are (or look like) resume section headers.
+
+    Used to keep headers out of evidence bullets and quoted evidence — a
+    header like 'LEADERSHIP EXPERIENCE & ACTIVITIES' names a section, it
+    isn't evidence of anything.
+    """
+    header_map = knowledge_loader.get_common().get("section_headers", {})
+    if _match_section_header(line, header_map):
+        return True
+    stripped = line.strip()
+    return (
+        len(stripped) <= 60
+        and stripped.upper() == stripped
+        and any(c.isalpha() for c in stripped)
+    )
+
+
 def _is_quantified(line: str) -> bool:
     return any(c.isdigit() for c in line) or "$" in line or "%" in line
 
@@ -100,7 +118,9 @@ def parse_resume(text: str) -> ParsedResume:
             candidate_lines = lines
     else:
         candidate_lines = lines
-    bullets = [ln for ln in candidate_lines if len(ln) >= 30]
+    bullets = [
+        ln for ln in candidate_lines if len(ln) >= 30 and not is_section_header(ln)
+    ]
 
     skills_vocab, tools_vocab = _vocab_from_packs(disciplines)
     skills_found = sorted(

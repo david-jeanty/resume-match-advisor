@@ -16,18 +16,22 @@ REQUIRED_HEADERS = [
     "qualifications", "what you bring", "what you'll bring",
     "must have", "must-haves", "about you", "what we're looking for",
     "what we are looking for", "your background", "you have", "skills and qualifications",
+    "required technical and professional expertise", "required experience",
+    "required education", "skills & experience", "skills and experience",
 ]
 PREFERRED_HEADERS = [
     "preferred qualifications", "preferred", "nice to have", "nice-to-haves",
     "assets", "bonus points", "bonus", "additional assets", "it's a plus if",
-    "preferred skills",
+    "preferred skills", "preferred technical and professional experience",
+    "preferred technical and professional expertise", "preferred experience",
+    "preferred education",
 ]
 RESPONSIBILITY_HEADERS = [
     "responsibilities", "key responsibilities", "what you'll do", "what you will do",
     "the role", "your role", "duties", "day to day", "day-to-day", "in this role",
     "about the role", "what you'll be doing", "position summary", "job duties",
     "your responsibilities", "core responsibilities", "the opportunity",
-    "how you'll succeed", "how you will succeed",
+    "how you'll succeed", "how you will succeed", "your role and responsibilities",
 ]
 # "Who You Are" mixes one or two real requirements (degree, tools) into mostly
 # corporate-values language. Route it to a holding bucket that gets filtered
@@ -39,6 +43,8 @@ IGNORE_HEADERS = [
     "whats in it for you", "application instructions", "how to apply", "about us",
     "about the company", "equal opportunity employer", "accommodation",
     "legal disclaimer", "disclaimer", "additional information",
+    "introduction", "about the job", "about business unit", "why this role",
+    "why this role?", "about the team", "your life @ ibm", "benefits", "perks",
 ]
 
 PREFERRED_INLINE_CUES = ["preferred", "nice to have", "an asset", "a plus", "bonus"]

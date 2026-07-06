@@ -5,8 +5,15 @@ import re
 _WORD_RE = re.compile(r"[a-z0-9][a-z0-9&/+.#-]*")
 
 
+_PUNCT_TRANSLATION = str.maketrans({
+    "‘": "'", "’": "'",  # curly single quotes — "Bachelor’s" == "Bachelor's"
+    "“": '"', "”": '"',
+    "–": "-", "—": "-",
+})
+
+
 def normalize(text: str) -> str:
-    return re.sub(r"\s+", " ", text.lower()).strip()
+    return re.sub(r"\s+", " ", text.translate(_PUNCT_TRANSLATION).lower()).strip()
 
 
 def contains_term(text: str, term: str) -> bool:

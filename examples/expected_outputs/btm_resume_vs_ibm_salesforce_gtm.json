@@ -1,0 +1,437 @@
+{
+  "overall_score": 84,
+  "score_interpretation": "Strong match \u2014 your resume already supports most of this role, but review the remaining gaps before applying.",
+  "score_breakdown": [
+    {
+      "category": "required_qualifications",
+      "label": "Required qualifications match",
+      "score": 22,
+      "max_score": 25,
+      "explanation": "Of 7 required qualifications: 6 strong, 0 moderate, 1 weak, 0 missing."
+    },
+    {
+      "category": "skills_tools",
+      "label": "Skills & tools match",
+      "score": 15,
+      "max_score": 20,
+      "explanation": "The posting mentions 17 skills/tools: 12 covered in your resume, 2 plausibly transferable from student experience, 3 not found."
+    },
+    {
+      "category": "experience_evidence",
+      "label": "Experience evidence match",
+      "score": 18,
+      "max_score": 20,
+      "explanation": "Based on how well your bullets support the day-to-day work: 6 of 6 responsibilities have direct or transferable evidence; 9 of 13 bullets include numbers."
+    },
+    {
+      "category": "discipline_fit",
+      "label": "Commerce discipline fit",
+      "score": 11,
+      "max_score": 15,
+      "explanation": "This looks like a Business Technology Management (BTM/MIS) role; your resume shows 9 of the skills and tools common to that discipline."
+    },
+    {
+      "category": "keyword_coverage",
+      "label": "Keyword & context coverage",
+      "score": 10,
+      "max_score": 10,
+      "explanation": "The posting uses 7 business keywords for this discipline; your resume speaks the same language on 4 of them (e.g. crm, process, stakeholders, strategy)."
+    },
+    {
+      "category": "clarity_structure",
+      "label": "Resume clarity & structure",
+      "score": 8,
+      "max_score": 10,
+      "explanation": "Structure checks passed: 5 of 6. Could improve: bullets that start with action verbs."
+    }
+  ],
+  "detected_disciplines": [
+    {
+      "discipline_id": "btm_mis",
+      "discipline": "Business Technology Management (BTM/MIS)",
+      "confidence": "high",
+      "matched_signals": [
+        "skill: business analysis",
+        "skill: communication",
+        "skill: process execution",
+        "skill: process mapping",
+        "skill: solution overviews",
+        "skill: stakeholder management",
+        "skill: user stories",
+        "tool: excel"
+      ]
+    },
+    {
+      "discipline_id": "consulting",
+      "discipline": "Consulting",
+      "confidence": "high",
+      "matched_signals": [
+        "skill: business analysis",
+        "skill: communication",
+        "skill: excel",
+        "skill: market research",
+        "skill: presentation",
+        "skill: problem solving",
+        "skill: stakeholder management",
+        "tool: excel"
+      ]
+    },
+    {
+      "discipline_id": "sales_revops",
+      "discipline": "Sales / Revenue Operations",
+      "confidence": "high",
+      "matched_signals": [
+        "skill: communication",
+        "skill: crm",
+        "skill: excel",
+        "skill: presentation",
+        "skill: reporting",
+        "skill: sales",
+        "skill: sales operations",
+        "tool: excel"
+      ]
+    }
+  ],
+  "extracted_job_requirements": {
+    "role_title": "Consulting & Go-To-Market (GTM) Intern \u2014 Salesforce Practice",
+    "required_qualifications": [
+      "Currently enrolled in Business, Commerce, Management, Technology, or related programs at a post-secondary institution",
+      "Experience with Excel or other digital tools for data organization and reporting",
+      "Strong organization and ability to manage multiple tasks and priorities",
+      "Clear communicator with strong written and verbal skills",
+      "Curiosity & analytical thinking: you ask thoughtful questions and enjoy digging into business problems",
+      "People-first mindset: you collaborate well with internal stakeholders and clients",
+      "Growth mindset and a passion for business and technology"
+    ],
+    "preferred_qualifications": [
+      "Exposure to Salesforce or another CRM",
+      "Interest in consulting, sales operations, and GTM strategy",
+      "Experience preparing presentations or reports for stakeholders",
+      "Demonstrated leadership experience in school or work",
+      "Bachelor\u2019s Degree"
+    ],
+    "responsibilities": [
+      "Support consulting and GTM activities including industry, account, and competitive research",
+      "Prepare client-facing materials, presentations, reports, and preparation materials for sales pursuits",
+      "Support operational coordination and internal operations across cross-functional teams",
+      "Assist in creating Salesforce-related assets, demos, and solution overviews",
+      "Draft user stories and process flows to help translate business requirements into technical solutions",
+      "Maintain CRM data and support go-to-market readiness activities"
+    ],
+    "skills": [
+      "business analysis",
+      "communication",
+      "crm",
+      "excel",
+      "market research",
+      "organization",
+      "presentation",
+      "problem solving",
+      "process execution",
+      "process mapping",
+      "reporting",
+      "sales",
+      "sales operations",
+      "solution overviews",
+      "stakeholder management",
+      "user stories"
+    ],
+    "tools": [
+      "excel",
+      "salesforce"
+    ]
+  },
+  "extracted_resume_signals": {
+    "sections_found": [
+      "education",
+      "experience",
+      "leadership",
+      "skills"
+    ],
+    "skills_found": [
+      "analytics",
+      "business analysis",
+      "client service",
+      "communication",
+      "crm",
+      "data investigation",
+      "data quality",
+      "documentation",
+      "excel",
+      "kpi reporting",
+      "logistics",
+      "organization",
+      "outreach",
+      "presentation",
+      "problem solving",
+      "process execution",
+      "reporting",
+      "sales operations",
+      "stakeholder management"
+    ],
+    "tools_found": [
+      "excel",
+      "outreach",
+      "salesforce"
+    ],
+    "student_signals": [
+      "coursework",
+      "intern",
+      "student ambassador",
+      "vice president"
+    ],
+    "bullet_count": 13,
+    "quantified_bullet_count": 9,
+    "action_verb_bullet_count": 5
+  },
+  "evidence_map": [
+    {
+      "requirement": "Currently enrolled in Business, Commerce, Management, Technology, or related programs at a post-secondary institution",
+      "requirement_type": "required",
+      "resume_evidence": "Bachelor of Commerce, Business Technology Management (French Immersion), Sep. 2023 - Jun. 2027",
+      "match_strength": "strong",
+      "explanation": "Your bachelor of commerce program in the Education section satisfies this field-of-study requirement, and your resume shows you're currently enrolled."
+    },
+    {
+      "requirement": "Experience with Excel or other digital tools for data organization and reporting",
+      "requirement_type": "required",
+      "resume_evidence": "Identified process gaps and prepared structured reporting summaries for stakeholders across multiple workstreams",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows reporting in an experience bullet."
+    },
+    {
+      "requirement": "Strong organization and ability to manage multiple tasks and priorities",
+      "requirement_type": "required",
+      "resume_evidence": "Identified process gaps and prepared structured reporting summaries for stakeholders across multiple workstreams",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows process execution (via multiple workstreams) in an experience bullet."
+    },
+    {
+      "requirement": "Clear communicator with strong written and verbal skills",
+      "requirement_type": "required",
+      "resume_evidence": "Coordinated communication between MIS professors, Telfer administration, and the Career Centre, managing 100+ student inquiries",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows communication in an experience bullet."
+    },
+    {
+      "requirement": "Curiosity & analytical thinking: you ask thoughtful questions and enjoy digging into business problems",
+      "requirement_type": "required",
+      "resume_evidence": "Audited reports to verify data accuracy, identify exceptions, and support operational follow-up and issue resolution",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows problem solving (via issue resolution) in an experience bullet."
+    },
+    {
+      "requirement": "People-first mindset: you collaborate well with internal stakeholders and clients",
+      "requirement_type": "required",
+      "resume_evidence": "Coordinated communication between MIS professors, Telfer administration, and the Career Centre, managing 100+ student inquiries",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows stakeholder management (via coordinated communication) in an experience bullet."
+    },
+    {
+      "requirement": "Growth mindset and a passion for business and technology",
+      "requirement_type": "required",
+      "resume_evidence": "Bachelor of Commerce, Business Technology Management (French Immersion), Sep. 2023 - Jun. 2027",
+      "match_strength": "weak",
+      "explanation": "Some wording overlaps with this requirement, but nothing in the resume clearly demonstrates it."
+    },
+    {
+      "requirement": "Exposure to Salesforce or another CRM",
+      "requirement_type": "preferred",
+      "resume_evidence": "Managed 3,500+ CRM inquiries while maintaining accurate records and flagging follow-up needs in a high-volume service environment",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows crm in an experience bullet."
+    },
+    {
+      "requirement": "Interest in consulting, sales operations, and GTM strategy",
+      "requirement_type": "preferred",
+      "resume_evidence": "Built Excel outreach trackers using PivotTables, lookup functions, and conditional formatting to organize contact, program, and status data across 31 universities and 15 Ontario p\u2026",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows sales operations (via outreach trackers) in an experience bullet."
+    },
+    {
+      "requirement": "Experience preparing presentations or reports for stakeholders",
+      "requirement_type": "preferred",
+      "resume_evidence": "Coordinated communication between MIS professors, Telfer administration, and the Career Centre, managing 100+ student inquiries",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows communication in an experience bullet."
+    },
+    {
+      "requirement": "Demonstrated leadership experience in school or work",
+      "requirement_type": "preferred",
+      "resume_evidence": "Vice President, Internal Affairs \u2014 Telfer Business Technology Association (BTA) (Sep 2025 - Present)",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows leadership (via vice president) in an experience bullet."
+    },
+    {
+      "requirement": "Bachelor\u2019s Degree",
+      "requirement_type": "preferred",
+      "resume_evidence": "Bachelor of Commerce, Business Technology Management (French Immersion), Sep. 2023 - Jun. 2027",
+      "match_strength": "strong",
+      "explanation": "Your bachelor of commerce program in the Education section satisfies this field-of-study requirement, and your resume shows you're currently enrolled."
+    },
+    {
+      "requirement": "Support consulting and GTM activities including industry, account, and competitive research",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Built Excel outreach trackers using PivotTables, lookup functions, and conditional formatting to organize contact, program, and status data across 31 universities and 15 Ontario p\u2026",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows sales operations (via outreach trackers) in an experience bullet."
+    },
+    {
+      "requirement": "Prepare client-facing materials, presentations, reports, and preparation materials for sales pursuits",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Built Excel outreach trackers using PivotTables, lookup functions, and conditional formatting to organize contact, program, and status data across 31 universities and 15 Ontario p\u2026",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows sales operations (via outreach trackers) in an experience bullet."
+    },
+    {
+      "requirement": "Support operational coordination and internal operations across cross-functional teams",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Coordinated communication between MIS professors, Telfer administration, and the Career Centre, managing 100+ student inquiries",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows stakeholder management (via coordinated communication) in an experience bullet."
+    },
+    {
+      "requirement": "Assist in creating Salesforce-related assets, demos, and solution overviews",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Managed 3,500+ CRM inquiries while maintaining accurate records and flagging follow-up needs in a high-volume service environment",
+      "match_strength": "moderate",
+      "explanation": "Crm appears in your resume, but only as a listed skill \u2014 an experience bullet showing it in use would be stronger. Still unaddressed: solution overviews."
+    },
+    {
+      "requirement": "Draft user stories and process flows to help translate business requirements into technical solutions",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Relevant coursework: Business Analytics, Systems Analysis, Management Information Systems, Operations Management, Statistical Methods",
+      "match_strength": "moderate",
+      "explanation": "Found related evidence for business analysis through systems analysis, though it isn't framed in an experience bullet yet. Still unaddressed: process mapping, user stories."
+    },
+    {
+      "requirement": "Maintain CRM data and support go-to-market readiness activities",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Built Excel outreach trackers using PivotTables, lookup functions, and conditional formatting to organize contact, program, and status data across 31 universities and 15 Ontario p\u2026",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows sales operations (via outreach trackers) in an experience bullet."
+    }
+  ],
+  "missing_skills": {
+    "required_missing": [
+      "process mapping",
+      "solution overviews",
+      "user stories"
+    ],
+    "preferred_missing": [],
+    "tools_missing": []
+  },
+  "weak_areas": [
+    "Only weak evidence for: \"Growth mindset and a passion for business and technology\"",
+    "market research \u2014 your 'coursework' experience is transferable, but the resume doesn't say it explicitly yet",
+    "sales \u2014 your 'student ambassador' experience is transferable, but the resume doesn't say it explicitly yet"
+  ],
+  "improvement_suggestions": [
+    {
+      "priority": "high",
+      "title": "Add process mapping evidence",
+      "suggestion": "The posting names process mapping as a skill it cares about. If you have used it in coursework, a class project, a club role, an internship, or a part-time job, add a specific bullet naming the context and what you did with it. If you haven't, consider a small project or course to build it before applying \u2014 don't add it without real experience.",
+      "related_requirement": "process mapping"
+    },
+    {
+      "priority": "high",
+      "title": "Add solution overviews evidence",
+      "suggestion": "The posting names solution overviews as a skill it cares about. If you have used it in coursework, a class project, a club role, an internship, or a part-time job, add a specific bullet naming the context and what you did with it. If you haven't, consider a small project or course to build it before applying \u2014 don't add it without real experience.",
+      "related_requirement": "solution overviews"
+    },
+    {
+      "priority": "high",
+      "title": "Add user stories evidence",
+      "suggestion": "The posting names user stories as a skill it cares about. If you have used it in coursework, a class project, a club role, an internship, or a part-time job, add a specific bullet naming the context and what you did with it. If you haven't, consider a small project or course to build it before applying \u2014 don't add it without real experience.",
+      "related_requirement": "user stories"
+    },
+    {
+      "priority": "medium",
+      "title": "Reframe your coursework experience as market research",
+      "suggestion": "Class and capstone projects count as evidence when they name the tools, dataset or company context, and the deliverable \u2014 treat them like mini work experiences with outcomes.",
+      "related_requirement": "market research"
+    },
+    {
+      "priority": "medium",
+      "title": "Reframe your student ambassador experience as sales",
+      "suggestion": "Ambassador and mentoring roles support outreach, promotion, and communication evidence \u2014 quantify audiences reached, events run, or students supported.",
+      "related_requirement": "sales"
+    }
+  ],
+  "company_card": null,
+  "university_context": {
+    "university_name": "University of Ottawa",
+    "business_school": "Telfer School of Management",
+    "detected_from": "resume",
+    "program": null,
+    "detected_courses": [],
+    "detected_clubs": [
+      {
+        "name": "Telfer Business Technology Association (BTA)",
+        "matched_text": "bta",
+        "kind": "club",
+        "disciplines": [
+          "btm_mis",
+          "business_analytics",
+          "consulting"
+        ],
+        "supports": [
+          "business analysis",
+          "data analysis",
+          "event planning",
+          "stakeholder management",
+          "communication"
+        ],
+        "strength": "strong",
+        "note": "Strong involvement \u2014 keep the specifics. BTA involvement signals business-technology interest. It becomes real BTM/analytics evidence when you show organized tech or analytics events, workshop content, speaker or sponsor outreach, CRM/BI exposure, or attendance numbers."
+      }
+    ],
+    "coop_detected": false,
+    "bilingual_detected": true,
+    "notes": []
+  },
+  "location_context": {
+    "location_name": "Toronto / GTA",
+    "detected_from": "job_description",
+    "industries": [
+      "Banking & capital markets",
+      "Insurance & wealth management",
+      "Big 4 accounting & consulting",
+      "Retail & CPG head offices",
+      "Technology & fintech",
+      "Media & telecommunications",
+      "Real estate & construction"
+    ],
+    "positioning_advice": [
+      "Toronto student hiring is high-volume and competitive \u2014 quantified, specific bullets matter even more than usual.",
+      "Financial services and Big 4 recruiting is structured and credential-aware \u2014 surface CPA-track coursework, case competitions, and finance club technical work explicitly.",
+      "Retail/CPG head offices value category, brand, and consumer-analytics language \u2014 translate campus marketing work into those terms where honest."
+    ]
+  },
+  "contextual_feedback": [
+    {
+      "section_id": "university_program",
+      "title": "How your school/program context may help",
+      "items": [
+        "English/French bilingualism is a real asset in the Ottawa market (federal government, Crown corporations, and many NCR employers). If you are bilingual or in French Immersion, state it explicitly in your skills or summary \u2014 including your working level."
+      ]
+    },
+    {
+      "section_id": "school_involvement",
+      "title": "How your Telfer School of Management involvement may translate",
+      "items": [
+        "Telfer Business Technology Association (BTA): Strong involvement \u2014 keep the specifics. BTA involvement signals business-technology interest. It becomes real BTM/analytics evidence when you show organized tech or analytics events, workshop content, speaker or sponsor outreach, CRM/BI exposure, or attendance numbers."
+      ]
+    },
+    {
+      "section_id": "location_angle",
+      "title": "Location-specific application angle",
+      "items": [
+        "Toronto student hiring is high-volume and competitive \u2014 quantified, specific bullets matter even more than usual.",
+        "Financial services and Big 4 recruiting is structured and credential-aware \u2014 surface CPA-track coursework, case competitions, and finance club technical work explicitly.",
+        "Retail/CPG head offices value category, brand, and consumer-analytics language \u2014 translate campus marketing work into those terms where honest."
+      ]
+    }
+  ],
+  "privacy_note": "Your resume and job description are processed in memory to generate this report and are not stored, logged, or used for anything else."
+}

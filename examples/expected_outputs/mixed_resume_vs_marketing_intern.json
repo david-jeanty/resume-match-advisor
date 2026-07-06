@@ -1,20 +1,20 @@
 {
-  "overall_score": 88,
+  "overall_score": 90,
   "score_interpretation": "Strong match \u2014 your resume already supports most of this role, but review the remaining gaps before applying.",
   "score_breakdown": [
     {
       "category": "required_qualifications",
       "label": "Required qualifications match",
-      "score": 23,
+      "score": 25,
       "max_score": 25,
-      "explanation": "Of 5 required qualifications: 4 strong, 1 moderate, 0 weak, 0 missing."
+      "explanation": "Of 5 required qualifications: 5 strong, 0 moderate, 0 weak, 0 missing."
     },
     {
       "category": "skills_tools",
       "label": "Skills & tools match",
       "score": 16,
       "max_score": 20,
-      "explanation": "The posting mentions 17 skills/tools: 13 covered in your resume, 1 plausibly transferable from student experience, 3 not found."
+      "explanation": "The posting mentions 18 skills/tools: 14 covered in your resume, 1 plausibly transferable from student experience, 3 not found."
     },
     {
       "category": "experience_evidence",
@@ -98,8 +98,7 @@
       "market research",
       "reporting",
       "sales",
-      "social media",
-      "testing"
+      "social media"
     ],
     "tools": [
       "canva",
@@ -155,9 +154,9 @@
     {
       "requirement": "Currently enrolled in a business, marketing, or communications program",
       "requirement_type": "required",
-      "resume_evidence": "Relevant coursework: Marketing Analytics, Consumer Behaviour, Business Statistics",
-      "match_strength": "moderate",
-      "explanation": "Your resume covers this requirement's wording closely, though no specific skill term was involved \u2014 read the quoted line and make sure it says this as directly as possible."
+      "resume_evidence": "Bachelor of Commerce, Marketing Major \u2014 Toronto Metropolitan University",
+      "match_strength": "strong",
+      "explanation": "Your bachelor of commerce program in the Education section satisfies this field-of-study requirement, and your resume shows you're currently enrolled."
     },
     {
       "requirement": "Experience with CRM or campaign tracking tools",
@@ -199,7 +198,7 @@
       "requirement_type": "preferred",
       "resume_evidence": "Tracked leads and supported campaign planning in HubSpot CRM for 3 concurrent email campaigns",
       "match_strength": "strong",
-      "explanation": "Your resume directly shows email marketing (via email campaigns) in an experience bullet. Still unaddressed: mailchimp."
+      "explanation": "Your resume directly shows email marketing (via email campaigns) in an experience bullet."
     },
     {
       "requirement": "Previous internship, club marketing, or campaign experience",
@@ -227,7 +226,7 @@
       "requirement_type": "responsibility",
       "resume_evidence": "Tracked leads and supported campaign planning in HubSpot CRM for 3 concurrent email campaigns",
       "match_strength": "strong",
-      "explanation": "Your resume directly shows hubspot in an experience bullet."
+      "explanation": "Your resume directly shows crm in an experience bullet."
     },
     {
       "requirement": "Report weekly on campaign KPIs including open rates, CTR, and conversions",
@@ -254,8 +253,8 @@
       "requirement": "Support event promotion and webinar logistics",
       "requirement_type": "responsibility",
       "resume_evidence": "Led a 6-person team promoting 8 campus events with a $2,000 annual budget",
-      "match_strength": "strong",
-      "explanation": "Your resume directly shows event planning (via campus events) in an experience bullet. Still unaddressed: logistics."
+      "match_strength": "moderate",
+      "explanation": "Found related evidence for event planning through campus events, though it isn't framed in an experience bullet yet. Still unaddressed: logistics."
     }
   ],
   "missing_skills": {
@@ -302,5 +301,35 @@
     "resume_angle": "Mirror the posting's own vocabulary where it's honest for you, and pick the one or two experiences most relevant to what Brightpath Software actually does \u2014 a targeted resume beats a complete one.",
     "source": "fallback"
   },
+  "university_context": null,
+  "location_context": {
+    "location_name": "Toronto / GTA",
+    "detected_from": "job_description",
+    "industries": [
+      "Banking & capital markets",
+      "Insurance & wealth management",
+      "Big 4 accounting & consulting",
+      "Retail & CPG head offices",
+      "Technology & fintech",
+      "Media & telecommunications",
+      "Real estate & construction"
+    ],
+    "positioning_advice": [
+      "Toronto student hiring is high-volume and competitive \u2014 quantified, specific bullets matter even more than usual.",
+      "Financial services and Big 4 recruiting is structured and credential-aware \u2014 surface CPA-track coursework, case competitions, and finance club technical work explicitly.",
+      "Retail/CPG head offices value category, brand, and consumer-analytics language \u2014 translate campus marketing work into those terms where honest."
+    ]
+  },
+  "contextual_feedback": [
+    {
+      "section_id": "location_angle",
+      "title": "Location-specific application angle",
+      "items": [
+        "Toronto student hiring is high-volume and competitive \u2014 quantified, specific bullets matter even more than usual.",
+        "Financial services and Big 4 recruiting is structured and credential-aware \u2014 surface CPA-track coursework, case competitions, and finance club technical work explicitly.",
+        "Retail/CPG head offices value category, brand, and consumer-analytics language \u2014 translate campus marketing work into those terms where honest."
+      ]
+    }
+  ],
   "privacy_note": "Your resume and job description are processed in memory to generate this report and are not stored, logged, or used for anything else."
 }

@@ -155,6 +155,13 @@ def _terms_in(text: str) -> list[str]:
     for canonical, variants in aliases.items():
         if canonical not in found and any(contains_term(norm, v) for v in variants):
             found.append(canonical)
+    # A term that is itself an alias of another found term is the same ask
+    # counted twice (Salesforce is both a tool and a CRM alias) — keep the
+    # canonical so the requirement's distinct asks are counted honestly.
+    found = [
+        t for t in found
+        if not any(o != t and t in aliases.get(o, []) for o in found)
+    ]
     # Drop terms fully contained in a longer matched term
     # ("marketing" inside "email marketing").
     return sorted(
@@ -165,15 +172,34 @@ def _terms_in(text: str) -> list[str]:
 
 
 def _find_line(resume: ParsedResume, term: str) -> Optional[str]:
-    """Best resume line containing the term: quantified bullets win."""
+    """Best resume line containing the term: quantified bullets win.
+
+    Section headers are never quotable evidence — 'LEADERSHIP EXPERIENCE &
+    ACTIVITIES' containing 'leadership' proves nothing.
+    """
+    from .resume_parser import is_section_header
+
     hits = [b for b in resume.bullets if contains_term(normalize(b), term)]
     if hits:
         quantified = [b for b in hits if b in resume.quantified_bullets]
         return (quantified or hits)[0]
     for line in resume.lines:
-        if contains_term(normalize(line), term):
+        if contains_term(normalize(line), term) and not is_section_header(line):
             return line
     return None
+
+
+def _line_quality(resume: ParsedResume, line: Optional[str]) -> int:
+    """Rank quotable evidence: quantified work/leadership bullets beat plain
+    bullets, which beat skills-list/education lines, which beat a mention
+    with no quotable line at all (e.g. only inside a section header)."""
+    if line is None:
+        return 1
+    if line in resume.quantified_bullets:
+        return 4
+    if line in resume.bullets:
+        return 3
+    return 2
 
 
 def _translations_for(term: str) -> list[dict]:
@@ -187,20 +213,25 @@ def _translations_for(term: str) -> list[dict]:
 def evidence_for_term(term: str, resume: ParsedResume) -> TermEvidence:
     aliases = knowledge_loader.get_common().get("skill_aliases", {})
 
-    # 1. Direct occurrence of the term itself.
-    if contains_term(resume.norm_text, term):
-        line = _find_line(resume, term)
+    # 1./2. Direct occurrence of the term or a known equivalent (Salesforce
+    # for CRM). All hits compete on evidence quality so a work/leadership
+    # bullet found via an alias beats the term itself sitting in a skills
+    # list — students shouldn't be quoted their skills line when a real
+    # bullet demonstrates the same thing.
+    best: Optional[tuple[int, Optional[str], Optional[str]]] = None
+    for candidate, via in [(term, None)] + [(a, a) for a in aliases.get(term, [])]:
+        if not contains_term(resume.norm_text, candidate):
+            continue
+        line = _find_line(resume, candidate)
+        quality = _line_quality(resume, line)
+        if best is None or quality > best[0]:
+            best = (quality, line, via)
+        if quality >= 4:
+            break
+    if best is not None:
+        _, line, via = best
         in_bullet = line is not None and line in resume.bullets
-        return TermEvidence(term, "strong" if in_bullet else "moderate", line, None)
-
-    # 2. A known equivalent (e.g. Salesforce for CRM).
-    for alias in aliases.get(term, []):
-        if contains_term(resume.norm_text, alias):
-            line = _find_line(resume, alias)
-            in_bullet = line is not None and line in resume.bullets
-            return TermEvidence(
-                term, "strong" if in_bullet else "moderate", line, alias
-            )
+        return TermEvidence(term, "strong" if in_bullet else "moderate", line, via)
 
     # 3. Transferable student experience present in the resume.
     for translation in _translations_for(term):
@@ -323,10 +354,12 @@ def build_evidence_item(
         )
         best = evidences[0]
         strength, line = best.strength, best.line
-        # A requirement whose terms are mostly unaddressed shouldn't read
-        # as fully covered even if one term matched.
+        # A requirement with several distinct asks shouldn't read as fully
+        # covered when half or more of them have no evidence — one matched
+        # term (e.g. CRM in "Salesforce assets, demos, and solution
+        # overviews") doesn't cover the rest.
         missing_count = sum(1 for e in evidences if e.strength == "missing")
-        if strength == "strong" and missing_count > len(evidences) / 2:
+        if strength == "strong" and missing_count * 2 >= len(evidences):
             strength = "moderate"
         explanation = _explain(strength, evidences, line)
     else:

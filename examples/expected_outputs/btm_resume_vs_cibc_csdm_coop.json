@@ -1,5 +1,5 @@
 {
-  "overall_score": 62,
+  "overall_score": 60,
   "score_interpretation": "Partial match \u2014 targeted resume changes are needed to show the evidence this role asks for.",
   "score_breakdown": [
     {
@@ -14,19 +14,19 @@
       "label": "Skills & tools match",
       "score": 9,
       "max_score": 20,
-      "explanation": "The posting mentions 17 skills/tools: 7 covered in your resume, 1 plausibly transferable from student experience, 8 not found. 1 appear only in course/club context \u2014 weak until the resume shows them applied."
+      "explanation": "The posting mentions 18 skills/tools: 7 covered in your resume, 2 plausibly transferable from student experience, 8 not found. 1 appear only in course/club context \u2014 weak until the resume shows them applied."
     },
     {
       "category": "experience_evidence",
       "label": "Experience evidence match",
-      "score": 17,
+      "score": 16,
       "max_score": 20,
       "explanation": "Based on how well your bullets support the day-to-day work: 10 of 12 responsibilities have direct or transferable evidence; 5 of 10 bullets include numbers."
     },
     {
       "category": "discipline_fit",
       "label": "Commerce discipline fit",
-      "score": 8,
+      "score": 7,
       "max_score": 15,
       "explanation": "This looks like a Business Technology Management (BTM/MIS) role; your resume shows 6 of the skills and tools common to that discipline."
     },
@@ -114,6 +114,7 @@
       "reporting",
       "requirements gathering",
       "scrum",
+      "stakeholder management",
       "testing",
       "uat"
     ],
@@ -177,8 +178,8 @@
       "requirement": "Support data quality and remediation activities across multiple Capital Markets products",
       "requirement_type": "responsibility",
       "resume_evidence": "Audited weekly registration reports to verify data accuracy, flag anomalies, and identify exceptions requiring follow-up with stakeholders before deadlines",
-      "match_strength": "strong",
-      "explanation": "Your resume directly shows data quality (via data accuracy) in an experience bullet. Still unaddressed: capital markets."
+      "match_strength": "moderate",
+      "explanation": "Found related evidence for data quality through data accuracy, though it isn't framed in an experience bullet yet. Still unaddressed: capital markets."
     },
     {
       "requirement": "Conduct data investigation to identify root causes of data issues and anomalies",
@@ -199,7 +200,7 @@
       "requirement_type": "responsibility",
       "resume_evidence": "Tracked open items across multiple workstreams and maintained documentation for staff, providing organized follow-up on outstanding requests",
       "match_strength": "strong",
-      "explanation": "Your resume directly shows documentation in an experience bullet. Still unaddressed: requirements gathering."
+      "explanation": "Your resume directly shows documentation in an experience bullet."
     },
     {
       "requirement": "Assist with User Acceptance Testing (UAT) and system testing for CSDM technology initiatives",
@@ -233,8 +234,8 @@
       "requirement": "Identify and escalate process gaps and control weaknesses",
       "requirement_type": "responsibility",
       "resume_evidence": "Tracked open items across multiple workstreams and maintained documentation for staff, providing organized follow-up on outstanding requests",
-      "match_strength": "strong",
-      "explanation": "Your resume directly shows process execution (via multiple workstreams) in an experience bullet."
+      "match_strength": "moderate",
+      "explanation": "Found related evidence for process execution through multiple workstreams, though it isn't framed in an experience bullet yet. Still unaddressed: problem solving."
     },
     {
       "requirement": "Business analysis: Apply structured problem solving to data quality and process issues, working with stakeholders to document requirements and drive remediation.",
@@ -268,7 +269,8 @@
   "weak_areas": [
     "No evidence yet for required item: \"You put clients first, and you're keen to develop an understanding of Capital Markets products and regulatory reporting.\"",
     "business analysis \u2014 your Telfer Business Technology Association (BTA) involvement may cover this, but the resume doesn't show it applied yet",
-    "communication \u2014 your 'student ambassador' experience is transferable, but the resume doesn't say it explicitly yet"
+    "communication \u2014 your 'student ambassador' experience is transferable, but the resume doesn't say it explicitly yet",
+    "stakeholder management \u2014 your 'co-op' experience is transferable, but the resume doesn't say it explicitly yet"
   ],
   "improvement_suggestions": [
     {
@@ -300,6 +302,12 @@
       "title": "Reframe your student ambassador experience as communication",
       "suggestion": "Ambassador and mentoring roles support outreach, promotion, and communication evidence \u2014 quantify audiences reached, events run, or students supported.",
       "related_requirement": "communication"
+    },
+    {
+      "priority": "medium",
+      "title": "Reframe your co-op experience as stakeholder management",
+      "suggestion": "Internship and co-op bullets carry the most weight \u2014 make each one name the tool, the task, and a concrete result.",
+      "related_requirement": "stakeholder management"
     }
   ],
   "company_card": null,
