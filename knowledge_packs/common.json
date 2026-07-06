@@ -47,6 +47,64 @@
     "internship": ["intern", "co-op", "coop", "summer student", "summer analyst"],
     "sales": ["cold calling", "prospecting", "outbound", "closed deals", "upselling", "quota"]
   },
+  "adjacent_evidence": {
+    "uat": {
+      "adjacent": ["data quality", "data investigation", "testing", "documentation", "excel"],
+      "advice": "You have adjacent validation evidence, but not formal UAT. If you tested dashboards, CRM records, system outputs, or wrote test cases, name that explicitly. If not, keep UAT as a gap."
+    },
+    "testing": {
+      "adjacent": ["data quality", "data investigation", "documentation", "excel"],
+      "advice": "You have adjacent quality-checking evidence (validation, auditing, exception identification), but no explicit testing. If you tested a system, report, or process output, say so directly — otherwise treat testing as a real gap."
+    },
+    "sales operations": {
+      "adjacent": ["process execution", "client service", "crm", "reporting", "stakeholder management"],
+      "advice": "You have strong adjacent consulting/GTM evidence, but the resume does not use consulting or GTM language yet. Reframe your operations experience around research, preparation materials, stakeholder coordination, and workstream execution."
+    },
+    "requirements gathering": {
+      "adjacent": ["documentation", "stakeholder management", "client service", "business analysis"],
+      "advice": "You gather information from stakeholders already — but the resume never calls it requirements gathering. If you collected needs, documented requests, or turned stakeholder input into documents or trackers, use that language explicitly."
+    },
+    "user stories": {
+      "adjacent": ["business analysis", "documentation", "process mapping"],
+      "advice": "You have documentation and analysis evidence, but no named user stories. If a course or project had you write user stories, acceptance criteria, or requirement documents, name the deliverable — otherwise keep it as a gap to address in an interview."
+    },
+    "business analysis": {
+      "adjacent": ["data analysis", "documentation", "process execution", "stakeholder management"],
+      "advice": "Your analysis and process work is adjacent to business analysis, but the resume doesn't frame it that way. Describe one piece of work as: the business problem, who you gathered input from, what you documented, and what changed."
+    },
+    "financial modeling": {
+      "adjacent": ["excel", "data analysis", "financial analysis"],
+      "advice": "You have Excel and analysis evidence, but no named financial model. If you built any model (course DCF, budget forecast, scenario sheet), name the model type and what decision it informed — otherwise keep modeling as a gap."
+    },
+    "campaign management": {
+      "adjacent": ["social media", "event planning", "content creation", "email marketing"],
+      "advice": "Your promotion and content work is adjacent to campaign management. Frame one initiative as a campaign: audience, channel, message, timeline, and result."
+    },
+    "sql": {
+      "adjacent": ["excel", "data analysis"],
+      "advice": "You show data analysis in Excel, but no SQL. If you queried a database in any course or project, add it with the context — if not, SQL is a genuine gap worth a short course before applying."
+    },
+    "agile": {
+      "adjacent": ["project management", "process execution"],
+      "advice": "You show coordination and process evidence, but no named agile experience. If any course or project used sprints, standups, or a backlog, say so — otherwise keep agile as a gap and be ready to discuss how you organize work."
+    },
+    "regulatory reporting": {
+      "adjacent": ["reporting", "data quality", "documentation"],
+      "advice": "You have reporting and data-accuracy evidence, but nothing tied to a regulatory or compliance context. If any reporting you did fed an audit, policy, or compliance need, say so — otherwise this stays a gap you can close on the job."
+    },
+    "power bi": {
+      "adjacent": ["excel", "dashboards", "reporting"],
+      "advice": "Your Excel reporting is adjacent to BI tools. If you've built any Power BI or Tableau visual (even in class), add it — if not, this is a quick skill to pick up and worth naming as in progress only if true."
+    },
+    "crm": {
+      "adjacent": ["customer service", "client service", "sales"],
+      "advice": "Your customer-facing work is adjacent to CRM experience. If you logged, tracked, or looked up customer records in any system, name the system and task — that is CRM evidence."
+    },
+    "presentation": {
+      "adjacent": ["communication", "powerpoint", "market research"],
+      "advice": "You have communication evidence, but no named presentations. If you presented findings to a class, panel, client, or team, add one bullet with the audience and topic."
+    }
+  },
   "student_experience_translations": [
     {
       "signals": ["case competition", "case comp"],

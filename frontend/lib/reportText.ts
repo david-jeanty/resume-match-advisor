@@ -66,6 +66,14 @@ export function reportToMarkdown(report: AnalyzeResponse): string {
   }
   lines.push("");
 
+  if ((report.advisor_notes ?? []).length > 0) {
+    lines.push(`## Advisor insights`);
+    for (const note of report.advisor_notes) {
+      lines.push(`- **${note.title}** — ${note.message}`);
+    }
+    lines.push("");
+  }
+
   for (const section of report.contextual_feedback ?? []) {
     lines.push(`## ${section.title}`);
     for (const item of section.items) lines.push(`- ${item}`);

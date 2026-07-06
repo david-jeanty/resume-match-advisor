@@ -1,6 +1,7 @@
 """Assembles the full analysis report from the deterministic pipeline."""
 
 from . import context_engine, knowledge_loader
+from .advisor_engine import AdvisorInput, get_advisor
 from .company_card import build_company_card
 from .discipline_classifier import classify
 from .jd_parser import ParsedJD, parse_jd
@@ -250,6 +251,32 @@ def generate_report(request: AnalyzeRequest) -> AnalyzeResponse:
         university_context, university_pack, location_context, disciplines
     )
 
+    # Optional advisor layer: richer explanations AFTER scoring is final, so
+    # it can never influence the score. A provider failure must never break
+    # the scan.
+    advisor = get_advisor()
+    advisor_notes = []
+    advisor_name = "off"
+    if advisor is not None:
+        advisor_name = advisor.name
+        try:
+            advisor_notes = advisor.advise(AdvisorInput(
+                request=request,
+                resume=resume,
+                jd=jd,
+                disciplines=disciplines,
+                evidence_map=evidence,
+                skill_matches=matches,
+                missing_skills=missing,
+                university_context=university_context,
+                university_pack=university_pack,
+                location_context=location_context,
+                company_card=card,
+                overall_score=overall,
+            ))
+        except Exception:
+            advisor_notes = []
+
     return AnalyzeResponse(
         overall_score=overall,
         score_interpretation=interpretation,
@@ -280,4 +307,6 @@ def generate_report(request: AnalyzeRequest) -> AnalyzeResponse:
         university_context=university_context,
         location_context=location_context,
         contextual_feedback=contextual_feedback,
+        advisor_notes=advisor_notes,
+        advisor_provider=advisor_name,
     )

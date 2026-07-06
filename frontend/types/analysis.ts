@@ -128,6 +128,20 @@ export interface ContextSection {
   items: string[];
 }
 
+export interface AdvisorNote {
+  category:
+    | "false_gap"
+    | "gap_explanation"
+    | "positioning"
+    | "experience_translation"
+    | "role_suggestion"
+    | "context_advice"
+    | "company_angle";
+  title: string;
+  message: string;
+  related_terms: string[];
+}
+
 export interface AnalyzeResponse {
   overall_score: number;
   score_interpretation: string;
@@ -143,6 +157,8 @@ export interface AnalyzeResponse {
   university_context: UniversityContext | null;
   location_context: LocationContext | null;
   contextual_feedback: ContextSection[];
+  advisor_notes: AdvisorNote[];
+  advisor_provider: string;
   privacy_note: string;
 }
 

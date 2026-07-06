@@ -387,5 +387,81 @@
       ]
     }
   ],
+  "advisor_notes": [
+    {
+      "category": "false_gap",
+      "title": "regulatory reporting: possibly a wording gap, not an experience gap",
+      "message": "The posting asks for regulatory reporting, and your resume already shows related evidence (reporting, data quality, documentation). You have reporting and data-accuracy evidence, but nothing tied to a regulatory or compliance context. If any reporting you did fed an audit, policy, or compliance need, say so \u2014 otherwise this stays a gap you can close on the job.",
+      "related_terms": [
+        "regulatory reporting",
+        "reporting",
+        "data quality",
+        "documentation"
+      ]
+    },
+    {
+      "category": "false_gap",
+      "title": "requirements gathering: possibly a wording gap, not an experience gap",
+      "message": "The posting asks for requirements gathering, and your resume already shows related evidence (documentation, stakeholder management, client service). You gather information from stakeholders already \u2014 but the resume never calls it requirements gathering. If you collected needs, documented requests, or turned stakeholder input into documents or trackers, use that language explicitly.",
+      "related_terms": [
+        "requirements gathering",
+        "documentation",
+        "stakeholder management",
+        "client service"
+      ]
+    },
+    {
+      "category": "false_gap",
+      "title": "testing: possibly a wording gap, not an experience gap",
+      "message": "The posting asks for testing, and your resume already shows related evidence (data quality, data investigation, documentation). You have adjacent quality-checking evidence (validation, auditing, exception identification), but no explicit testing. If you tested a system, report, or process output, say so directly \u2014 otherwise treat testing as a real gap.",
+      "related_terms": [
+        "testing",
+        "data quality",
+        "data investigation",
+        "documentation"
+      ]
+    },
+    {
+      "category": "gap_explanation",
+      "title": "agile: a genuine gap to address",
+      "message": "You show coordination and process evidence, but no named agile experience. If any course or project used sprints, standups, or a backlog, say so \u2014 otherwise keep agile as a gap and be ready to discuss how you organize work.",
+      "related_terms": [
+        "agile"
+      ]
+    },
+    {
+      "category": "gap_explanation",
+      "title": "capital markets: a genuine gap to address",
+      "message": "Nothing in your resume relates to capital markets yet. If you genuinely have this experience, add it with context; if not, treat it as a skill to build or a point to address honestly in a cover letter.",
+      "related_terms": [
+        "capital markets"
+      ]
+    },
+    {
+      "category": "positioning",
+      "title": "Lead with your strongest proof",
+      "message": "For this Business Technology Management (BTM/MIS) role, your most convincing evidence is client service, data investigation, data quality. Put the bullets that show these at the top of their sections, and mirror the posting's wording for them where it's honest \u2014 recruiters skim, so your best proof should be first.",
+      "related_terms": [
+        "client service",
+        "data investigation",
+        "data quality"
+      ]
+    },
+    {
+      "category": "experience_translation",
+      "title": "Experience you already have \u2014 just not in these words",
+      "message": "Your Telfer Business Technology Association (BTA) involvement plausibly covers business analysis, but the resume never says so. This is a wording fix, not a new experience requirement: rewrite those bullets to name the skill, the stakeholders, and the outcome the posting is asking about.",
+      "related_terms": [
+        "business analysis"
+      ]
+    },
+    {
+      "category": "context_advice",
+      "title": "Positioning for Toronto / GTA",
+      "message": "For a Toronto financial-services role, emphasize Excel/modeling evidence, finance coursework applied to real analyses, attention to detail, and any client-facing experience.",
+      "related_terms": []
+    }
+  ],
+  "advisor_provider": "rule_based",
   "privacy_note": "Your resume and job description are processed in memory to generate this report and are not stored, logged, or used for anything else."
 }

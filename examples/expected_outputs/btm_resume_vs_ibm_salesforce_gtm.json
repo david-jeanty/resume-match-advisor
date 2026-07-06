@@ -433,5 +433,58 @@
       ]
     }
   ],
+  "advisor_notes": [
+    {
+      "category": "false_gap",
+      "title": "user stories: possibly a wording gap, not an experience gap",
+      "message": "The posting asks for user stories, and your resume already shows related evidence (business analysis, documentation). You have documentation and analysis evidence, but no named user stories. If a course or project had you write user stories, acceptance criteria, or requirement documents, name the deliverable \u2014 otherwise keep it as a gap to address in an interview.",
+      "related_terms": [
+        "user stories",
+        "business analysis",
+        "documentation"
+      ]
+    },
+    {
+      "category": "gap_explanation",
+      "title": "process mapping: a genuine gap to address",
+      "message": "Nothing in your resume relates to process mapping yet. If you genuinely have this experience, add it with context; if not, treat it as a skill to build or a point to address honestly in a cover letter.",
+      "related_terms": [
+        "process mapping"
+      ]
+    },
+    {
+      "category": "gap_explanation",
+      "title": "solution overviews: a genuine gap to address",
+      "message": "Nothing in your resume relates to solution overviews yet. If you genuinely have this experience, add it with context; if not, treat it as a skill to build or a point to address honestly in a cover letter.",
+      "related_terms": [
+        "solution overviews"
+      ]
+    },
+    {
+      "category": "positioning",
+      "title": "Lead with your strongest proof",
+      "message": "For this Business Technology Management (BTM/MIS) role, your most convincing evidence is business analysis, communication, crm. Put the bullets that show these at the top of their sections, and mirror the posting's wording for them where it's honest \u2014 recruiters skim, so your best proof should be first.",
+      "related_terms": [
+        "business analysis",
+        "communication",
+        "crm"
+      ]
+    },
+    {
+      "category": "experience_translation",
+      "title": "Experience you already have \u2014 just not in these words",
+      "message": "Your coursework plausibly covers market research, but the resume never says so. This is a wording fix, not a new experience requirement: rewrite those bullets to name the skill, the stakeholders, and the outcome the posting is asking about.",
+      "related_terms": [
+        "market research"
+      ]
+    },
+    {
+      "category": "context_advice",
+      "title": "Positioning for Toronto / GTA",
+      "message": "Toronto student hiring is high-volume and competitive \u2014 quantified, specific bullets matter even more than usual.",
+      "related_terms": []
+    }
+  ],
+  "advisor_provider": "rule_based",
   "privacy_note": "Your resume and job description are processed in memory to generate this report and are not stored, logged, or used for anything else."
 }

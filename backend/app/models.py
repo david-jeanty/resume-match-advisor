@@ -140,6 +140,24 @@ class ContextSection(BaseModel):
     items: list[str]
 
 
+class AdvisorNote(BaseModel):
+    """A note from the (optional) advisor engine. Explanation only — advisor
+    notes never affect the score."""
+
+    category: Literal[
+        "false_gap",
+        "gap_explanation",
+        "positioning",
+        "experience_translation",
+        "role_suggestion",
+        "context_advice",
+        "company_angle",
+    ]
+    title: str
+    message: str
+    related_terms: list[str] = []
+
+
 class AnalyzeResponse(BaseModel):
     overall_score: int
     score_interpretation: str
@@ -155,4 +173,6 @@ class AnalyzeResponse(BaseModel):
     university_context: Optional[UniversityContext] = None
     location_context: Optional[LocationContext] = None
     contextual_feedback: list[ContextSection] = []
+    advisor_notes: list[AdvisorNote] = []
+    advisor_provider: str = "off"
     privacy_note: str = PRIVACY_NOTE

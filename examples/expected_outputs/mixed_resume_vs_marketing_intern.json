@@ -331,5 +331,48 @@
       ]
     }
   ],
+  "advisor_notes": [
+    {
+      "category": "gap_explanation",
+      "title": "logistics: a genuine gap to address",
+      "message": "Nothing in your resume relates to logistics yet. If you genuinely have this experience, add it with context; if not, treat it as a skill to build or a point to address honestly in a cover letter.",
+      "related_terms": [
+        "logistics"
+      ]
+    },
+    {
+      "category": "gap_explanation",
+      "title": "mailchimp: a genuine gap to address",
+      "message": "Nothing in your resume relates to mailchimp yet. If you genuinely have this experience, add it with context; if not, treat it as a skill to build or a point to address honestly in a cover letter.",
+      "related_terms": [
+        "mailchimp"
+      ]
+    },
+    {
+      "category": "positioning",
+      "title": "Lead with your strongest proof",
+      "message": "For this Marketing role, your most convincing evidence is analytics, canva, communication. Put the bullets that show these at the top of their sections, and mirror the posting's wording for them where it's honest \u2014 recruiters skim, so your best proof should be first.",
+      "related_terms": [
+        "analytics",
+        "canva",
+        "communication"
+      ]
+    },
+    {
+      "category": "experience_translation",
+      "title": "Experience you already have \u2014 just not in these words",
+      "message": "Your intern plausibly covers reporting, but the resume never says so. This is a wording fix, not a new experience requirement: rewrite those bullets to name the skill, the stakeholders, and the outcome the posting is asking about.",
+      "related_terms": [
+        "reporting"
+      ]
+    },
+    {
+      "category": "context_advice",
+      "title": "Positioning for Toronto / GTA",
+      "message": "Toronto student hiring is high-volume and competitive \u2014 quantified, specific bullets matter even more than usual.",
+      "related_terms": []
+    }
+  ],
+  "advisor_provider": "rule_based",
   "privacy_note": "Your resume and job description are processed in memory to generate this report and are not stored, logged, or used for anything else."
 }

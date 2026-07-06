@@ -68,6 +68,27 @@ What context does — and deliberately doesn't do:
    never facts. Facts that couldn't be verified are marked `to_verify` in
    `research_sources/uottawa_telfer_sources.json` and `verified: false` in the pack.
 
+## Advisor engine (optional explanation layer)
+
+After the deterministic scan is scored, an optional **advisor engine**
+(`backend/app/advisor_engine/`) adds richer, student-friendly notes: false-gap detection
+("you have adjacent validation evidence, but never say UAT — name it explicitly or keep
+it as a gap"), genuine-gap explanations, positioning advice, experience translation,
+and course/location/company cross-references.
+
+Design rules:
+
+- **The default provider is rule-based**: deterministic templates driven by the
+  `adjacent_evidence` table in `knowledge_packs/common.json` plus the scan results.
+  No AI, no network, no cost.
+- **The advisor never changes the score.** It runs after scoring and only adds notes;
+  a provider failure cannot break a scan.
+- **LLM providers are opt-in stubs.** `optional_llm_provider.py` reserves slots for
+  future local (Ollama) or API (Anthropic/OpenAI) providers, but they are disabled by
+  default, make no calls, and raise with an explanation if selected. The base product
+  must always work fully without them.
+- Select a provider with `ADVISOR_PROVIDER` (`rule_based` default, `off` to disable).
+
 ### Updating university and location packs
 
 - Add a new school: copy `university_packs/uottawa_telfer.json`, fill in `aliases`,
@@ -115,6 +136,7 @@ Environment variables (all optional):
 - `ALLOWED_ORIGINS` — comma-separated CORS origins (default `*`).
 - `COMPANY_LOOKUP=off` — disable the Wikipedia company lookup (offline fallback card is used).
 - `KNOWLEDGE_PACKS_DIR` / `UNIVERSITY_PACKS_DIR` / `LOCATION_PACKS_DIR` — override pack locations.
+- `ADVISOR_PROVIDER` — advisor engine provider: `rule_based` (default, offline) or `off`.
 
 ### Frontend (port 3000)
 

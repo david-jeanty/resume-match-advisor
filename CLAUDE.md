@@ -61,7 +61,13 @@ SaaS, and must stay cheap/free to run.
 
 - `backend/app/` — FastAPI. Pipeline: `resume_parser` + `jd_parser` → `discipline_classifier`
   → `matching_engine` (evidence map, student translation) → `scoring_engine` →
-  `report_generator` → `/analyze`. `company_card` is Wikipedia-or-fallback and must never raise.
+  `advisor_engine` (optional notes) → `report_generator` → `/analyze`. `company_card` is
+  Wikipedia-or-fallback and must never raise.
+- `backend/app/advisor_engine/` — optional post-scan explanation layer. Rules:
+  the default provider is `rule_based` (offline, deterministic, driven by the
+  `adjacent_evidence` table in `common.json`); advisor notes **never change the score**;
+  a provider failure must never break a scan; LLM providers stay opt-in stubs
+  (`ADVISOR_PROVIDER` env var) and must never become a default or required dependency.
 - `knowledge_packs/*.json` — 9 discipline packs + `common.json` (skill aliases,
   student-experience translations, action verbs, section headers, stopwords). Improving
   match quality usually means editing packs, not code.
