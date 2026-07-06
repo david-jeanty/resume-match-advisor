@@ -227,11 +227,7 @@ def generate_report(request: AnalyzeRequest) -> AnalyzeResponse:
     disciplines = classify(jd, request.target_discipline)
 
     evidence = build_evidence_map(jd, resume)
-    # Drop terms subsumed by a longer detected term ("testing" vs "a/b testing").
-    all_terms = set(jd.skills) | set(jd.tools)
-    skill_terms = sorted(
-        t for t in all_terms if not any(t != other and t in other for other in all_terms)
-    )
+    skill_terms = sorted(set(jd.skills) | set(jd.tools))
     matches = match_skills(skill_terms, resume)
 
     overall, interpretation, breakdown = compute_scores(

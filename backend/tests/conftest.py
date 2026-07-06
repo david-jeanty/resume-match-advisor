@@ -41,3 +41,13 @@ def btm_jd() -> str:
 @pytest.fixture
 def finance_jd() -> str:
     return _read("sample_job_descriptions/finance_intern.txt")
+
+
+@pytest.fixture
+def cibc_jd() -> str:
+    return _read("sample_job_descriptions/cibc_csdm_coop.txt")
+
+
+@pytest.fixture
+def btm_data_resume() -> str:
+    return _read("sample_resumes/btm_data_coop_student.txt")

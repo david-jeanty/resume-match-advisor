@@ -10,16 +10,97 @@ Match strengths, in plain terms:
   missing  — no evidence found at all.
 """
 
+import re
 from dataclasses import dataclass
 from typing import Literal, Optional
 
 from . import knowledge_loader
-from .jd_parser import ParsedJD
+from .jd_parser import EDUCATION_DEGREE_CUES, ParsedJD
 from .models import EvidenceItem, RequirementType
 from .resume_parser import ParsedResume
 from .text_utils import clip, contains_term, content_tokens, normalize
 
 STRENGTH_ORDER = {"strong": 3, "moderate": 2, "weak": 1, "missing": 0}
+
+# Broad field-of-study aliases for "degree in Business, Finance, Economics,
+# or a related field"-type requirements. Deliberately does NOT include
+# "intern"/"co-op" — those describe work status, not a field of study, and
+# must never satisfy an education requirement on their own.
+#
+# Distinctive multi-word/program names are safe to search anywhere in the
+# resume. Generic single-word field names (finance, marketing, accounting...)
+# are common outside an education context too (job titles, company
+# descriptions) and are only trusted when found inside a detected Education
+# section — otherwise "Marketing Intern" would falsely satisfy a degree
+# requirement for someone with no education section at all.
+DISTINCTIVE_DEGREE_TERMS = [
+    "bachelor of commerce", "bcom", "b.com", "bcomm",
+    "business technology management", "btm", "telfer school of management",
+    "telfer", "management information systems", "business analytics",
+    "operations management", "business administration", "bba",
+    "business management",
+]
+GENERIC_FIELD_TERMS = ["commerce", "finance", "accounting", "marketing", "economics", "mis"]
+BUSINESS_DEGREE_TERMS = DISTINCTIVE_DEGREE_TERMS + GENERIC_FIELD_TERMS
+DEGREE_DATE_CUES = ["expected", "anticipated", "in progress", "current year"]
+_YEAR_RE = re.compile(r"\b20\d{2}\b")
+
+
+def _is_education_requirement(text: str) -> bool:
+    lowered = normalize(text)
+    return any(cue in lowered for cue in EDUCATION_DEGREE_CUES)
+
+
+def _evaluate_education_requirement(resume: ParsedResume) -> "TermEvidence":
+    education_lines = resume.sections.get("education", [])
+    education_text = normalize(" ".join(education_lines))
+
+    if education_lines:
+        matched_term = next(
+            (t for t in BUSINESS_DEGREE_TERMS if contains_term(education_text, t)), None
+        )
+    else:
+        # No Education section at all — only trust distinctive program names,
+        # never a bare word like "marketing" or "finance" that could just as
+        # easily come from a job title.
+        matched_term = next(
+            (t for t in DISTINCTIVE_DEGREE_TERMS if contains_term(resume.norm_text, t)),
+            None,
+        )
+    if not matched_term:
+        return TermEvidence(
+            "degree field", "missing", None, None,
+            advice="No business/finance/economics-related degree or program was found.",
+        )
+
+    line = next(
+        (l for l in (education_lines or resume.lines) if contains_term(normalize(l), matched_term)),
+        None,
+    )
+    has_date = bool(education_lines) and (
+        _YEAR_RE.search(education_text) or any(c in education_text for c in DEGREE_DATE_CUES)
+    )
+
+    if education_lines and has_date:
+        strength = "strong"
+        advice = (
+            f"Your {matched_term} program in the Education section satisfies this "
+            "field-of-study requirement, and your resume shows you're currently enrolled."
+        )
+    elif education_lines:
+        strength = "moderate"
+        advice = (
+            f"Your {matched_term} program supports this requirement — add your expected "
+            "graduation date to your Education section to make current enrollment obvious."
+        )
+    else:
+        strength = "moderate"
+        advice = (
+            f"Found '{matched_term}' relevant to this requirement, but not in a clearly "
+            "labeled Education section — make sure your degree and expected graduation "
+            "date are easy to find."
+        )
+    return TermEvidence("degree field", strength, line, matched_term, advice=advice)
 
 
 @dataclass
@@ -223,6 +304,16 @@ def _explain(strength: str, evidences: list[TermEvidence], line: Optional[str]) 
 def build_evidence_item(
     requirement: str, req_type: RequirementType, resume: ParsedResume
 ) -> EvidenceItem:
+    if _is_education_requirement(requirement):
+        ev = _evaluate_education_requirement(resume)
+        return EvidenceItem(
+            requirement=clip(requirement, 220),
+            requirement_type=req_type,
+            resume_evidence=clip(ev.line) if ev.line else None,
+            match_strength=ev.strength,  # type: ignore[arg-type]
+            explanation=ev.advice or "",
+        )
+
     terms = _terms_in(requirement)
     if terms:
         evidences = sorted(

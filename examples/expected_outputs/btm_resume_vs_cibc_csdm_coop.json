@@ -1,0 +1,383 @@
+{
+  "overall_score": 62,
+  "score_interpretation": "Partial match \u2014 targeted resume changes are needed to show the evidence this role asks for.",
+  "score_breakdown": [
+    {
+      "category": "required_qualifications",
+      "label": "Required qualifications match",
+      "score": 12,
+      "max_score": 25,
+      "explanation": "Of 2 required qualifications: 1 strong, 0 moderate, 0 weak, 1 missing."
+    },
+    {
+      "category": "skills_tools",
+      "label": "Skills & tools match",
+      "score": 9,
+      "max_score": 20,
+      "explanation": "The posting mentions 17 skills/tools: 7 covered in your resume, 1 plausibly transferable from student experience, 8 not found. 1 appear only in course/club context \u2014 weak until the resume shows them applied."
+    },
+    {
+      "category": "experience_evidence",
+      "label": "Experience evidence match",
+      "score": 17,
+      "max_score": 20,
+      "explanation": "Based on how well your bullets support the day-to-day work: 10 of 12 responsibilities have direct or transferable evidence; 5 of 10 bullets include numbers."
+    },
+    {
+      "category": "discipline_fit",
+      "label": "Commerce discipline fit",
+      "score": 8,
+      "max_score": 15,
+      "explanation": "This looks like a Business Technology Management (BTM/MIS) role; your resume shows 6 of the skills and tools common to that discipline."
+    },
+    {
+      "category": "keyword_coverage",
+      "label": "Keyword & context coverage",
+      "score": 6,
+      "max_score": 10,
+      "explanation": "The posting uses 9 business keywords for this discipline; your resume speaks the same language on 3 of them (e.g. documentation, reporting, stakeholders)."
+    },
+    {
+      "category": "clarity_structure",
+      "label": "Resume clarity & structure",
+      "score": 10,
+      "max_score": 10,
+      "explanation": "Structure checks passed: 6 of 6."
+    }
+  ],
+  "detected_disciplines": [
+    {
+      "discipline_id": "btm_mis",
+      "discipline": "Business Technology Management (BTM/MIS)",
+      "confidence": "high",
+      "matched_signals": [
+        "skill: agile",
+        "skill: business analysis",
+        "skill: client service",
+        "skill: communication",
+        "skill: data investigation",
+        "skill: data quality",
+        "skill: documentation",
+        "skill: process execution"
+      ]
+    },
+    {
+      "discipline_id": "business_analytics",
+      "discipline": "Business Analytics",
+      "confidence": "high",
+      "matched_signals": [
+        "skill: data investigation",
+        "skill: data quality",
+        "skill: excel",
+        "skill: problem solving",
+        "skill: process execution",
+        "skill: reporting",
+        "skill: testing",
+        "tool: excel"
+      ]
+    }
+  ],
+  "extracted_job_requirements": {
+    "role_title": "Co-op Student, CSDM Business Transformation",
+    "required_qualifications": [
+      "You are working towards a degree in Business, Finance, Economics or a related field, and are currently enrolled in post-secondary education.",
+      "You put clients first, and you're keen to develop an understanding of Capital Markets products and regulatory reporting."
+    ],
+    "preferred_qualifications": [],
+    "responsibilities": [
+      "As a Co-op Student on the CSDM (Client Static Data Management) Business Transformation team, you will support data quality and remediation initiatives for Capital Markets products. You will work alongside business analysts and technology partners to identify data issues, coordinate remediation efforts, and support regulatory reporting requirements.",
+      "Support data quality and remediation activities across multiple Capital Markets products",
+      "Conduct data investigation to identify root causes of data issues and anomalies",
+      "Prepare structured reporting summaries and KPI trend analysis for management",
+      "Support business analysis activities including requirements gathering and process documentation",
+      "Assist with User Acceptance Testing (UAT) and system testing for CSDM technology initiatives",
+      "Coordinate follow-up with internal stakeholders across multiple workstreams",
+      "Support regulatory reporting deliverables and governance documentation",
+      "Participate in Agile/Scrum ceremonies with the technology delivery team",
+      "Identify and escalate process gaps and control weaknesses",
+      "Business analysis: Apply structured problem solving to data quality and process issues, working with stakeholders to document requirements and drive remediation.",
+      "Data investigation: Use tools like Excel to investigate data anomalies, flag exceptions, and support root-cause analysis."
+    ],
+    "skills": [
+      "agile",
+      "business analysis",
+      "capital markets",
+      "client service",
+      "communication",
+      "data investigation",
+      "data quality",
+      "documentation",
+      "excel",
+      "problem solving",
+      "process execution",
+      "regulatory reporting",
+      "reporting",
+      "requirements gathering",
+      "scrum",
+      "testing",
+      "uat"
+    ],
+    "tools": [
+      "excel"
+    ]
+  },
+  "extracted_resume_signals": {
+    "sections_found": [
+      "education",
+      "experience",
+      "leadership",
+      "skills"
+    ],
+    "skills_found": [
+      "client service",
+      "crm",
+      "customer service",
+      "data entry",
+      "data investigation",
+      "data quality",
+      "documentation",
+      "excel",
+      "process execution",
+      "reporting"
+    ],
+    "tools_found": [
+      "excel"
+    ],
+    "student_signals": [
+      "co-op",
+      "student ambassador"
+    ],
+    "bullet_count": 10,
+    "quantified_bullet_count": 5,
+    "action_verb_bullet_count": 6
+  },
+  "evidence_map": [
+    {
+      "requirement": "You are working towards a degree in Business, Finance, Economics or a related field, and are currently enrolled in post-secondary education.",
+      "requirement_type": "required",
+      "resume_evidence": "Bachelor of Commerce, Business Technology Management (BTM), Co-op",
+      "match_strength": "strong",
+      "explanation": "Your bachelor of commerce program in the Education section satisfies this field-of-study requirement, and your resume shows you're currently enrolled."
+    },
+    {
+      "requirement": "You put clients first, and you're keen to develop an understanding of Capital Markets products and regulatory reporting.",
+      "requirement_type": "required",
+      "resume_evidence": null,
+      "match_strength": "missing",
+      "explanation": "No evidence for this requirement was found in your resume."
+    },
+    {
+      "requirement": "As a Co-op Student on the CSDM (Client Static Data Management) Business Transformation team, you will support data quality and remediation initiatives for Capital Markets products. You will work alongside business analy\u2026",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Audited weekly registration reports to verify data accuracy, flag anomalies, and identify exceptions requiring follow-up with stakeholders before deadlines",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows data quality (via data accuracy) in an experience bullet. Still unaddressed: regulatory reporting, capital markets."
+    },
+    {
+      "requirement": "Support data quality and remediation activities across multiple Capital Markets products",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Audited weekly registration reports to verify data accuracy, flag anomalies, and identify exceptions requiring follow-up with stakeholders before deadlines",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows data quality (via data accuracy) in an experience bullet. Still unaddressed: capital markets."
+    },
+    {
+      "requirement": "Conduct data investigation to identify root causes of data issues and anomalies",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Audited weekly registration reports to verify data accuracy, flag anomalies, and identify exceptions requiring follow-up with stakeholders before deadlines",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows data investigation (via identify exceptions) in an experience bullet."
+    },
+    {
+      "requirement": "Prepare structured reporting summaries and KPI trend analysis for management",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Audited weekly registration reports to verify data accuracy, flag anomalies, and identify exceptions requiring follow-up with stakeholders before deadlines",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows data investigation (via identify exceptions) in an experience bullet."
+    },
+    {
+      "requirement": "Support business analysis activities including requirements gathering and process documentation",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Tracked open items across multiple workstreams and maintained documentation for staff, providing organized follow-up on outstanding requests",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows documentation in an experience bullet. Still unaddressed: requirements gathering."
+    },
+    {
+      "requirement": "Assist with User Acceptance Testing (UAT) and system testing for CSDM technology initiatives",
+      "requirement_type": "responsibility",
+      "resume_evidence": null,
+      "match_strength": "missing",
+      "explanation": "No evidence for this requirement was found in your resume."
+    },
+    {
+      "requirement": "Coordinate follow-up with internal stakeholders across multiple workstreams",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Tracked open items across multiple workstreams and maintained documentation for staff, providing organized follow-up on outstanding requests",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows process execution (via multiple workstreams) in an experience bullet."
+    },
+    {
+      "requirement": "Support regulatory reporting deliverables and governance documentation",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Tracked open items across multiple workstreams and maintained documentation for staff, providing organized follow-up on outstanding requests",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows process execution (via multiple workstreams) in an experience bullet. Still unaddressed: regulatory reporting."
+    },
+    {
+      "requirement": "Participate in Agile/Scrum ceremonies with the technology delivery team",
+      "requirement_type": "responsibility",
+      "resume_evidence": null,
+      "match_strength": "missing",
+      "explanation": "No evidence for this requirement was found in your resume."
+    },
+    {
+      "requirement": "Identify and escalate process gaps and control weaknesses",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Tracked open items across multiple workstreams and maintained documentation for staff, providing organized follow-up on outstanding requests",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows process execution (via multiple workstreams) in an experience bullet."
+    },
+    {
+      "requirement": "Business analysis: Apply structured problem solving to data quality and process issues, working with stakeholders to document requirements and drive remediation.",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Audited weekly registration reports to verify data accuracy, flag anomalies, and identify exceptions requiring follow-up with stakeholders before deadlines",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows data quality (via data accuracy) in an experience bullet. Still unaddressed: problem solving."
+    },
+    {
+      "requirement": "Data investigation: Use tools like Excel to investigate data anomalies, flag exceptions, and support root-cause analysis.",
+      "requirement_type": "responsibility",
+      "resume_evidence": "Audited weekly registration reports to verify data accuracy, flag anomalies, and identify exceptions requiring follow-up with stakeholders before deadlines",
+      "match_strength": "strong",
+      "explanation": "Your resume directly shows data investigation (via identify exceptions) in an experience bullet."
+    }
+  ],
+  "missing_skills": {
+    "required_missing": [
+      "agile",
+      "capital markets",
+      "problem solving",
+      "regulatory reporting",
+      "requirements gathering",
+      "scrum",
+      "testing",
+      "uat"
+    ],
+    "preferred_missing": [],
+    "tools_missing": []
+  },
+  "weak_areas": [
+    "No evidence yet for required item: \"You put clients first, and you're keen to develop an understanding of Capital Markets products and regulatory reporting.\"",
+    "business analysis \u2014 your Telfer Business Technology Association (BTA) involvement may cover this, but the resume doesn't show it applied yet",
+    "communication \u2014 your 'student ambassador' experience is transferable, but the resume doesn't say it explicitly yet"
+  ],
+  "improvement_suggestions": [
+    {
+      "priority": "high",
+      "title": "Add agile evidence",
+      "suggestion": "The posting names agile as a skill it cares about. If you have used it in coursework, a class project, a club role, an internship, or a part-time job, add a specific bullet naming the context and what you did with it. If you haven't, consider a small project or course to build it before applying \u2014 don't add it without real experience.",
+      "related_requirement": "agile"
+    },
+    {
+      "priority": "high",
+      "title": "Add capital markets evidence",
+      "suggestion": "The posting names capital markets as a skill it cares about. If you have used it in coursework, a class project, a club role, an internship, or a part-time job, add a specific bullet naming the context and what you did with it. If you haven't, consider a small project or course to build it before applying \u2014 don't add it without real experience.",
+      "related_requirement": "capital markets"
+    },
+    {
+      "priority": "high",
+      "title": "Surface hidden problem solving evidence",
+      "suggestion": "The posting asks for problem solving and your resume doesn't show it yet. Case competition work can count as real project and analysis evidence \u2014 make the business problem, your role, the timeline, and the outcome (placement, recommendation adopted) explicit.",
+      "related_requirement": "problem solving"
+    },
+    {
+      "priority": "medium",
+      "title": "Turn your Telfer Business Technology Association (BTA) involvement into business analysis evidence",
+      "suggestion": "Strong involvement \u2014 keep the specifics. BTA involvement signals business-technology interest. It becomes real BTM/analytics evidence when you show organized tech or analytics events, workshop content, speaker or sponsor outreach, CRM/BI exposure, or attendance numbers.",
+      "related_requirement": "business analysis"
+    },
+    {
+      "priority": "medium",
+      "title": "Reframe your student ambassador experience as communication",
+      "suggestion": "Ambassador and mentoring roles support outreach, promotion, and communication evidence \u2014 quantify audiences reached, events run, or students supported.",
+      "related_requirement": "communication"
+    }
+  ],
+  "company_card": null,
+  "university_context": {
+    "university_name": "University of Ottawa",
+    "business_school": "Telfer School of Management",
+    "detected_from": "resume",
+    "program": null,
+    "detected_courses": [],
+    "detected_clubs": [
+      {
+        "name": "Telfer Business Technology Association (BTA)",
+        "matched_text": "bta",
+        "kind": "club",
+        "disciplines": [
+          "btm_mis",
+          "business_analytics",
+          "consulting"
+        ],
+        "supports": [
+          "business analysis",
+          "data analysis",
+          "event planning",
+          "stakeholder management",
+          "communication"
+        ],
+        "strength": "strong",
+        "note": "Strong involvement \u2014 keep the specifics. BTA involvement signals business-technology interest. It becomes real BTM/analytics evidence when you show organized tech or analytics events, workshop content, speaker or sponsor outreach, CRM/BI exposure, or attendance numbers."
+      }
+    ],
+    "coop_detected": true,
+    "bilingual_detected": false,
+    "notes": []
+  },
+  "location_context": {
+    "location_name": "Toronto / GTA",
+    "detected_from": "job_description",
+    "industries": [
+      "Banking & capital markets",
+      "Insurance & wealth management",
+      "Big 4 accounting & consulting",
+      "Retail & CPG head offices",
+      "Technology & fintech",
+      "Media & telecommunications",
+      "Real estate & construction"
+    ],
+    "positioning_advice": [
+      "For a Toronto financial-services role, emphasize Excel/modeling evidence, finance coursework applied to real analyses, attention to detail, and any client-facing experience.",
+      "Toronto student hiring is high-volume and competitive \u2014 quantified, specific bullets matter even more than usual.",
+      "Financial services and Big 4 recruiting is structured and credential-aware \u2014 surface CPA-track coursework, case competitions, and finance club technical work explicitly.",
+      "Retail/CPG head offices value category, brand, and consumer-analytics language \u2014 translate campus marketing work into those terms where honest."
+    ]
+  },
+  "contextual_feedback": [
+    {
+      "section_id": "university_program",
+      "title": "How your school/program context may help",
+      "items": [
+        "A co-op work term is direct, full-time student work experience \u2014 present it exactly like a job: employer, title, dates, and quantified bullets. If the posting is an internship, your co-op background is directly equivalent context; say 'co-op work term' explicitly."
+      ]
+    },
+    {
+      "section_id": "school_involvement",
+      "title": "How your Telfer School of Management involvement may translate",
+      "items": [
+        "Telfer Business Technology Association (BTA): Strong involvement \u2014 keep the specifics. BTA involvement signals business-technology interest. It becomes real BTM/analytics evidence when you show organized tech or analytics events, workshop content, speaker or sponsor outreach, CRM/BI exposure, or attendance numbers."
+      ]
+    },
+    {
+      "section_id": "location_angle",
+      "title": "Location-specific application angle",
+      "items": [
+        "For a Toronto financial-services role, emphasize Excel/modeling evidence, finance coursework applied to real analyses, attention to detail, and any client-facing experience.",
+        "Toronto student hiring is high-volume and competitive \u2014 quantified, specific bullets matter even more than usual.",
+        "Financial services and Big 4 recruiting is structured and credential-aware \u2014 surface CPA-track coursework, case competitions, and finance club technical work explicitly.",
+        "Retail/CPG head offices value category, brand, and consumer-analytics language \u2014 translate campus marketing work into those terms where honest."
+      ]
+    }
+  ],
+  "privacy_note": "Your resume and job description are processed in memory to generate this report and are not stored, logged, or used for anything else."
+}

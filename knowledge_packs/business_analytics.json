@@ -9,7 +9,8 @@
   "core_skills": [
     "data analysis", "sql", "excel", "data visualization", "reporting", "dashboards",
     "statistics", "data cleaning", "forecasting", "kpi reporting", "storytelling with data",
-    "a/b testing", "market research", "presentation", "problem solving"
+    "a/b testing", "market research", "presentation", "problem solving",
+    "data quality", "data investigation", "process execution", "testing"
   ],
   "tools": [
     "Excel", "SQL", "Power BI", "Tableau", "Python", "R", "Google Analytics",

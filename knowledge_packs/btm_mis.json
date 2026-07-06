@@ -11,7 +11,8 @@
     "business analysis", "requirements gathering", "process mapping", "documentation",
     "stakeholder management", "user stories", "testing", "uat", "data analysis", "sql",
     "agile", "scrum", "project management", "communication", "workflow analysis",
-    "gap analysis", "change management"
+    "gap analysis", "change management", "data quality", "process execution",
+    "data investigation", "client service"
   ],
   "tools": [
     "Excel", "Jira", "Confluence", "Visio", "Lucidchart", "SQL", "Power BI", "Tableau",
